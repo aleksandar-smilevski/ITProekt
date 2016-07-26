@@ -8,7 +8,7 @@
           <div class="col-md-12" style="margin-top:15px">
             <img src="Styles/img/logo.png" class="img-circle img-center "/>
             <div class="well-grey-text" >
-              <h1 class="text-center" >WELCOME TO IT PROEKT</h1> 
+              <h1 class="text-center" >WELCOME TO IT PROEKT</h1> <%--dasdasdasdasd--%>
               <p class="text-center">Your best option for custom PCs</p>
             </div>
            </div> 
