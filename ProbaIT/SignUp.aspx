@@ -1,30 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="ProbaIT.SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="ProbaIT.SignUp" MasterPageFile="~/Default.Master" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 60%;
-        }
-        .auto-style2 {
-            text-align: center;
-        }
-        .auto-style3 {
-            width: 416px;
-        }
-        .auto-style4 {
-            width: 416px;
-            text-align: right;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+    <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     
+    <div> 
         <h1 class="auto-style2">Sign up</h1>
         <table align="center" class="auto-style1">
             <tr>
@@ -66,7 +45,5 @@
         </table>
     
     </div>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-    </form>
-</body>
-</html>
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+</asp:Content>
