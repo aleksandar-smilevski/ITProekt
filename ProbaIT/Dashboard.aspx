@@ -79,6 +79,7 @@
             transform: translate(460px, -100px) rotate(180deg);
             -webkit-transition: all 0.2s 0.4s ease-in-out;
             transition: all 0.2s 0.4s ease-in-out;
+
         }
 
         .hovereffect img {
