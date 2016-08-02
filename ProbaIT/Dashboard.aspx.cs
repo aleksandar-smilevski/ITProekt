@@ -16,27 +16,27 @@ namespace ProbaIT
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
-            string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand(insertSQL, con);
-            cmd.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"].ToString()));
-            cmd.Parameters.AddWithValue("@orderContent", TextBox1.Text);
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch(Exception err)
-            {
-                Label1.Text = err.Message;
-            }
-            finally
-            {
-                con.Close();
-            }
-        }
+        //protected void Button1_Click(object sender, EventArgs e)
+        //{
+        //    string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
+        //    string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+        //    SqlConnection con = new SqlConnection(connectionString);
+        //    SqlCommand cmd = new SqlCommand(insertSQL, con);
+        //    cmd.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"].ToString()));
+        //    cmd.Parameters.AddWithValue("@orderContent", TextBox1.Text);
+        //    try
+        //    {
+        //        con.Open();
+        //        cmd.ExecuteNonQuery();
+        //    }
+        //    catch(Exception err)
+        //    {
+        //        Label1.Text = err.Message;
+        //    }
+        //    finally
+        //    {
+        //        con.Close();
+        //    }
+        //}
     }
 }
