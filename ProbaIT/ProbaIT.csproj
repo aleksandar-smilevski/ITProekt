@@ -114,6 +114,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Default.Master" />
     <None Include="scripts\jquery-2.2.4.intellisense.js" />
+    <Content Include="scripts\animatedModal.js" />
+    <Content Include="scripts\animatedModal.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-2.2.4.js" />
@@ -130,14 +132,17 @@
     <Content Include="Dashboard.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Styles\animate.min.css" />
     <Content Include="Styles\img\background.jpg" />
     <Content Include="Styles\img\logo.png" />
     <Content Include="Styles\img\PC.png" />
     <Content Include="Styles\img\web.png" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\navbar-fixed-side.css" />
+    <Content Include="Styles\normalize.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
