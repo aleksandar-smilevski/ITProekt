@@ -9,6 +9,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="Styles/navbar-fixed-side.css" rel="stylesheet" />
     <link href="Styles/main.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         $(document).ready(function () {
@@ -22,6 +23,11 @@
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        *{
+            font-family: 'Open Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -49,6 +55,7 @@
                   <li class="">
                     <a href=""><span class="glyphicon glyphicon-tags"></span> Orders</a>
                   </li>
+                    
                   <li>
                     <a href=""><span class="glyphicon glyphicon-cog"></span> Settings</a>
                   </li>
