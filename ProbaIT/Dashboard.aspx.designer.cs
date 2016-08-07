@@ -67,15 +67,6 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Panel pnlProcessor;
         
         /// <summary>
-        /// processorNameResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label processorNameResult;
-        
-        /// <summary>
         /// imgLogo control.
         /// </summary>
         /// <remarks>
@@ -85,6 +76,24 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Image imgLogo;
         
         /// <summary>
+        /// processorNameResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label processorNameResult;
+        
+        /// <summary>
+        /// lblCores control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCores;
+        
+        /// <summary>
         /// coresResult control.
         /// </summary>
         /// <remarks>
@@ -92,6 +101,15 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label coresResult;
+        
+        /// <summary>
+        /// processorPriceResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label processorPriceResult;
         
         /// <summary>
         /// lblThreads control.
@@ -148,6 +166,15 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label clockResult;
         
         /// <summary>
+        /// Image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
         /// lblProcessorScore control.
         /// </summary>
         /// <remarks>
@@ -157,22 +184,13 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label lblProcessorScore;
         
         /// <summary>
-        /// processorScoreResult control.
+        /// pnlStars control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label processorScoreResult;
-        
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Panel pnlStars;
         
         /// <summary>
         /// lblProcessorStock control.
@@ -191,24 +209,6 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label processorStockResult;
-        
-        /// <summary>
-        /// lblProcessorPrice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProcessorPrice;
-        
-        /// <summary>
-        /// processorPriceResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label processorPriceResult;
         
         /// <summary>
         /// lblErr control.

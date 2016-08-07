@@ -18,20 +18,6 @@ namespace ProbaIT
             {
                 fillProcessors();
             }
-            DataTable dt = new DataTable();
-            dt.Columns.AddRange(new DataColumn[1] { new DataColumn("ImageUrl") });
-            dt.Rows.Add("http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/75/199481072_b4a0d09597_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/57/199481087_33ae73a8de_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/77/199481108_4359e6b971_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/58/199481143_3c148d9dd3_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/72/199481203_ad4cdcf109_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/58/199481218_264ce20da0_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/69/199481255_fdfe885f87_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/60/199480111_87d4cb3e38_s.jpg");
-            dt.Rows.Add("http://static.flickr.com/70/229228324_08223b70fa_s.jpg");
-            //rptImages.DataSource = dt;
-            //rptImages.DataBind();
         }
 
         protected void fillProcessors()
@@ -95,9 +81,18 @@ namespace ProbaIT
                     threadsResult.Text = reader["Threads"].ToString();
                     clockResult.Text = reader["Clock"].ToString();
                     cacheResult.Text = reader["Cache"].ToString();
-                    processorScoreResult.Text = reader["Score"].ToString();
-                    processorStockResult.Text = reader["Stock"].ToString();
-                    processorPriceResult.Text = reader["Price"].ToString();
+                    double stars = int.Parse(reader["Score"].ToString()) / 100.0;
+                    int numStars = Convert.ToInt32(stars);
+                    addStar(numStars);
+                    if (Convert.ToInt32(reader["Stock"]) > 1)
+                    {
+                        processorStockResult.Text = "Yes";
+                    }
+                    else
+                    {
+                        processorStockResult.Text = "No";
+                    }
+                    processorPriceResult.Text = reader["Price"].ToString() + " MKD";
                 }
             }
             catch (Exception err)
@@ -107,6 +102,27 @@ namespace ProbaIT
             finally
             {
                 connection.Close();
+            }
+        }
+        
+        protected void addStar(int count)
+        {
+            Image star;
+            for (int i = 0; i < count; i++)
+            {
+                star = new Image();
+                star.ImageUrl = "Styles/img/star.png";
+                star.Width = Unit.Pixel(15);
+                star.Height = Unit.Pixel(15);
+                pnlStars.Controls.Add(star);
+            }
+            for (int i = count; i < 10; i++)
+            {
+                star = new Image();
+                star.ImageUrl = "Styles/img/empty-star.png";
+                star.Width = Unit.Pixel(15);
+                star.Height = Unit.Pixel(15);
+                pnlStars.Controls.Add(star);
             }
         }
 

@@ -6,6 +6,9 @@
     <script src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
     <link href="http://cdn.jsdelivr.net/jcarousel/0.2.8/skins/tango/skin.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.1.1/jquery.rateyo.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.1.1/jquery.rateyo.min.js"></script>
+
 
     <style type="text/css">
         * {
@@ -158,6 +161,10 @@
         .auto-style1 {
             width: 53%;
             height: 248px;
+            border-bottom: 1px solid #808080;
+            border-right: 1px solid #808080;
+            border-top: 1px solid #808080;
+            border-left: 1px solid #808080;
         }
 
         .close-modalCPU {
@@ -167,7 +174,7 @@
             width: 100%;
         }
 
-         .wrapper {
+        .wrapper {
             width: 100%;
             /*padding: 0 20px 40px 20px;*/
             margin: auto;
@@ -187,7 +194,7 @@
 
         /** Carousel **/
 
-       
+
 
         .jcarousel {
             position: relative;
@@ -287,10 +294,11 @@
                     box-shadow: 0 0 2px #F0EFE7;
                 }
 
-      
+
         .auto-style2 {
             width: 24%;
         }
+
         .auto-style3 {
             height: 24px;
         }
@@ -298,6 +306,33 @@
         .blockUI {
             background: #222222;
             pointer-events: none;
+        }
+
+        .auto-style4 {
+            text-align: center;
+            width: 107px;
+        }
+
+        .auto-style5 {
+            width: 107px;
+        }
+
+        .lblPickProcessor {
+            line-height: 2;
+            margin-left: 20px;
+        }
+
+        .ddlProcessor {
+            margin-top: 20px;
+        }
+
+        .auto-style6 {
+            width: 70px;
+        }
+
+        .auto-style7 {
+            height: 24px;
+            width: 70px;
         }
     </style>
 
@@ -386,14 +421,14 @@
                 <ContentTemplate>
                     <asp:Panel ID="Panel1" runat="server" BackColor="Black">
                         <br />
-                        <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Pick a processor"></asp:Label>
+                        <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Pick a processor" CssClass="lblPickProcessor"></asp:Label>
                         <br />
                     </asp:Panel>
                     <br />
                     <table align="center" class="auto-style2">
                         <tr>
                             <td>
-                                <asp:DropDownList ID="ddlProcessors" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProcessors_SelectedIndexChanged">
+                                <asp:DropDownList ID="ddlProcessors" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProcessors_SelectedIndexChanged" CssClass="ddlProcessor">
                                 </asp:DropDownList>
                             </td>
                         </tr>
@@ -403,108 +438,121 @@
                     <asp:Panel ID="pnlProcessor" runat="server" Visible="False">
                         <table align="center" class="auto-style1">
                             <tr>
-                                <td class="text-center" colspan="3">
-                                    <asp:Label ID="processorNameResult" runat="server"></asp:Label>
-                                </td>
-                                <td class="text-center" rowspan="5">
+                                <td class="auto-style4" rowspan="5">
                                     <asp:Image ID="imgLogo" runat="server" Height="60px" Width="100px" />
                                 </td>
+                                <td class="auto-style4" rowspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                                <td colspan="3">
+                                    <asp:Label ID="processorNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
+                                </td>
+                                <td class="text-center">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>Cores:</td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="lblCores" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Cores:"></asp:Label>
+                                </td>
                                 <td>
-                                    <asp:Label ID="coresResult" runat="server"></asp:Label>
+                                    <asp:Label ID="coresResult" runat="server" ForeColor="Gray"></asp:Label>
                                 </td>
                                 <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <asp:Label ID="lblThreads" runat="server" Text="Threads:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="threadsResult" runat="server"></asp:Label>
-                                </td>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <asp:Label ID="lblCache" runat="server" Text="Cache:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="cacheResult" runat="server"></asp:Label>
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style3">
-                                    <asp:Label ID="lblClock" runat="server" Text="Clock:"></asp:Label>
-                                </td>
-                                <td class="auto-style3">
-                                    <asp:Label ID="clockResult" runat="server"></asp:Label>
-                                </td>
-                                <td class="auto-style3"></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <asp:Label ID="lblProcessorScore" runat="server" Text="Score:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="processorScoreResult" runat="server"></asp:Label>
-                                </td>
-                                <td></td>
-                                <td class="text-center" rowspan="3">
-                                    <asp:Image ID="Image1" runat="server" Height="212px" ImageUrl="~/Styles/img/i7processor.jpg" Width="204px" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <asp:Label ID="lblProcessorStock" runat="server" Text="Stock:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="processorStockResult" runat="server"></asp:Label>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <asp:Label ID="lblProcessorPrice" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Price:"></asp:Label>
-                                </td>
                                 <td>
                                     <asp:Label ID="processorPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">
+                                    <asp:Label ID="lblThreads" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Threads:"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:Label ID="threadsResult" runat="server" ForeColor="Gray"></asp:Label>
+                                </td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
                                 <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">
+                                    <asp:Label ID="lblCache" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Cache:"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:Label ID="cacheResult" runat="server" ForeColor="Gray"></asp:Label>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>Free Shipping</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style7">
+                                    <asp:Label ID="lblClock" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Clock:"></asp:Label>
+                                </td>
+                                <td class="auto-style3">
+                                    <asp:Label ID="clockResult" runat="server" ForeColor="Gray"></asp:Label>
+                                </td>
+                                <td class="auto-style3"></td>
+                                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style5" rowspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Image ID="Image1" runat="server" Height="175px" ImageUrl="~/Styles/img/i7processor.jpg" Width="177px" />
+                                    &nbsp;
+                                </td>
+                                <td class="auto-style5" rowspan="3">&nbsp;</td>
+                                <td class="auto-style6">
+
+                                    <asp:Label ID="lblProcessorScore" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Score:"></asp:Label>
+
+                                </td>
+                                <td colspan="3">
+                                                                        
+                                    <asp:Panel ID="pnlStars" runat="server" Height="16px">
+                                    </asp:Panel>
+                                                                        
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">
+                                    <asp:Label ID="lblProcessorStock" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Stock:"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:Label ID="processorStockResult" runat="server" ForeColor="Gray"></asp:Label>
+                                </td>
+                                <td></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <asp:Label ID="lblErr" runat="server" ForeColor="Red"></asp:Label>
+                                </td>
                             </tr>
                         </table>
                     </asp:Panel>
-                    <asp:Label ID="lblErr" runat="server" ForeColor="Red"></asp:Label>
-                    <br />
 
-                  
+
                 </ContentTemplate>
             </asp:UpdatePanel>
-              <div class="wrapper">
-                        <div class="jcarousel-wrapper">
-                            <div class="jcarousel">
-                                <ul>
-                                    <li>
-                                        <img src="Styles\img\pro.png" alt="Image 1"></li>
-                                    <li>
-                                        <img src="Styles\img\background.jpg" alt="Image 2"></li>
-                                    <li>
-                                        <img src="Styles\img\i5processor.jpg" alt="Image 3"></li>
-                                     <li>
-                                        <img src="Styles\img\students.jpg" alt="Image 4"></li>
-                                     <li>
-                                        <img src="Styles\img\typing.jpg" alt="Image 5"></li>
-                                </ul>
-                            </div>
-
-                            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
-                            <p class="jcarousel-pagination"></p>
-                        </div>
+            <div class="wrapper">
+                <div class="jcarousel-wrapper">
+                    <div class="jcarousel">
+                        <ul>
+                            <li>
+                                <img src="Styles\img\pro.png" alt="Image 1"></li>
+                            <li>
+                                <img src="Styles\img\background.jpg" alt="Image 2"></li>
+                            <li>
+                                <img src="Styles\img\i5processor.jpg" alt="Image 3"></li>
+                            <li>
+                                <img src="Styles\img\students.jpg" alt="Image 4"></li>
+                            <li>
+                                <img src="Styles\img\typing.jpg" alt="Image 5"></li>
+                        </ul>
                     </div>
+
+                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                    <p class="jcarousel-pagination"></p>
+                </div>
+            </div>
             <br />
         </div>
     </div>
@@ -517,7 +565,7 @@
             console.log("aaaa");
             $(".backImgDashboard").removeClass("blockUI");
         });
-       
+
         $("#animateCPU").animatedModal({
             modalTarget: 'modalCPU',
             animatedIn: 'bounceIn',
@@ -534,6 +582,12 @@
         $(".hovereffect").mouseout(function () {
             $(this).find("h4").css("visibility", "visible");
         });
+            $(function () {
+                $("#ratingProcessors").rateYo({
+                    rating: 3.6
+                });
+                console.log("YAS");
+            });
         $(function () {
             var jcarousel = $('.jcarousel');
 
