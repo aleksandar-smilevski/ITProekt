@@ -111,7 +111,7 @@ namespace ProbaIT
             for (int i = 0; i < count; i++)
             {
                 star = new Image();
-                star.ImageUrl = "Styles/img/star.png";
+                star.ImageUrl = "Styles/img/star1.png";
                 star.Width = Unit.Pixel(15);
                 star.Height = Unit.Pixel(15);
                 pnlStars.Controls.Add(star);
@@ -119,7 +119,7 @@ namespace ProbaIT
             for (int i = count; i < 10; i++)
             {
                 star = new Image();
-                star.ImageUrl = "Styles/img/empty-star.png";
+                star.ImageUrl = "Styles/img/empty-star1.png";
                 star.Width = Unit.Pixel(15);
                 star.Height = Unit.Pixel(15);
                 pnlStars.Controls.Add(star);

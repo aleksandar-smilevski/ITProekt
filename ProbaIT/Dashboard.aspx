@@ -159,12 +159,12 @@
             }
 
         .auto-style1 {
-            width: 53%;
-            height: 248px;
-            border-bottom: 1px solid #808080;
-            border-right: 1px solid #808080;
-            border-top: 1px solid #808080;
-            border-left: 1px solid #808080;
+            width: 61%;
+            height: 295px;
+        }
+
+        #modalCPU {
+            overflow: hidden;
         }
 
         .close-modalCPU {
@@ -317,13 +317,19 @@
             width: 107px;
         }
 
+        .panel1 {
+            text-align: center;
+        }
+
         .lblPickProcessor {
             line-height: 2;
-            margin-left: 20px;
+            vertical-align: middle;
+            margin: 0;
         }
 
         .ddlProcessor {
             margin-top: 20px;
+            padding: 10px;
         }
 
         .auto-style6 {
@@ -419,7 +425,7 @@
             </asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:Panel ID="Panel1" runat="server" BackColor="Black">
+                    <asp:Panel ID="Panel1" runat="server" BackColor="Black" CssClass="panel1">
                         <br />
                         <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Pick a processor" CssClass="lblPickProcessor"></asp:Label>
                         <br />
@@ -435,17 +441,16 @@
                     </table>
                     <br />
                     <br />
-                    <asp:Panel ID="pnlProcessor" runat="server" Visible="False">
+                    <asp:Panel ID="pnlProcessor" runat="server" Visible="False" Height="306px">
                         <table align="center" class="auto-style1">
                             <tr>
                                 <td class="auto-style4" rowspan="5">
                                     <asp:Image ID="imgLogo" runat="server" Height="60px" Width="100px" />
                                 </td>
                                 <td class="auto-style4" rowspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                                <td colspan="3">
+                                <td colspan="4">
                                     <asp:Label ID="processorNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
                                 </td>
-                                <td class="text-center">&nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style6">
@@ -456,8 +461,7 @@
                                 </td>
                                 <td>&nbsp;</td>
                                 <td>
-                                    <asp:Label ID="processorPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </td>
+                                    &nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style6">
@@ -467,7 +471,9 @@
                                     <asp:Label ID="threadsResult" runat="server" ForeColor="Gray"></asp:Label>
                                 </td>
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td>
+                                    <asp:Label ID="processorPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="auto-style6">
@@ -572,9 +578,9 @@
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '75%',
-            height: '90%',
+            height: '100%',
             left: '15%',
-            top: '5%'
+            top: '0'
         });
         $(".hovereffect").mouseover(function () {
             $(this).find("h4").css("visibility", "hidden");
