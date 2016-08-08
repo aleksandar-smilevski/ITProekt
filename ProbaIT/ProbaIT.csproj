@@ -118,6 +118,7 @@
     <Content Include="scripts\animatedModal.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jcarousel-processors.js" />
     <Content Include="scripts\jquery-2.2.4.js" />
     <Content Include="scripts\jquery-2.2.4.min.js" />
     <Content Include="scripts\jquery-2.2.4.min.map" />
@@ -149,6 +150,7 @@
     <Content Include="Styles\img\students.jpg" />
     <Content Include="Styles\img\typing.jpg" />
     <Content Include="Styles\img\web.png" />
+    <Content Include="Styles\jcarousel-styles.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\navbar-fixed-side.css" />
     <Content Include="Styles\normalize.min.css" />

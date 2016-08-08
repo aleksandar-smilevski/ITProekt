@@ -8,6 +8,7 @@
     <link href="http://cdn.jsdelivr.net/jcarousel/0.2.8/skins/tango/skin.css" rel="Stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.1.1/jquery.rateyo.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.1.1/jquery.rateyo.min.js"></script>
+    <link rel="stylesheet" href="Styles/jcarousel-styles.css"/>
 
 
     <style type="text/css">
@@ -174,127 +175,6 @@
             width: 100%;
         }
 
-        .wrapper {
-            width: 100%;
-            /*padding: 0 20px 40px 20px;*/
-            margin: auto;
-        }
-
-        .jcarousel-wrapper {
-            margin: 20px auto;
-            position: relative;
-            border: 10px solid #fff;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            -webkit-box-shadow: 0 0 2px #999;
-            -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-        }
-
-        /** Carousel **/
-
-
-
-        .jcarousel {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-
-            .jcarousel ul {
-                width: 20000em;
-                position: relative;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-
-            .jcarousel li {
-                width: 200px;
-                float: left;
-                border: 1px solid #fff;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-            }
-
-            .jcarousel img {
-                display: block;
-                max-width: 100%;
-                height: auto !important;
-            }
-
-        /** Carousel Controls **/
-
-        .jcarousel-control-prev,
-        .jcarousel-control-next {
-            position: absolute;
-            top: 50%;
-            margin-top: -15px;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            background: #4E443C;
-            color: #fff;
-            text-decoration: none;
-            text-shadow: 0 0 1px #000;
-            font: 24px/27px Arial, sans-serif;
-            -webkit-border-radius: 30px;
-            -moz-border-radius: 30px;
-            border-radius: 30px;
-            -webkit-box-shadow: 0 0 4px #F0EFE7;
-            -moz-box-shadow: 0 0 4px #F0EFE7;
-            box-shadow: 0 0 4px #F0EFE7;
-        }
-
-        .jcarousel-control-prev {
-            left: 15px;
-        }
-
-        .jcarousel-control-next {
-            right: 15px;
-        }
-
-        /** Carousel Pagination **/
-
-        .jcarousel-pagination {
-            position: absolute;
-            bottom: -40px;
-            left: 50%;
-            -webkit-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-            margin: 0;
-        }
-
-            .jcarousel-pagination a {
-                text-decoration: none;
-                display: inline-block;
-                font-size: 11px;
-                height: 10px;
-                width: 10px;
-                line-height: 10px;
-                background: #fff;
-                color: #4E443C;
-                border-radius: 10px;
-                text-indent: -9999px;
-                margin-right: 7px;
-                -webkit-box-shadow: 0 0 2px #4E443C;
-                -moz-box-shadow: 0 0 2px #4E443C;
-                box-shadow: 0 0 2px #4E443C;
-            }
-
-                .jcarousel-pagination a.active {
-                    background: #4E443C;
-                    color: #fff;
-                    opacity: 1;
-                    -webkit-box-shadow: 0 0 2px #F0EFE7;
-                    -moz-box-shadow: 0 0 2px #F0EFE7;
-                    box-shadow: 0 0 2px #F0EFE7;
-                }
-
-
         .auto-style2 {
             width: 24%;
         }
@@ -460,8 +340,7 @@
                                     <asp:Label ID="coresResult" runat="server" ForeColor="Gray"></asp:Label>
                                 </td>
                                 <td>&nbsp;</td>
-                                <td>
-                                    &nbsp;</td>
+                                <td>&nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style6">
@@ -506,10 +385,10 @@
 
                                 </td>
                                 <td colspan="3">
-                                                                        
+
                                     <asp:Panel ID="pnlStars" runat="server" Height="16px">
                                     </asp:Panel>
-                                                                        
+
                                 </td>
                             </tr>
                             <tr>
@@ -563,6 +442,7 @@
         </div>
     </div>
     <script src="/scripts/animatedModal.js"></script>
+    <script src="/scripts/jcarousel-processors.js"></script>
     <script type="text/javascript">
         function blockUI() {
             $(".backImgDashboard").addClass("blockUI");
@@ -588,58 +468,12 @@
         $(".hovereffect").mouseout(function () {
             $(this).find("h4").css("visibility", "visible");
         });
-            $(function () {
-                $("#ratingProcessors").rateYo({
-                    rating: 3.6
-                });
-                console.log("YAS");
-            });
         $(function () {
-            var jcarousel = $('.jcarousel');
-
-            jcarousel
-                .on('jcarousel:reload jcarousel:create', function () {
-                    var carousel = $(this),
-                        width = carousel.innerWidth();
-
-                    if (width >= 600) {
-                        width = width / 3;
-                    } else if (width >= 350) {
-                        width = width / 2;
-                    }
-
-                    carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-                })
-                .jcarousel({
-                    wrap: 'circular'
-                });
-
-            $('.jcarousel-control-prev')
-                .jcarouselControl({
-                    target: '-=1'
-                });
-
-            $('.jcarousel-control-next')
-                .jcarouselControl({
-                    target: '+=1'
-                });
-
-            $('.jcarousel-pagination')
-                .on('jcarouselpagination:active', 'a', function () {
-                    $(this).addClass('active');
-                })
-                .on('jcarouselpagination:inactive', 'a', function () {
-                    $(this).removeClass('active');
-                })
-                .on('click', function (e) {
-                    e.preventDefault();
-                })
-                .jcarouselPagination({
-                    perPage: 1,
-                    item: function (page) {
-                        return '<a href="#' + page + '">' + page + '</a>';
-                    }
-                });
+            $("#ratingProcessors").rateYo({
+                rating: 3.6
+            });
+            console.log("YAS");
         });
+        
     </script>
 </asp:Content>
