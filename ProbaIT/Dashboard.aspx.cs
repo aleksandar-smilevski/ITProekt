@@ -81,7 +81,7 @@ namespace ProbaIT
                     threadsResult.Text = reader["Threads"].ToString();
                     clockResult.Text = reader["Clock"].ToString();
                     cacheResult.Text = reader["Cache"].ToString();
-                    double stars = int.Parse(reader["Score"].ToString()) / 100.0;
+                    double stars = Convert.ToDouble(reader["Score"].ToString()) / 10.0;
                     int numStars = Convert.ToInt32(stars);
                     addStar(numStars);
                     if (Convert.ToInt32(reader["Stock"]) > 1)
