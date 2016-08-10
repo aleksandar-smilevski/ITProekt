@@ -8,7 +8,8 @@
     <link href="http://cdn.jsdelivr.net/jcarousel/0.2.8/skins/tango/skin.css" rel="Stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.1.1/jquery.rateyo.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.1.1/jquery.rateyo.min.js"></script>
-    <link rel="stylesheet" href="Styles/jcarousel-styles.css"/>
+    <link rel="stylesheet" href="Styles/jcarousel-styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.js"></script>
 
 
     <style type="text/css">
@@ -112,7 +113,7 @@
             .hovereffect h3.info {
                 display: inline-block;
                 text-decoration: none;
-                padding: 1px 14px;
+                padding: 4px 14px;
                 text-transform: uppercase;
                 color: #fff;
                 border: 1px solid #ffffff;
@@ -150,29 +151,34 @@
             cursor: pointer;
         }
 
-            .hovereffect:hover h3.info {
-                -webkit-transform: translateY(0px);
-                -ms-transform: translateY(0px);
-                transform: translateY(0px);
-                -webkit-transition-delay: 0.3s;
-                transition-delay: 0.3s;
-                cursor: pointer;
-            }
+        .hovereffect:hover h3 {
+            -webkit-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            transform: translateY(0px);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            cursor: pointer;
+        }
 
         .auto-style1 {
             width: 61%;
             height: 295px;
         }
 
-        #modalCPU {
-            overflow: hidden;
-        }
-
         .close-modalCPU {
             cursor: pointer;
             color: #000000;
-            text-align: center;
+            text-align: right;
             width: 100%;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            padding-right: 10px;
+        }
+
+        .close-modalCPU img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 5px;
         }
 
         .auto-style2 {
@@ -235,7 +241,7 @@
                             <div class="col-md-4">
                                 <div class="box hovereffect" id="processors">
                                     <div class="overlay">
-                                        <a id="animateCPU" href="#modalCPU" onclick="blockUI()">
+                                        <a id="animateCPU" href="#modalCPU">
                                             <h3 class="info">Buy Now</h3>
                                         </a>
                                     </div>
@@ -297,7 +303,12 @@
     </div>
     <div id="modalCPU">
         <div id="btn-close-modal" class="close-modalCPU">
-            DONE
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <asp:Panel ID="Panel1" runat="server" BackColor="Black" CssClass="panel1">
+                <br />
+                <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Pick a processor" CssClass="lblPickProcessor"></asp:Label>
+                <br />
+            </asp:Panel>
         </div>
 
         <div class="modal-content">
@@ -305,12 +316,6 @@
             </asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:Panel ID="Panel1" runat="server" BackColor="Black" CssClass="panel1">
-                        <br />
-                        <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Pick a processor" CssClass="lblPickProcessor"></asp:Label>
-                        <br />
-                    </asp:Panel>
-                    <br />
                     <table align="center" class="auto-style2">
                         <tr>
                             <td>
@@ -339,8 +344,8 @@
                                 <td>
                                     <asp:Label ID="coresResult" runat="server" ForeColor="Gray"></asp:Label>
                                 </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <%--<td>&nbsp;</td>
+                                <td>&nbsp;</td>--%>
                             </tr>
                             <tr>
                                 <td class="auto-style6">
@@ -403,8 +408,8 @@
                             </tr>
                             <tr>
                                 <td class="auto-style6">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <%--     <td>&nbsp;</td>
+                                <td>&nbsp;</td>--%>
                                 <td>
                                     <asp:Label ID="lblErr" runat="server" ForeColor="Red"></asp:Label>
                                 </td>
@@ -447,20 +452,24 @@
         function blockUI() {
             $(".backImgDashboard").addClass("blockUI");
         }
+
         $(".close-modalCPU").on("click", function () {
-            console.log("aaaa");
             $(".backImgDashboard").removeClass("blockUI");
         });
 
         $("#animateCPU").animatedModal({
             modalTarget: 'modalCPU',
-            animatedIn: 'bounceIn',
+            animatedIn: 'lightSpeedIn',
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '75%',
             height: '100%',
             left: '15%',
-            top: '0'
+            top: '0',
+            overflow: 'hidden'
+        });
+        $("#animateCPU").on("click", function () {
+            blockUI();
         });
         $(".hovereffect").mouseover(function () {
             $(this).find("h4").css("visibility", "hidden");
@@ -469,11 +478,10 @@
             $(this).find("h4").css("visibility", "visible");
         });
         $(function () {
-            $("#ratingProcessors").rateYo({
-                rating: 3.6
+            $(".modal-content").slimScroll({
+                height: '100%'
             });
-            console.log("YAS");
         });
-        
+
     </script>
 </asp:Content>
