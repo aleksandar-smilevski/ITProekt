@@ -17,6 +17,7 @@ namespace ProbaIT
             if(!IsPostBack)
             {
                 fillProcessors();
+                fillMotherboards();
             }
         }
 
@@ -41,7 +42,7 @@ namespace ProbaIT
             }
             catch(Exception err)
             {
-                lblErr.Text = err.Message;
+                //lblErr.Text = err.Message;
             }
             finally
             {
@@ -97,7 +98,7 @@ namespace ProbaIT
             }
             catch (Exception err)
             {
-                lblErr.Text = err.Message;
+                //lblErr.Text = err.Message;
             }
             finally
             {
@@ -126,27 +127,70 @@ namespace ProbaIT
             }
         }
 
-        //protected void Button1_Click(object sender, EventArgs e)
-        //{
-        //    string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
-        //    string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-        //    SqlConnection con = new SqlConnection(connectionString);
-        //    SqlCommand cmd = new SqlCommand(insertSQL, con);
-        //    cmd.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"].ToString()));
-        //    cmd.Parameters.AddWithValue("@orderContent", TextBox1.Text);
-        //    try
-        //    {
-        //        con.Open();
-        //        cmd.ExecuteNonQuery();
-        //    }
-        //    catch(Exception err)
-        //    {
-        //        Label1.Text = err.Message;
-        //    }
-        //    finally
-        //    {
-        //        con.Close();
-        //    }
-        //}
+        protected void fillMotherboards()
+        {
+            ddlMotherboards.Items.Clear();
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT Id, Name FROM dbo.Motherboards";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet ds = new DataSet();
+            try
+            {
+                connection.Open();
+                adapter.Fill(ds, "Motherboards");
+                ddlMotherboards.DataValueField = "Id";
+                ddlMotherboards.DataTextField = "Name";
+                ddlMotherboards.DataSource = ds.Tables["Motherboards"];
+
+                ddlMotherboards.DataBind();
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        protected void ddlMotherboards_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnlProcessor.Visible = true;
+            selectMotherboard(ddlMotherboards.SelectedValue);
+
+        }
+
+        public void selectMotherboard(string id)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT * FROM Motherboards WHERE Id='" + id + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    motherboardNameResult.Text = reader["Name"].ToString();
+                    descResult.Text = reader["Description"].ToString();
+                    stockMotherboardsResult.Text = reader["Stock"].ToString();
+                    motherboardsPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
     }
 }

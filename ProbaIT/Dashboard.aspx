@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="ProbaIT.Dashboard" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="Styles/main.css" />
     <link rel="stylesheet" href="Styles/normalize.min.css" />
     <link rel="stylesheet" href="Styles/animate.min.css" />
     <script src="/scripts/jquery.min.js"></script>
@@ -161,8 +162,9 @@
         }
 
         .auto-style1 {
-            width: 61%;
+            width: 65%;
             height: 295px;
+            margin-left: 74px;
         }
 
         .close-modalCPU {
@@ -175,11 +177,11 @@
             padding-right: 10px;
         }
 
-        .close-modalCPU img {
-            width: 20px;
-            height: 20px;
-            margin-bottom: 5px;
-        }
+            .close-modalCPU img {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 5px;
+            }
 
         .auto-style2 {
             width: 24%;
@@ -196,11 +198,11 @@
 
         .auto-style4 {
             text-align: center;
-            width: 107px;
+            width: 407px;
         }
 
         .auto-style5 {
-            width: 107px;
+            width: 407px;
         }
 
         .panel1 {
@@ -225,6 +227,84 @@
         .auto-style7 {
             height: 24px;
             width: 70px;
+        }
+
+        .auto-style8 {
+            text-align: center;
+            width: 283px;
+        }
+
+        .auto-style9 {
+            width: 283px;
+        }
+
+
+        .outerTable {
+            width: 90%;
+            height: 70%;
+            margin-left: 5%;
+            margin-top: 50px;
+            margin-right: 5%;
+            display: inline-flex;
+        }
+
+        .imageGroup {
+            width: 20%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .logoImage {
+            height: 30%;
+        }
+
+        .productImage {
+            height: 70%;
+        }
+
+        .productInfo {
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .priceInfo {
+            width: 20%;
+            height: 100%;
+            display: inline-block;
+            border-radius: 5px;
+            margin-left: -60px;
+        }
+
+        .info-row {
+            height: 10%;
+            width: 100%;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .info-col1 {
+            height: 100%;
+            width: 30%;
+            position: absolute;
+        }
+
+        .info-col2 {
+            height: 100%;
+            width: 70%;
+            left: 20%;
+            position: absolute;
+        }
+
+        .ddlMotherboard {
+            margin-top: 20px;
+            padding: 10px;
+            margin-left: 40%;
+        }
+
+        .priceHolder {
+            height: 50%;
+            border: 1px solid #383838;
         }
     </style>
 
@@ -302,11 +382,11 @@
         </div>
     </div>
     <div id="modalCPU">
-        <div id="btn-close-modal" class="close-modalCPU">
+        <div class="close-modalCPU">
             <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
             <asp:Panel ID="Panel1" runat="server" BackColor="Black" CssClass="panel1">
                 <br />
-                <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Pick a processor" CssClass="lblPickProcessor"></asp:Label>
+                <asp:Label ID="lblPickProcessor" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a processor" CssClass="lblPickProcessor"></asp:Label>
                 <br />
             </asp:Panel>
         </div>
@@ -326,101 +406,83 @@
                     </table>
                     <br />
                     <br />
-                    <asp:Panel ID="pnlProcessor" runat="server" Visible="False" Height="306px">
-                        <table align="center" class="auto-style1">
-                            <tr>
-                                <td class="auto-style4" rowspan="5">
-                                    <asp:Image ID="imgLogo" runat="server" Height="60px" Width="100px" />
-                                </td>
-                                <td class="auto-style4" rowspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                                <td colspan="4">
+                    <asp:Panel ID="pnlProcessor" runat="server" Visible="True" Height="306px">
+                        <div class="outerTable">
+                            <div class="imageGroup">
+                                <div class="logoImage">
+                                    <asp:Image ID="imgLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
+                                </div>
+                                <div class="productImage">
+                                    <asp:Image ID="Image2" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                </div>
+                            </div>
+                            <div class="productInfo">
+                                <div class="info-row">
                                     <asp:Label ID="processorNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style6">
-                                    <asp:Label ID="lblCores" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Cores:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="coresResult" runat="server" ForeColor="Gray"></asp:Label>
-                                </td>
-                                <%--<td>&nbsp;</td>
-                                <td>&nbsp;</td>--%>
-                            </tr>
-                            <tr>
-                                <td class="auto-style6">
-                                    <asp:Label ID="lblThreads" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Threads:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="threadsResult" runat="server" ForeColor="Gray"></asp:Label>
-                                </td>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                                <td>
+                                </div>
+                                <div class="info-row" style="height: 15%;">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblCores" runat="server" Font-Bold="True" ForeColor="#605A5A">Cores:</asp:Label>
+
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="coresResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblThreads" runat="server" Font-Bold="True" ForeColor="#605A5A">Threads:</asp:Label>
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="threadsResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblClock" runat="server" Font-Bold="True" ForeColor="#605A5A">Clock:</asp:Label>
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="clockResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblCache" runat="server" Font-Bold="True" ForeColor="#605A5A">Cache:</asp:Label>
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="cacheResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblProcessorScore" runat="server" Font-Bold="True" ForeColor="#605A5A">Score:</asp:Label>
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Panel ID="pnlStars" runat="server" Height="16px">
+                                        </asp:Panel>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblProcessorStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="processorStockResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priceInfo">
+                                <div class="priceHolder">
+                                    <asp:Label ID="lblProcessorPrice" runat="server" ForeColor="Gray">Price:</asp:Label>
+                                    <br />
                                     <asp:Label ID="processorPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style6">
-                                    <asp:Label ID="lblCache" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Cache:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="cacheResult" runat="server" ForeColor="Gray"></asp:Label>
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>Free Shipping</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style7">
-                                    <asp:Label ID="lblClock" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Clock:"></asp:Label>
-                                </td>
-                                <td class="auto-style3">
-                                    <asp:Label ID="clockResult" runat="server" ForeColor="Gray"></asp:Label>
-                                </td>
-                                <td class="auto-style3"></td>
-                                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style5" rowspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Image ID="Image1" runat="server" Height="175px" ImageUrl="~/Styles/img/i7processor.jpg" Width="177px" />
-                                    &nbsp;
-                                </td>
-                                <td class="auto-style5" rowspan="3">&nbsp;</td>
-                                <td class="auto-style6">
-
-                                    <asp:Label ID="lblProcessorScore" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Score:"></asp:Label>
-
-                                </td>
-                                <td colspan="3">
-
-                                    <asp:Panel ID="pnlStars" runat="server" Height="16px">
-                                    </asp:Panel>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style6">
-                                    <asp:Label ID="lblProcessorStock" runat="server" Font-Bold="True" ForeColor="#605A5A" Text="Stock:"></asp:Label>
-                                </td>
-                                <td>
-                                    <asp:Label ID="processorStockResult" runat="server" ForeColor="Gray"></asp:Label>
-                                </td>
-                                <td></td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style6">&nbsp;</td>
-                                <%--     <td>&nbsp;</td>
-                                <td>&nbsp;</td>--%>
-                                <td>
-                                    <asp:Label ID="lblErr" runat="server" ForeColor="Red"></asp:Label>
-                                </td>
-                            </tr>
-                        </table>
-                    </asp:Panel>
-
-
+                                </div>
+                            </div>
+                        </div>
+                        </asp:Panel>
                 </ContentTemplate>
             </asp:UpdatePanel>
-            <div class="wrapper">
+            <%--<div class="wrapper">
                 <div class="jcarousel-wrapper">
                     <div class="jcarousel">
                         <ul>
@@ -442,8 +504,70 @@
 
                     <p class="jcarousel-pagination"></p>
                 </div>
-            </div>
+            </div>--%>
             <br />
+        </div>
+    </div>
+    <div id="modalMotherboards">
+        <div class="close-modalMotherboards">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <asp:Panel ID="Panel3" runat="server" BackColor="Black" CssClass="panel1">
+                <br />
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a motherboard" CssClass="lblPickProcessor"></asp:Label>
+                <br />
+            </asp:Panel>
+        </div>
+
+
+        <div class="modal-content">
+            <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                <ContentTemplate>
+                    <asp:DropDownList ID="ddlMotherboards" runat="server" AutoPostBack="True" CssClass="ddlMotherboard" OnSelectedIndexChanged="ddlMotherboards_SelectedIndexChanged">
+                    </asp:DropDownList>
+                    <br />
+                    <asp:Panel ID="motherboardPanel" runat="server" Visible="True" Height="306px">
+                        <div class="outerTable">
+                            <div class="imageGroup">
+                                <div class="logoImage">
+                                    <asp:Image ID="ImageLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
+                                </div>
+                                <div class="productImage">
+                                    <asp:Image ID="ImageMotherboard" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                </div>
+                            </div>
+                            <div class="productInfo">
+                                <div class="info-row">
+                                    <asp:Label ID="motherboardNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C">Motherboard</asp:Label>
+                                </div>
+                                <div class="info-row" style="height: 15%;">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblDesciption" runat="server" Font-Bold="True" ForeColor="#605A5A">Description:</asp:Label>
+
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="descResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-col1">
+                                        <asp:Label ID="lblMotherboardsStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
+                                    </div>
+                                    <div class="info-col2">
+                                        <asp:Label ID="stockMotherboardsResult" runat="server" ForeColor="Gray"></asp:Label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priceInfo">
+                                <div class="priceHolder">
+                                    <asp:Label ID="Label1" runat="server" ForeColor="Gray">Price:</asp:Label>
+                                    <br />
+                                    <asp:Label ID="motherboardsPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
+                                </div>
+                            </div>
+                        </div>
+                    </asp:Panel>
+                </ContentTemplate>
+            </asp:UpdatePanel>
         </div>
     </div>
     <script src="/scripts/animatedModal.js"></script>
@@ -462,10 +586,21 @@
             animatedIn: 'lightSpeedIn',
             animatedOut: 'bounceOutDown',
             color: 'white',
-            width: '75%',
-            height: '100%',
-            left: '15%',
-            top: '0',
+            width: '60%',
+            height: '75%',
+            left: '25%',
+            top: '10%',
+            overflow: 'hidden'
+        });
+        $("#animateMotherboards").animatedModal({
+            modalTarget: 'modalMotherboards',
+            animatedIn: 'lightSpeedIn',
+            animatedOut: 'bounceOutDown',
+            color: 'white',
+            width: '60%',
+            height: '75%',
+            left: '25%',
+            top: '10%',
             overflow: 'hidden'
         });
         $("#animateCPU").on("click", function () {
