@@ -17,7 +17,7 @@
                 window.location = "Dashboard.aspx";
             });
             $("#service-link").click(function () {
-                window.location = "Dashboard.aspx";
+                window.location = "CPUAnalyzer.aspx";
             });
         });
     </script>

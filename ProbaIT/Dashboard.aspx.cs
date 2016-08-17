@@ -17,6 +17,7 @@ namespace ProbaIT
             if(!IsPostBack)
             {
                 fillProcessors();
+                fillMotherboards();
             }
         }
 
@@ -41,7 +42,7 @@ namespace ProbaIT
             }
             catch(Exception err)
             {
-                lblErr.Text = err.Message;
+                //lblErr.Text = err.Message;
             }
             finally
             {
@@ -97,7 +98,7 @@ namespace ProbaIT
             }
             catch (Exception err)
             {
-                lblErr.Text = err.Message;
+                //lblErr.Text = err.Message;
             }
             finally
             {
@@ -126,27 +127,323 @@ namespace ProbaIT
             }
         }
 
-        //protected void Button1_Click(object sender, EventArgs e)
-        //{
-        //    string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
-        //    string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-        //    SqlConnection con = new SqlConnection(connectionString);
-        //    SqlCommand cmd = new SqlCommand(insertSQL, con);
-        //    cmd.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"].ToString()));
-        //    cmd.Parameters.AddWithValue("@orderContent", TextBox1.Text);
-        //    try
-        //    {
-        //        con.Open();
-        //        cmd.ExecuteNonQuery();
-        //    }
-        //    catch(Exception err)
-        //    {
-        //        Label1.Text = err.Message;
-        //    }
-        //    finally
-        //    {
-        //        con.Close();
-        //    }
-        //}
+        protected void fillMotherboards()
+        {
+            ddlMotherboards.Items.Clear();
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT Id, Name FROM dbo.Motherboards";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet ds = new DataSet();
+            try
+            {
+                connection.Open();
+                adapter.Fill(ds, "Motherboards");
+                ddlMotherboards.DataValueField = "Id";
+                ddlMotherboards.DataTextField = "Name";
+                ddlMotherboards.DataSource = ds.Tables["Motherboards"];
+
+                ddlMotherboards.DataBind();
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        protected void ddlMotherboards_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnlProcessor.Visible = true;
+            selectMotherboard(ddlMotherboards.SelectedValue);
+
+        }
+
+        public void selectMotherboard(string id)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT * FROM Motherboards WHERE Id='" + id + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    motherboardNameResult.Text = reader["Name"].ToString();
+                    descResult.Text = reader["Description"].ToString();
+                    stockMotherboardsResult.Text = reader["Stock"].ToString();
+                    motherboardsPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        protected void fillPowerUnits()
+        {
+            ddlPowerUnits.Items.Clear();
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT Id, Name FROM dbo.PowerUnits";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet ds = new DataSet();
+            try
+            {
+                connection.Open();
+                adapter.Fill(ds, "PowerUnits");
+                ddlPowerUnits.DataValueField = "Id";
+                ddlPowerUnits.DataTextField = "Name";
+                ddlPowerUnits.DataSource = ds.Tables["PowerUnits"];
+
+                ddlPowerUnits.DataBind();
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        public void selectPowerUnit(string id)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT * FROM PowerUnits WHERE Id='" + id + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    powerUnitNameResult.Text = reader["Name"].ToString();
+                    powerUnitsDescResult.Text = reader["Description"].ToString();
+                    powerUnitsStockResult.Text = reader["Stock"].ToString();
+                    powerUnitsPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        protected void ddlPowerUnits_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectPowerUnit(ddlPowerUnits.SelectedValue);
+        }
+
+        protected void fillGraphicsCards()
+        {
+            ddlGraphicsCards.Items.Clear();
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT Id, Name FROM dbo.GraphicsCards";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet ds = new DataSet();
+            try
+            {
+                connection.Open();
+                adapter.Fill(ds, "GraphicsCards");
+                ddlGraphicsCards.DataValueField = "Id";
+                ddlGraphicsCards.DataTextField = "Name";
+                ddlGraphicsCards.DataSource = ds.Tables["GraphicsCards"];
+
+                ddlGraphicsCards.DataBind();
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        public void selectGraphicsCard(string id)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT * FROM GraphicsCards WHERE Id='" + id + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    graphicsCardNameResult.Text = reader["Name"].ToString();
+                    graphicsCardDescResult.Text = reader["Description"].ToString();
+                    graphicsCardStockResult.Text = reader["Stock"].ToString();
+                    graphicsCardPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        protected void ddlGraphicsCards_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectGraphicsCard(ddlGraphicsCards.SelectedValue);
+        }
+
+        protected void fillRAM()
+        {
+            ddlRAM.Items.Clear();
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT Id, Name FROM dbo.RAM";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet ds = new DataSet();
+            try
+            {
+                connection.Open();
+                adapter.Fill(ds, "RAM");
+                ddlRAM.DataValueField = "Id";
+                ddlRAM.DataTextField = "Name";
+                ddlRAM.DataSource = ds.Tables["RAM"];
+
+                ddlRAM.DataBind();
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        public void selectRAM(string id)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT * FROM RAM WHERE Id='" + id + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    lblRAMNameResult.Text = reader["Name"].ToString();
+                    RAMDescResult.Text = reader["Description"].ToString();
+                    RAMStockResult.Text = reader["Stock"].ToString();
+                    RAMPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        protected void ddlRAM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectRAM(ddlRAM.SelectedValue);
+        }
+
+
+        protected void fillHardDrives()
+        {
+            ddlHardDrives.Items.Clear();
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT Id, Name FROM dbo.HDD";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet ds = new DataSet();
+            try
+            {
+                connection.Open();
+                adapter.Fill(ds, "HDD");
+                ddlHardDrives.DataValueField = "Id";
+                ddlHardDrives.DataTextField = "Name";
+                ddlHardDrives.DataSource = ds.Tables["HDD"];
+
+                ddlHardDrives.DataBind();
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        public void selectHardDrive(string id)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            string query = "SELECT * FROM HDD WHERE Id='" + id + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    hardDriveNameResult.Text = reader["Name"].ToString();
+                    hardDriveDescResult.Text = reader["Description"].ToString();
+                    hardDriveStockResult.Text = reader["Stock"].ToString();
+                    hardDrivePriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+            }
+            catch (Exception err)
+            {
+                //lblErr.Text = err.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        protected void ddlHardDrives_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectHardDrive(ddlHardDrives.SelectedValue);
+        }
+
     }
 }
