@@ -24,7 +24,7 @@ namespace ProbaIT
             string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(selectSQL, con);
-            cmd.Parameters.AddWithValue("@username", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@username", TxtUsername.Text);
             bool valid = true;
             int id = -1;
             try
@@ -35,7 +35,7 @@ namespace ProbaIT
                 {
                     string password = reader["password"].ToString();
                     //Response.Write(password + " " + );
-                    string passTextBox = CalculateMD5Hash(TextBox2.Text);
+                    string passTextBox = CalculateMD5Hash(TxtPassword.Text);
                     if (!(password.Equals(passTextBox)))
                     {
                         valid = false;
@@ -48,7 +48,7 @@ namespace ProbaIT
             }
             catch(Exception err)
             {
-                Label1.Text = err.Message;
+                //Label1.Text = err.Message;
             }
             finally
             {
@@ -62,7 +62,8 @@ namespace ProbaIT
             }
             else
             {
-                Label1.Text = "Nema takov username";
+                Label1.Text = "Wrong username or password!";
+                Label1.Visible = true;
             }
         }
 

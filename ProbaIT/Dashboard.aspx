@@ -289,6 +289,7 @@
                                     <h4>HDD & SSD</h4>
                                 </div>
                             </div>
+                            <p class="text-center"><asp:Button ID="Button1" runat="server" style="margin: 10px 0" Text="Submit" CssClass="btn-center-register"/></p>
                         </div>
                     </div>
                 </div>
