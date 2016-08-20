@@ -18,6 +18,10 @@ namespace ProbaIT
             {
                 fillProcessors();
                 fillMotherboards();
+                fillGraphicsCards();
+                fillHardDrives();
+                fillRAM();
+                fillPowerUnits();
             }
         }
 
@@ -226,7 +230,7 @@ namespace ProbaIT
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM PowerUnits WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.PowerUnits WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -289,7 +293,7 @@ namespace ProbaIT
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM GraphicsCards WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.GraphicsCards WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -323,7 +327,7 @@ namespace ProbaIT
             ddlRAM.Items.Clear();
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT Id, Name FROM dbo.RAM";
+            string query = "SELECT Id, Name FROM dbo.RAMS";
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataSet ds = new DataSet();
@@ -352,7 +356,7 @@ namespace ProbaIT
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM RAM WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.RAMS WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -387,7 +391,7 @@ namespace ProbaIT
             ddlHardDrives.Items.Clear();
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT Id, Name FROM dbo.HDD";
+            string query = "SELECT Id, Name FROM dbo.HDDS";
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataSet ds = new DataSet();
@@ -416,7 +420,7 @@ namespace ProbaIT
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM HDD WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.HDDS WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
