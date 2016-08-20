@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="CPUAnalyzer.aspx.cs" Inherits="ProbaIT.CPUAnalyzer" %>
+
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-
 
     </style>
 </asp:Content>
@@ -21,13 +22,61 @@
               </div></div> 
            
             </div>
-      
+            <div class="col-md-10">
+                <asp:Chart ID="Chart1" runat="server" Visible="False" Width="600px" Height="200px">
+                    <Series>
+                        <asp:Series Name="Score" IsValueShownAsLabel="True" Label="Score" Legend="Legend1" ChartArea="ChartArea1" YValuesPerPoint="2" ></asp:Series>
+                      
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                    </ChartAreas>
+                    <Legends>
+                        <asp:Legend Name="Legend1" Title="Components">
+                        </asp:Legend>
+                    </Legends>
+                </asp:Chart>
+                <asp:Table ID="Table1" runat="server" Width="100%" BackColor="#CCCCCC" BorderStyle="Outset" CssClass="alert-success" Font-Bold="True" GridLines="Both" Height="100%" Visible="False" >
+                    <asp:TableRow runat="server">
+                        <asp:TableCell  runat="server" ForeColor="Black"  Font-Bold="True" Font-Size="Larger">CPU Name:</asp:TableCell>
+                        <asp:TableCell ID="name1" runat="server"  ForeColor="Black"  Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                        <asp:TableCell ID="name2" runat="server" ForeColor="Black"  Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server"   ForeColor="Black"  Font-Bold="True" Font-Size="Larger">Number of Cores:</asp:TableCell>
+                        <asp:TableCell ID="cores1" runat="server" ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                        <asp:TableCell ID="cores2" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell  ForeColor="Black" Font-Bold="True" Font-Size="Larger">Number of Threads:</asp:TableCell>
+                        <asp:TableCell ID="threads1" runat="server"  ForeColor="Black"  Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                        <asp:TableCell ID="threads2" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell ForeColor="Black"  Font-Bold="True" Font-Size="Larger">Clock Cycle:</asp:TableCell>
+                        <asp:TableCell ID="clock1" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                        <asp:TableCell ID="clock2" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell  ForeColor="Black"  Font-Bold="True" Font-Size="Larger">Cache:</asp:TableCell>
+                        <asp:TableCell ID="cache1" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                        <asp:TableCell ID="cache2" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell  ForeColor="Black"  Font-Bold="True" Font-Size="Larger">Overall Score:</asp:TableCell>
+                        <asp:TableCell ID="score1" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                        <asp:TableCell ID="score2" runat="server"  ForeColor="Black" Font-Bold="True" Font-Size="Larger"></asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+               
+            </div>
+            <div class="row">
             <div class="col-md-10" style="margin-bottom:15px; float:left; width:44%; height:100%">
              
-                  <asp:GridView ID="processors"  runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" AllowSorting="True" Width="105%" Height="90%" BorderColor="Black" BackColor="#666699" BorderStyle="Outset" BorderWidth="3px" OnSelectedIndexChanged="processors_SelectedIndexChanged" >
+                  <asp:GridView ID="processors"  runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" AllowSorting="True" Width="105%" Height="90%" BorderColor="Black" BackColor="#666699" BorderStyle="Outset" BorderWidth="3px" >
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="id" HeaderText="Product ID" Visible="False" />
+            <asp:BoundField DataField="id" HeaderText="Number" />
             <asp:BoundField DataField="Name" HeaderText="Processsor name" />
            
             
@@ -49,12 +98,12 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
              </div>
-
+           
              <div class="col-md-10" style="float:right; width:44%; height:100% " >
-             <asp:GridView ID="processors2"  runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" AllowSorting="True" Width="105%" Height="90%" BorderColor="Black" BackColor="#666699" BorderStyle="Outset" BorderWidth="3px" OnSelectedIndexChanged="processors_SelectedIndexChanged" >
+             <asp:GridView ID="processors2"  runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" AllowSorting="True" Width="105%" Height="90%" BorderColor="Black" BackColor="#666699" BorderStyle="Outset" BorderWidth="3px" >
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="id" HeaderText="Product ID" Visible="False" />
+            <asp:BoundField DataField="id" HeaderText="Number" />
             <asp:BoundField DataField="Name" HeaderText="Processsor name" />
            
             
@@ -76,14 +125,16 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
                  </div>
-            <div class="col-md-10" style="width:92%; margin:auto; top: 0px; left: 0px;">
+                 </div>
+            <div class="row">
+            <div class="col-md-10" style="width:100%; ">
             <asp:Button ID="BtnBack" runat="server" Text="Back" CssClass="btn-center-register" Width="20%" Height="10%" OnClick="BtnBack_Click" />
 
             <asp:Button ID="BtnCompare" runat="server" Text="Compare Performances"  CssClass="btn-center-register" Width="45%" Height="10%" OnClick="BtnCompare_Click" />
         </div>
                 </div>
                  </div>
-         
+         </div>
         </div>
    
     

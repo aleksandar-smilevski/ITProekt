@@ -21,21 +21,36 @@ namespace ProbaIT
         protected void Button1_Click(object sender, EventArgs e)
         {
             string insertSQL = "INSERT INTO Users (username, password, type, firstname, lastname, email) VALUES (@username, @password, @type, @firstname, @lastname ,@email)";
+            string selectSQL = "SELECT username FROM Users WHERE username=@username";
             string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand(insertSQL, con);
-            cmd.Parameters.AddWithValue("@username", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@password", CalculateMD5Hash(TextBox2.Text));
-            cmd.Parameters.AddWithValue("@type", "user");
-            cmd.Parameters.AddWithValue("@firstname", TextBox5.Text);
-            cmd.Parameters.AddWithValue("@lastname", TextBox4.Text);
-            cmd.Parameters.AddWithValue("@email", TextBox3.Text);
+            SqlCommand cmd = new SqlCommand(selectSQL, con);
+            SqlCommand insertCMD = new SqlCommand(insertSQL, con);
+            cmd.Parameters.AddWithValue("@username", TxtUsername.Text);
+            insertCMD.Parameters.AddWithValue("@username", TxtUsername.Text);
+            insertCMD.Parameters.AddWithValue("@password", CalculateMD5Hash(TxtPassword.Text));
+            insertCMD.Parameters.AddWithValue("@type", "user");
+            insertCMD.Parameters.AddWithValue("@firstname", TxtFirstName.Text);
+            insertCMD.Parameters.AddWithValue("@lastname", TxtLastName.Text);
+            insertCMD.Parameters.AddWithValue("@email", TxtEmail.Text);
+            bool valid = true;
             try
             {
                 con.Open();
-                cmd.ExecuteNonQuery();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    if(reader["username"] != null)
+                    {
+                        valid = false;
+                    }
+                }
+                if(valid)
+                {
+                    cmd.ExecuteNonQuery();
+                }
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 Label1.Text = err.Message;
             }
@@ -43,8 +58,11 @@ namespace ProbaIT
             {
                 con.Close();
             }
-                Response.Redirect("SignIn.aspx");
-            
+            if (!valid)
+            {
+                Label1.Text = "A user with that username already exists";
+            }
+
         }
         public string CalculateMD5Hash(string input)
         {
