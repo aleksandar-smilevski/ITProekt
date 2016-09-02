@@ -76,6 +76,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,6 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -117,8 +119,11 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="scripts\jquery-2.2.4.intellisense.js" />
+    <Content Include="scripts\animatedModal.js" />
+    <Content Include="scripts\animatedModal.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jcarousel-processors.js" />
     <Content Include="scripts\jquery-2.2.4.js" />
     <Content Include="scripts\jquery-2.2.4.min.js" />
     <Content Include="scripts\jquery-2.2.4.min.map" />
@@ -133,19 +138,40 @@
     <Content Include="Dashboard.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Styles\animate.min.css" />
+    <Content Include="Styles\img\amd-logo.png" />
     <Content Include="Styles\img\background.jpg" />
+    <Content Include="Styles\img\empty-star1.png" />
+    <Content Include="Styles\img\i5processor.jpg" />
+    <Content Include="Styles\img\i7processor.jpg" />
+    <Content Include="Styles\img\intel-logo.png" />
     <Content Include="Styles\img\logo.png" />
     <Content Include="Styles\img\PC.png" />
+    <Content Include="Styles\img\pro.png" />
+    <Content Include="Styles\img\star1.png" />
+    <Content Include="Styles\img\students.jpg" />
+    <Content Include="Styles\img\typing.jpg" />
     <Content Include="Styles\img\web.png" />
+    <Content Include="Styles\jcarousel-styles.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\navbar-fixed-side.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Styles\normalize.min.css" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CPUAnalyzer.aspx.cs">
       <DependentUpon>CPUAnalyzer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
