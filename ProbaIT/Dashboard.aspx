@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="Styles/jcarousel-styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.js"></script>
 
-
+    
     <style type="text/css">
         * {
             font-family: 'Open Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -260,13 +260,19 @@
         }
 
         .productImage {
-            height: 70%;
+            height: 100%;
+        }
+
+        .productImage img {
+            height: 130px;
+            width: 170px;
         }
 
         .productInfo {
             width: 60%;
             height: 100%;
             display: inline-block;
+            padding-left: 40px;
         }
 
         .priceInfo {
@@ -418,10 +424,10 @@
                         <div class="outerTable">
                             <div class="imageGroup">
                                 <div class="logoImage">
-                                    <asp:Image ID="imgLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
+                                    <asp:Image ID="ImageLogoProcessor" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
                                 </div>
                                 <div class="productImage">
-                                    <asp:Image ID="Image2" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                    <asp:Image ID="ImageProcessor" runat="server" Height="130px" Width="170px" ImageUrl="~/Styles/img/web.png" />
                                 </div>
                             </div>
                             <div class="productInfo">
@@ -538,11 +544,9 @@
                     <asp:Panel ID="motherboardPanel" runat="server" Visible="True" Height="306px">
                         <div class="outerTable">
                             <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
+                             
                                 <div class="productImage">
-                                    <asp:Image ID="ImageMotherboard" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                    <asp:Image ID="ImageMotherboard" runat="server" Height="130px" Width="170px" ImageUrl="~/Styles/img/web.png" />
                                 </div>
                             </div>
                             <div class="productInfo">
@@ -600,11 +604,8 @@
                     <asp:Panel ID="powerUnitsPanel" runat="server" Visible="True" Height="306px">
                         <div class="outerTable">
                             <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogoPU" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
                                 <div class="productImage">
-                                    <asp:Image ID="ImagePowerUnit" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                    <asp:Image ID="ImagePowerUnit" runat="server" Height="130px" Width="170px" ImageUrl="~/Styles/img/web.png" />
                                 </div>
                             </div>
                             <div class="productInfo">
@@ -663,11 +664,9 @@
                     <asp:Panel ID="graphicsCardsPanel" runat="server" Visible="True" Height="306px">
                         <div class="outerTable">
                             <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogoGraphics" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
+                                
                                 <div class="productImage">
-                                    <asp:Image ID="ImageGraphicsCard" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                    <asp:Image ID="ImageGraphicsCard" runat="server" Height="130px" Width="170px" ImageUrl="~/Styles/img/web.png" />
                                 </div>
                             </div>
                             <div class="productInfo">
@@ -726,11 +725,9 @@
                     <asp:Panel ID="panelRAM" runat="server" Visible="True" Height="306px">
                         <div class="outerTable">
                             <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogoRAM" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
+                               
                                 <div class="productImage">
-                                    <asp:Image ID="ImageRAM" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                    <asp:Image ID="ImageRAM" runat="server" Height="130px" Width="170px" ImageUrl="~/Styles/img/web.png" />
                                 </div>
                             </div>
                             <div class="productInfo">
@@ -789,11 +786,9 @@
                     <asp:Panel ID="panelHardDrives" runat="server" Visible="True" Height="306px">
                         <div class="outerTable">
                             <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageHardDriveLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
+                               
                                 <div class="productImage">
-                                    <asp:Image ID="ImageHardDrive" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
+                                    <asp:Image ID="ImageHardDrive" runat="server" Height="130px" Width="170px" ImageUrl="~/Styles/img/web.png" />
                                 </div>
                             </div>
                             <div class="productInfo">
