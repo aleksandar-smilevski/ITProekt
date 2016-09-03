@@ -175,112 +175,85 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// UpdatePanel3 control.
+        /// updatePanelMotherboards control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel3;
+        protected global::System.Web.UI.UpdatePanel updatePanelMotherboards;
         
         /// <summary>
-        /// ddlMotherboards control.
+        /// Panel7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMotherboards;
+        protected global::System.Web.UI.WebControls.Panel Panel7;
         
         /// <summary>
-        /// motherboardPanel control.
+        /// gvMotherboards control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel motherboardPanel;
+        protected global::System.Web.UI.WebControls.GridView gvMotherboards;
         
         /// <summary>
-        /// ImageLogo control.
+        /// tbMbName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogo;
+        protected global::System.Web.UI.WebControls.TextBox tbMbName;
         
         /// <summary>
-        /// ImageMotherboard control.
+        /// tbMbPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageMotherboard;
+        protected global::System.Web.UI.WebControls.TextBox tbMbPrice;
         
         /// <summary>
-        /// motherboardNameResult control.
+        /// tbMbStock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label motherboardNameResult;
+        protected global::System.Web.UI.WebControls.TextBox tbMbStock;
         
         /// <summary>
-        /// lblDesciption control.
+        /// tbMbDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDesciption;
+        protected global::System.Web.UI.WebControls.TextBox tbMbDescription;
         
         /// <summary>
-        /// descResult control.
+        /// btnMbCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label descResult;
+        protected global::System.Web.UI.WebControls.Button btnMbCancel;
         
         /// <summary>
-        /// lblMotherboardsStock control.
+        /// btMbAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMotherboardsStock;
-        
-        /// <summary>
-        /// stockMotherboardsResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label stockMotherboardsResult;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// motherboardsPriceResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label motherboardsPriceResult;
+        protected global::System.Web.UI.WebControls.Button btMbAdd;
         
         /// <summary>
         /// Panel2 control.
@@ -301,112 +274,85 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// UpdatePanel2 control.
+        /// updatePanelPower control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
+        protected global::System.Web.UI.UpdatePanel updatePanelPower;
         
         /// <summary>
-        /// ddlPowerUnits control.
+        /// Panel8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPowerUnits;
+        protected global::System.Web.UI.WebControls.Panel Panel8;
         
         /// <summary>
-        /// powerUnitsPanel control.
+        /// gvPowerUnit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel powerUnitsPanel;
+        protected global::System.Web.UI.WebControls.GridView gvPowerUnit;
         
         /// <summary>
-        /// ImageLogoPU control.
+        /// tbPuName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoPU;
+        protected global::System.Web.UI.WebControls.TextBox tbPuName;
         
         /// <summary>
-        /// ImagePowerUnit control.
+        /// tbPuPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImagePowerUnit;
+        protected global::System.Web.UI.WebControls.TextBox tbPuPrice;
         
         /// <summary>
-        /// powerUnitNameResult control.
+        /// tbPuStock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label powerUnitNameResult;
+        protected global::System.Web.UI.WebControls.TextBox tbPuStock;
         
         /// <summary>
-        /// lblPowerUnitsDesc control.
+        /// tbPuDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPowerUnitsDesc;
+        protected global::System.Web.UI.WebControls.TextBox tbPuDescription;
         
         /// <summary>
-        /// powerUnitsDescResult control.
+        /// btnPuCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label powerUnitsDescResult;
+        protected global::System.Web.UI.WebControls.Button btnPuCancel;
         
         /// <summary>
-        /// lblPowerUnitsStock control.
+        /// btnPuAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPowerUnitsStock;
-        
-        /// <summary>
-        /// powerUnitsStockResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label powerUnitsStockResult;
-        
-        /// <summary>
-        /// lblPowerUnitsPrice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPowerUnitsPrice;
-        
-        /// <summary>
-        /// powerUnitsPriceResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label powerUnitsPriceResult;
+        protected global::System.Web.UI.WebControls.Button btnPuAdd;
         
         /// <summary>
         /// Panel4 control.
@@ -427,112 +373,85 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// panelGraphicsCards control.
+        /// updatePanelGraphics control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel panelGraphicsCards;
+        protected global::System.Web.UI.UpdatePanel updatePanelGraphics;
         
         /// <summary>
-        /// ddlGraphicsCards control.
+        /// Panel9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGraphicsCards;
+        protected global::System.Web.UI.WebControls.Panel Panel9;
         
         /// <summary>
-        /// graphicsCardsPanel control.
+        /// gvGraphics control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel graphicsCardsPanel;
+        protected global::System.Web.UI.WebControls.GridView gvGraphics;
         
         /// <summary>
-        /// ImageLogoGraphics control.
+        /// tbGcName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoGraphics;
+        protected global::System.Web.UI.WebControls.TextBox tbGcName;
         
         /// <summary>
-        /// ImageGraphicsCard control.
+        /// tbGcPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageGraphicsCard;
+        protected global::System.Web.UI.WebControls.TextBox tbGcPrice;
         
         /// <summary>
-        /// graphicsCardNameResult control.
+        /// tbGcStock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label graphicsCardNameResult;
+        protected global::System.Web.UI.WebControls.TextBox tbGcStock;
         
         /// <summary>
-        /// lblGraphicsCardDesc control.
+        /// tbGcDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGraphicsCardDesc;
+        protected global::System.Web.UI.WebControls.TextBox tbGcDescription;
         
         /// <summary>
-        /// graphicsCardDescResult control.
+        /// btnGcCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label graphicsCardDescResult;
+        protected global::System.Web.UI.WebControls.Button btnGcCancel;
         
         /// <summary>
-        /// lblGraphicsCardStock control.
+        /// btnGcAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGraphicsCardStock;
-        
-        /// <summary>
-        /// graphicsCardStockResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label graphicsCardStockResult;
-        
-        /// <summary>
-        /// lblGraphicsCardResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGraphicsCardResult;
-        
-        /// <summary>
-        /// graphicsCardPriceResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label graphicsCardPriceResult;
+        protected global::System.Web.UI.WebControls.Button btnGcAdd;
         
         /// <summary>
         /// Panel5 control.
@@ -553,112 +472,85 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// UpdatePanel4 control.
+        /// updatePanelRam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel4;
+        protected global::System.Web.UI.UpdatePanel updatePanelRam;
         
         /// <summary>
-        /// ddlRAM control.
+        /// Panel10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlRAM;
+        protected global::System.Web.UI.WebControls.Panel Panel10;
         
         /// <summary>
-        /// panelRAM control.
+        /// gvRam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panelRAM;
+        protected global::System.Web.UI.WebControls.GridView gvRam;
         
         /// <summary>
-        /// ImageLogoRAM control.
+        /// tbRmName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoRAM;
+        protected global::System.Web.UI.WebControls.TextBox tbRmName;
         
         /// <summary>
-        /// ImageRAM control.
+        /// tbRmPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageRAM;
+        protected global::System.Web.UI.WebControls.TextBox tbRmPrice;
         
         /// <summary>
-        /// lblRAMNameResult control.
+        /// tbRmStock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRAMNameResult;
+        protected global::System.Web.UI.WebControls.TextBox tbRmStock;
         
         /// <summary>
-        /// lblRAMDesc control.
+        /// tbRmDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRAMDesc;
+        protected global::System.Web.UI.WebControls.TextBox tbRmDescription;
         
         /// <summary>
-        /// RAMDescResult control.
+        /// btnRmCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RAMDescResult;
+        protected global::System.Web.UI.WebControls.Button btnRmCancel;
         
         /// <summary>
-        /// lblRAMStock control.
+        /// btnRmAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRAMStock;
-        
-        /// <summary>
-        /// RAMStockResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RAMStockResult;
-        
-        /// <summary>
-        /// lblRAMPrice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRAMPrice;
-        
-        /// <summary>
-        /// RAMPriceResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RAMPriceResult;
+        protected global::System.Web.UI.WebControls.Button btnRmAdd;
         
         /// <summary>
         /// Panel6 control.
@@ -679,111 +571,291 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// UpdatePanel5 control.
+        /// updatePanelStorage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel5;
+        protected global::System.Web.UI.UpdatePanel updatePanelStorage;
         
         /// <summary>
-        /// ddlHardDrives control.
+        /// Panel11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlHardDrives;
+        protected global::System.Web.UI.WebControls.Panel Panel11;
         
         /// <summary>
-        /// panelHardDrives control.
+        /// gvStorage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panelHardDrives;
+        protected global::System.Web.UI.WebControls.GridView gvStorage;
         
         /// <summary>
-        /// ImageHardDriveLogo control.
+        /// tbStName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageHardDriveLogo;
+        protected global::System.Web.UI.WebControls.TextBox tbStName;
         
         /// <summary>
-        /// ImageHardDrive control.
+        /// tbStPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageHardDrive;
+        protected global::System.Web.UI.WebControls.TextBox tbStPrice;
         
         /// <summary>
-        /// hardDriveNameResult control.
+        /// tbStStock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hardDriveNameResult;
+        protected global::System.Web.UI.WebControls.TextBox tbStStock;
         
         /// <summary>
-        /// lblHardDriveDesc control.
+        /// tbStDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHardDriveDesc;
+        protected global::System.Web.UI.WebControls.TextBox tbStDescription;
         
         /// <summary>
-        /// hardDriveDescResult control.
+        /// btnStCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hardDriveDescResult;
+        protected global::System.Web.UI.WebControls.Button btnStCancel;
         
         /// <summary>
-        /// lblHardDriveStock control.
+        /// btnStAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHardDriveStock;
+        protected global::System.Web.UI.WebControls.Button btnStAdd;
         
         /// <summary>
-        /// hardDriveStockResult control.
+        /// Panel14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hardDriveStockResult;
+        protected global::System.Web.UI.WebControls.Panel Panel14;
         
         /// <summary>
-        /// lblHardDrivePrice control.
+        /// Label7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHardDrivePrice;
+        protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// hardDrivePriceResult control.
+        /// updatePanelNewAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hardDrivePriceResult;
+        protected global::System.Web.UI.UpdatePanel updatePanelNewAdmin;
+        
+        /// <summary>
+        /// Panel15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel15;
+        
+        /// <summary>
+        /// tbAdUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbAdUsername;
+        
+        /// <summary>
+        /// tbAdPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbAdPassword;
+        
+        /// <summary>
+        /// ddlAdType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlAdType;
+        
+        /// <summary>
+        /// tbAdFN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbAdFN;
+        
+        /// <summary>
+        /// tbAdLN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbAdLN;
+        
+        /// <summary>
+        /// tbAdemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbAdemail;
+        
+        /// <summary>
+        /// btnAdCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdCancel;
+        
+        /// <summary>
+        /// btnAdAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdAdd;
+        
+        /// <summary>
+        /// lbAdStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbAdStatus;
+        
+        /// <summary>
+        /// Panel12 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel12;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// updatePanelDeleteAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanelDeleteAdmin;
+        
+        /// <summary>
+        /// Panel13 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel13;
+        
+        /// <summary>
+        /// gvDeleteAcc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvDeleteAcc;
+        
+        /// <summary>
+        /// Panel16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel16;
+        
+        /// <summary>
+        /// Label8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// updatePanelEditAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanelEditAdmin;
+        
+        /// <summary>
+        /// Panel17 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel17;
+        
+        /// <summary>
+        /// gvEditAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvEditAdmin;
     }
 }

@@ -320,13 +320,13 @@
           
                     <h4 class="text-center">Accounts</h4>
                 <div class="row">
-                <div class="col-md-12" id="">
+                <div class="col-md-12" id="AddADmin">
                      <div class="col-md-4">
-                                 <div class="box hovereffect" id="">
+                                 <div class="box hovereffect" id="AddAdmin">
                                     <div class="overlay">
-                                        <a id="" href="#modalCPU">
-                                            <h3 class="info">Edit item</h3>
-                                        </a>
+                                       
+                                            <h3 class="info"> <a id="animateAddAdmin" href="#modalAddAdmin">Edit item</a></h3>
+                                        
                                     </div>
                                      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI5NyAyOTciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI5NyAyOTciIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiPgogIDxnPgogICAgPHBhdGggZD0ibTExMC41NDksOTguNzY4YzI3LjIzMSwwIDQ5LjM4NC0yMi4xNTQgNDkuMzg0LTQ5LjM4NCAwLjAwMS0yNy4yMzEtMjIuMTUzLTQ5LjM4NC00OS4zODQtNDkuMzg0cy00OS4zODQsMjIuMTUzLTQ5LjM4NCw0OS4zODRjMCwyNy4yMzEgMjIuMTU0LDQ5LjM4NCA0OS4zODQsNDkuMzg0eiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPHBhdGggZD0ibTIyNi44MjMsMTg1LjMwN2MtMzAuNzk0LDAtNTUuODQ2LDI1LjA1My01NS44NDYsNTUuODQ2IDAsMzAuNzk0IDI1LjA1Myw1NS44NDYgNTUuODQ2LDU1Ljg0NnM1NS44NDYtMjUuMDUzIDU1Ljg0Ni01NS44NDZjMC0zMC43OTMtMjUuMDUyLTU1Ljg0Ni01NS44NDYtNTUuODQ2em0zNC4wMTcsNDQuMjQ3bC0zNi40OTQsMzYuNDk0Yy0xLjgzNiwxLjgzNS00LjI0MSwyLjc1My02LjY0NywyLjc1My0yLjQwNiwwLTQuODExLTAuOTE4LTYuNjQ3LTIuNzUzbC0xOC4yNDctMTguMjQ3Yy0zLjY3MS0zLjY3MS0zLjY3MS05LjYyMyAwLTEzLjI5NCAzLjY3Mi0zLjY3IDkuNjIyLTMuNjcgMTMuMjk0LDBsMTEuNiwxMS42MDEgMjkuODQ3LTI5Ljg0OGMzLjY3Mi0zLjY3IDkuNjIyLTMuNjcgMTMuMjk0LDAgMy42NzEsMy42NzEgMy42NzEsOS42MjMtNS42ODQzNGUtMTQsMTMuMjk0eiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPHBhdGggZD0ibTIwNi43NTEsMTcyLjcydi04LjcxM2MwLTE4Ljc5My0xMi4wNzctMzUuNDU3LTI5LjkzNS00MS4zMDdsLS4wODMtLjAyNy0yNi4xMjEtNC4zMjVjLTIuMjIzLTAuNjg0LTQuNTk5LDAuNDkzLTUuMzk4LDIuNjg2bC0yOS42MzgsODEuMzE5Yy0xLjcxLDQuNjkxLTguMzQ1LDQuNjkxLTEwLjA1NSwwbC0yOS42MzgtODEuMzE5Yy0wLjY0Ni0xLjc3MS0yLjMxNy0yLjg4MS00LjEwOC0yLjg4MS0wLjQyNSwwLTI3LjQxLDQuNTE0LTI3LjQxLDQuNTE0LTE4LjAwNSw2LTMwLjAzNSwyMi42OTEtMzAuMDM1LDQxLjU2NXY2Ny42NjRjMCwxMC4xNCA4LjIyLDE4LjM2IDE4LjM2LDE4LjM2aDEyMy40MDVjLTAuMzgyLTIuOTg0LTAuNjAxLTYuMDE3LTAuNjAxLTkuMTAzIDAuMDAxLTMyLjM2MSAyMS42NzEtNTkuNzQgNTEuMjU3LTY4LjQzM3oiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxwYXRoIGQ9Im0xMjEuNDg3LDExMy4zOTVjLTEuMTU3LTEuMjYtMi44NDgtMS44OTUtNC41NTgtMS44OTVoLTEyLjc1OWMtMS43MTEsMC0zLjQwMiwwLjYzNC00LjU1OCwxLjg5NS0xLjc5MSwxLjk1MS0yLjA1MSw0Ljc2OS0wLjc3OSw2Ljk3Mmw2LjgyLDEwLjI4Mi0zLjE5MywyNi45MzQgNi4yODcsMTYuNzI1YzAuNjEzLDEuNjgyIDIuOTkyLDEuNjgyIDMuNjA1LDBsNi4yODctMTYuNzI1LTMuMTkzLTI2LjkzNCA2LjgyLTEwLjI4MmMxLjI3Mi0yLjIwMyAxLjAxMi01LjAyMS0wLjc3OS02Ljk3MnoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo="  class="img-center-nowidth"/>
                                       <h4>Create Admin Account</h4>
@@ -335,9 +335,9 @@
                      <div class="col-md-4">
                                  <div class="box hovereffect" id="">
                                     <div class="overlay">
-                                        <a id="" href="#modalCPU">
-                                            <h3 class="info">Edit item</h3>
-                                        </a>
+                                        
+                                            <h3 class="info"> <a id="animateDeleteAdmin" href="#modalDeleteAdmin">Edit item </a></h3>
+                                       
                                     </div>
                                      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMjggMzI4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMjggMzI4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnIGlkPSJYTUxJRF80NjNfIj4KCTxwYXRoIGlkPSJYTUxJRF80NjRfIiBkPSJNMjIzLDExNi43NWMtMzQuNDg4LDAtNjUuMTQ1LDE2LjcxNi04NC4yOTgsNDIuNDdjLTcuNzYzLTEuNjI4LTE1LjY5NC0yLjQ3LTIzLjcwMi0yLjQ3ICAgYy02My40MTIsMC0xMTUsNTEuNTg5LTExNSwxMTVjMCw4LjI4NCw2LjcxNSwxNSwxNSwxNWgxMjUuNTk2YzE5LjI0NiwyNC4zNDgsNDkuMDMsNDAsODIuNDA0LDQwYzU3Ljg5NiwwLDEwNS00Ny4xMDMsMTA1LTEwNSAgIFMyODAuODk2LDExNi43NSwyMjMsMTE2Ljc1eiBNMjIzLDI5Ni43NWMtNDEuMzU2LDAtNzUtMzMuNjQ1LTc1LTc1czMzLjY0NC03NSw3NS03NWM0MS4zNTQsMCw3NSwzMy42NDUsNzUsNzUgICBTMjY0LjM1NCwyOTYuNzUsMjIzLDI5Ni43NXoiIGZpbGw9IiNGRkZGRkYiLz4KCTxwYXRoIGlkPSJYTUxJRF80NjhfIiBkPSJNMjUzLDIwNi43NWgtNjBjLTguMjg1LDAtMTUsNi43MTYtMTUsMTVzNi43MTUsMTUsMTUsMTVoNjBjOC4yODMsMCwxNS02LjcxNiwxNS0xNSAgIFMyNjEuMjgzLDIwNi43NSwyNTMsMjA2Ljc1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBhdGggaWQ9IlhNTElEXzQ2OV8iIGQ9Ik0xNzcuNzUsNjQuMDAxQzE3Ny43NSwyOS40LDE0OS42MDEsMS4yNSwxMTUsMS4yNWMtMzQuNjAyLDAtNjIuNzUsMjguMTUtNjIuNzUsNjIuNzUxICAgUzgwLjM5OCwxMjYuNzUsMTE1LDEyNi43NUMxNDkuNjAxLDEyNi43NSwxNzcuNzUsOTguNjAyLDE3Ny43NSw2NC4wMDF6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" class="img-center-nowidth" />
                                     <h4>Delete Admin Account </h4>
@@ -346,9 +346,9 @@
                     <div class="col-md-4">
                                  <div class="box hovereffect" id="">
                                     <div class="overlay">
-                                        <a id="" href="#modalCPU">
-                                            <h3 class="info">Edit item</h3>
-                                        </a>
+                                        
+                                            <h3 class="info"><a id="animateEditAdmin" href="#modalEditAdmin">Edit item </a></h3>
+                                       
                                     </div>
                                      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI5NyAyOTciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI5NyAyOTciIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiPgogIDxnPgogICAgPHBhdGggZD0ibTExMi42MzIsMTg1LjA3NGw2Ljg4LTMuOTcyYzIuODA0LTEuNjE5IDMuNzY1LTUuMjA1IDIuMTQ2LTguMDFsLTEzLjAzNi0yMi41NzljLTEuMDg2LTEuODgxLTMuMDU3LTIuOTMzLTUuMDgzLTIuOTMzLTAuOTk1LDAtMi4wMDMsMC4yNTMtMi45MjYsMC43ODdsLTYuODgsMy45NzJjLTAuOTQ1LDAuNTQ1LTEuOTQ3LDAuNzk0LTIuOTIzLDAuNzk0LTMuMDYzLDAtNS44NzItMi40NDktNS44NzItNS44NzJ2LTcuOTQ0YzAtMy4yMzgtMi42MjUtNS44NjQtNS44NjQtNS44NjRoLTI2LjA3M2MtMy4yMzgsMC01Ljg2NCwyLjYyNS01Ljg2NCw1Ljg2NHY3Ljk0NGMwLDMuNDIzLTIuODEsNS44NzItNS44NzIsNS44NzItMC45NzYsMC0xLjk3OC0wLjI0OS0yLjkyMy0wLjc5NGwtNi44OC0zLjk3MmMtMC45MjMtMC41MzMtMS45MzItMC43ODYtMi45MjYtMC43ODctMi4wMjcsMC0zLjk5NywxLjA1Mi01LjA4MywyLjkzM2wtMTMuMDM2LDIyLjU3OWMtMS42MTksMi44MDUtMC42NTgsNi4zOTEgMi4xNDYsOC4wMWw2Ljg4LDMuOTcyYzMuOTA5LDIuMjU3IDMuOTA5LDcuODk5IDAsMTAuMTU2bC02Ljg4LDMuOTcyYy0yLjgwNSwxLjYxOS0zLjc2NSw1LjIwNS0yLjE0Niw4LjAxbDEzLjAzNiwyMi41NzljMS4wODYsMS44ODEgMy4wNTcsMi45MzMgNS4wODMsMi45MzMgMC45OTUsMCAyLjAwMy0wLjI1NCAyLjkyNi0wLjc4N2w2Ljg4LTMuOTcyYzAuOTQ1LTAuNTQ1IDEuOTQ3LTAuNzk0IDIuOTIzLTAuNzk0IDMuMDYzLDAgNS44NzIsMi40NDkgNS44NzIsNS44NzJ2Ny45NDRjMCwzLjIzOCAyLjYyNSw1Ljg2NCA1Ljg2NCw1Ljg2NGgyNi4wNzJjMy4yMzgsMCA1Ljg2NC0yLjYyNSA1Ljg2NC01Ljg2NHYtNy45NDRjMC0zLjQyMyAyLjgxLTUuODcyIDUuODcyLTUuODcyIDAuOTc2LDAgMS45NzgsMC4yNDkgMi45MjMsMC43OTRsNi44OCwzLjk3MmMwLjkyMywwLjUzMyAxLjkzMiwwLjc4NyAyLjkyNiwwLjc4NyAyLjAyNywwIDMuOTk3LTEuMDUyIDUuMDgzLTIuOTMzbDEzLjAzNi0yMi41NzljMS42MTktMi44MDUgMC42NTgtNi4zOTEtMi4xNDYtOC4wMWwtNi44OC0zLjk3MmMtMy45MDgtMi4yNTctMy45MDgtNy45IDAuMDAxLTEwLjE1NnptLTQ2LjU5NCwyMi40NzRjLTkuNjA4LDAtMTcuMzk2LTcuNzg5LTE3LjM5Ni0xNy4zOTYgMC05LjYwOCA3Ljc4OS0xNy4zOTYgMTcuMzk2LTE3LjM5NnMxNy4zOTYsNy43ODkgMTcuMzk2LDE3LjM5NmMwLDkuNjA3LTcuNzg5LDE3LjM5Ni0xNy4zOTYsMTcuMzk2eiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPHBhdGggZD0ibTEwOC4xMDksMjMuNjU5Yy0zLjE0Ni0zLjE0NC04LjI0My0zLjE0NC0xMS4zODksMC0zLjE0NSwzLjE0Ni0zLjE0NSw4LjI0NCAwLDExLjM4OWwxNC4zOSwxNC4zODljLTUyLjg4OSwyLjYxOS05NS43MDEsNDQuMTYyLTEwMC4zMzQsOTYuNTA2bDEuMTktMi4wNjJjMy40MDYtNS45IDkuNzU2LTkuNTY1IDE2LjU3LTkuNTY0IDAuMTQ0LDAgMC4yODcsMC4wMTMgMC40MzEsMC4wMTcgOS4wNzQtMzcuNzIxIDQxLjk2NS02Ni4yNTEgODEuODE1LTY4LjcyOWwtMTQuMDYyLDE0LjA2MWMtMy4xNDUsMy4xNDUtMy4xNDUsOC4yNDQgMCwxMS4zODkgMS41NzMsMS41NzIgMy42MzMsMi4zNTggNS42OTQsMi4zNThzNC4xMjItMC43ODYgNS42OTQtMi4zNThsMjguMDA0LTI4LjAwNGMxLjUxLTEuNTExIDIuMzU4LTMuNTU5IDIuMzU4LTUuNjk0IDAtMi4xMzYtMC44NDgtNC4xODQtMi4zNTgtNS42OTRsLTI4LjAwMy0yOC4wMDR6IiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8cGF0aCBkPSJtMjA5Ljg2OCw2NC44NTdjMTcuODgxLDAgMzIuNDI4LTE0LjU0NyAzMi40MjgtMzIuNDI4IDAtMTcuODgyLTE0LjU0Ny0zMi40MjktMzIuNDI4LTMyLjQyOS0xNy44ODEsMC0zMi40MjgsMTQuNTQ3LTMyLjQyOCwzMi40MjggMCwxNy44ODEgMTQuNTQ3LDMyLjQyOSAzMi40MjgsMzIuNDI5eiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPHBhdGggZD0ibTI3My4wMzksMTUyLjI3NnYtNDQuNThjMC0xMi4zNC03LjkzLTIzLjI4My0xOS42NTctMjcuMTI0bC0uMDU0LS4wMTgtMTcuMTUyLTIuODRjLTEuNDYtMC40NDktMy4wMiwwLjMyNC0zLjU0NSwxLjc2NGwtMTkuNDYyLDUzLjM5OWMtMS4xMjMsMy4wODEtNS40OCwzLjA4MS02LjYwMiwwbC0xOS40NjItNTMuMzk5Yy0wLjQyNC0xLjE2My0xLjUyMi0xLjg5Mi0yLjY5OC0xLjg5Mi0wLjI3OSwwLTE3Ljk5OSwyLjk2NC0xNy45OTksMi45NjQtMTEuODIzLDMuOTQtMTkuNzIzLDE0LjktMTkuNzIzLDI3LjI5NHY0NC40MzJjMCw2LjY1OSA1LjM5OCwxMi4wNTYgMTIuMDU2LDEyLjA1NmgxMDIuMjQxYzYuNjYtMi44NDIxN2UtMTQgMTIuMDU3LTUuMzk4IDEyLjA1Ny0xMi4wNTZ6IiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8cGF0aCBkPSJtMjg3LjM3LDE2Mi45MzNjLTAuNjczLDkuMjE1LTguMjMzLDE0Ljg1OC0xNy40NSwxNS41MjYtNy4wNjIsNDAuNDI1LTQxLjIwNyw3MS42NC04Mi45NzksNzQuMjM3bDE0LjA2MS0xNC4wNjFjMy4xNDUtMy4xNDYgMy4xNDUtOC4yNDQgMC0xMS4zODktMy4xNDYtMy4xNDQtOC4yNDMtMy4xNDQtMTEuMzg5LDBsLTI4LjAwMywyOC4wMDRjLTMuMTQ1LDMuMTQ2LTMuMTQ1LDguMjQ0IDAsMTEuMzg5bDI4LjAwMywyOC4wMDNjMS41NzMsMS41NzIgMy42MzMsMi4zNTggNS42OTQsMi4zNThzNC4xMjItMC43ODYgNS42OTQtMi4zNThjMy4xNDUtMy4xNDUgMy4xNDUtOC4yNDQgMC0xMS4zODlsLTE0LjM4OS0xNC4zODljNTYuMDI4LTIuNzc0IDEwMC43NTgtNDkuMjI3IDEwMC43NTgtMTA1LjkzMXoiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxwYXRoIGQ9Im0yMTYuOTM2LDc3LjEwNWMtMC43NDctMC44MTQtMS44NC0xLjIyNC0yLjk0Ni0xLjIyNGgtOC4yNDVjLTEuMTA1LDAtMi4xOTgsMC40MS0yLjk0NiwxLjIyNC0xLjE1NywxLjI2MS0xLjMyNSwzLjA4Mi0wLjUwNCw0LjUwNWw0LjQwNyw2LjY0NC0yLjA2MywxNy40MDUgNC4wNjMsMTAuODA4YzAuMzk2LDEuMDg3IDEuOTMzLDEuMDg3IDIuMzMsMGw0LjA2My0xMC44MDgtMi4wNjMtMTcuNDA1IDQuNDA3LTYuNjQ0YzAuODIyLTEuNDIzIDAuNjU0LTMuMjQ0LTAuNTAzLTQuNTA1eiIgZmlsbD0iI0ZGRkZGRiIvPgogIDwvZz4KPC9zdmc+Cg=="  class="img-center-nowidth" />
                                      <h4>Edit Admin Account </h4>
@@ -490,123 +490,198 @@
             <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
             <asp:Panel ID="Panel3" runat="server" BackColor="Black" CssClass="panel1">
                 <br />
-                <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a motherboard" CssClass="lblPickProcessor"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Motherboards panel" CssClass="lblPickProcessor"></asp:Label>
                 <br />
             </asp:Panel>
         </div>
 
 
-        <div class="modal-content">
-            <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                <div class="modal-content">
+          
+            <asp:UpdatePanel ID="updatePanelMotherboards" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
-                    <asp:DropDownList ID="ddlMotherboards" runat="server" AutoPostBack="True" CssClass="ddlMotherboard" >
-                    </asp:DropDownList>
+                   
                     <br />
-                    <asp:Panel ID="motherboardPanel" runat="server" Visible="True" Height="306px">
-                        <div class="outerTable">
-                            <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
-                                <div class="productImage">
-                                    <asp:Image ID="ImageMotherboard" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
-                                </div>
-                            </div>
-                            <div class="productInfo">
-                                <div class="info-row">
-                                    <asp:Label ID="motherboardNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C">Motherboard</asp:Label>
-                                </div>
-                                <div class="info-row" style="height: 15%;">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblDesciption" runat="server" Font-Bold="True" ForeColor="#605A5A">Description:</asp:Label>
-
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="descResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                                <div class="info-row">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblMotherboardsStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="stockMotherboardsResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="priceInfo">
-                                <div class="priceHolder">
-                                    <asp:Label ID="Label1" runat="server" ForeColor="Gray">Price:</asp:Label>
-                                    <br />
-                                    <asp:Label ID="motherboardsPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </div>
-                            </div>
+                    <br />
+                    <asp:Panel ID="Panel7" runat="server" Visible="True" Height="1000px">
+                        <div class="row">
+                        <div class="col-lg-12 table" >
+                            <asp:GridView ID="gvMotherboards" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnPageIndexChanging="gvMotherboards_PageIndexChanging" OnRowCancelingEdit="gvMotherboards_RowCancelingEdit" OnRowEditing="gvMotherboards_RowEditing" OnRowUpdating="gvMotherboards_RowUpdating" OnRowDeleting="gvMotherboards_RowDeleting">
+                                <Columns>
+                                    <asp:BoundField DataField="Id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="Name" HeaderText="Name" />
+                                    <asp:BoundField DataField="Price" HeaderText="Price" />
+                                    <asp:BoundField DataField="Stock" HeaderText="Stock" />
+                                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                                    
+                                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
+                                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
                         </div>
-                    </asp:Panel>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3" ></div>
+                         <div class="col-md-6 center-block text-center" style="height:80%" >
+                             
+                            
+                             <div class="box center-block ">
+                                  <h4 >Add new motherboard</h4>    
+                                 <div class="overlay">
+                                      <table style="width: 100%; height=100%">
+                                 
+                                 <tr>
+                                     <td><h4 >Name</h4></td>
+                                     <td> <asp:TextBox ID="tbMbName" runat="server" BackColor="Black"></asp:TextBox></td>
+                                    
+                                 </tr>
+                                 <tr>
+                                     <td><h4 >Price</h4></td>
+                                     <td><asp:TextBox ID="tbMbPrice" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                  <tr>
+                                     <td><h4 >Stock</h4></td>
+                                     <td><asp:TextBox ID="tbMbStock" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                   <tr>
+                                     <td><h4 >Description</h4></td>
+                                     <td><asp:TextBox ID="tbMbDescription" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+   
+                                           <tr>
+                                     <td>
+                                         <asp:Button ID="btnMbCancel" runat="server" Text="Cancel" CssClass="btn-center-register" OnClick="btnMbCancel_Click" /></td>
+                                     <td>
+                                         <asp:Button ID="btMbAdd" runat="server" Text="Add New motherboard"  CssClass="btn-center-register" Width="100%" OnClick="btMbAdd_Click" /></td>
+                                     
+                                 </tr>
+                             </table>
+                                 </div>
+
+                             </div>
+                            
+
+                         </div>
+                            </div>
+                        </asp:Panel>
                 </ContentTemplate>
+               
             </asp:UpdatePanel>
+           
+            <br />
         </div>
+
     </div>
         <div id="modalPU">
         <div class="close-modalPU">
             <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
             <asp:Panel ID="Panel2" runat="server" BackColor="Black" CssClass="panel1">
                 <br />
-                <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a Power Unit" CssClass="lblPickProcessor"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Power Units panel" CssClass="lblPickProcessor"></asp:Label>
                 <br />
             </asp:Panel>
         </div>
 
 
         <div class="modal-content">
-            <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+          
+            <asp:UpdatePanel ID="updatePanelPower" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
-                    <asp:DropDownList ID="ddlPowerUnits" runat="server" AutoPostBack="True" CssClass="ddlPowerUnit" >
-                    </asp:DropDownList>
+                   
                     <br />
-                    <asp:Panel ID="powerUnitsPanel" runat="server" Visible="True" Height="306px">
-                        <div class="outerTable">
-                            <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogoPU" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
-                                <div class="productImage">
-                                    <asp:Image ID="ImagePowerUnit" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
-                                </div>
-                            </div>
-                            <div class="productInfo">
-                                <div class="info-row">
-                                    <asp:Label ID="powerUnitNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
-                                </div>
-                                <div class="info-row" style="height: 15%;">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblPowerUnitsDesc" runat="server" Font-Bold="True" ForeColor="#605A5A">Description:</asp:Label>
-
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="powerUnitsDescResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                                <div class="info-row">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblPowerUnitsStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="powerUnitsStockResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="priceInfo">
-                                <div class="priceHolder">
-                                    <asp:Label ID="lblPowerUnitsPrice" runat="server" ForeColor="Gray">Price:</asp:Label>
-                                    <br />
-                                    <asp:Label ID="powerUnitsPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </div>
-                            </div>
+                    <br />
+                    <asp:Panel ID="Panel8" runat="server" Visible="True" Height="1000px">
+                        <div class="row">
+                        <div class="col-lg-12 table" >
+                            <asp:GridView ID="gvPowerUnit" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnRowCancelingEdit="gvPowerUnit_RowCancelingEdit" OnRowDeleting="gvPowerUnit_RowDeleting" OnRowEditing="gvPowerUnit_RowEditing" OnRowUpdating="gvPowerUnit_RowUpdating" OnPageIndexChanging="gvPowerUnit_PageIndexChanging" >
+                                <Columns>
+                                    <asp:BoundField DataField="Id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="Name" HeaderText="Name" />
+                                    <asp:BoundField DataField="Price" HeaderText="Price" />
+                                    <asp:BoundField DataField="Stock" HeaderText="Stock" />
+                                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                                    
+                                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
+                                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
                         </div>
-                    </asp:Panel>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3" ></div>
+                         <div class="col-md-6 center-block text-center" style="height:80%" >
+                             
+                            
+                             <div class="box center-block ">
+                                  <h4 >Add new power unit</h4>    
+                                 <div class="overlay">
+                                      <table style="width: 100%; height=100%">
+                                 
+                                 <tr>
+                                     <td><h4 >Name</h4></td>
+                                     <td> <asp:TextBox ID="tbPuName" runat="server" BackColor="Black"></asp:TextBox></td>
+                                    
+                                 </tr>
+                                 <tr>
+                                     <td><h4 >Price</h4></td>
+                                     <td><asp:TextBox ID="tbPuPrice" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                  <tr>
+                                     <td><h4 >Stock</h4></td>
+                                     <td><asp:TextBox ID="tbPuStock" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                   <tr>
+                                     <td><h4 >Description</h4></td>
+                                     <td><asp:TextBox ID="tbPuDescription" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+   
+                                           <tr>
+                                     <td>
+                                         <asp:Button ID="btnPuCancel" runat="server" Text="Cancel" CssClass="btn-center-register" OnClick="btnPuCancel_Click" /></td>
+                                     <td>
+                                         <asp:Button ID="btnPuAdd" runat="server" Text="Add New power unit"  CssClass="btn-center-register" Width="100%" OnClick="btnPuAdd_Click"  /></td>
+                                     
+                                 </tr>
+                             </table>
+                                 </div>
+
+                             </div>
+                            
+
+                         </div>
+                            </div>
+                        </asp:Panel>
                 </ContentTemplate>
+               
             </asp:UpdatePanel>
+           
+            <br />
         </div>
     </div>
 
@@ -615,62 +690,98 @@
             <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
             <asp:Panel ID="Panel4" runat="server" BackColor="Black" CssClass="panel1">
                 <br />
-                <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a Graphics Card" CssClass="lblPickProcessor"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Graphics Card panel" CssClass="lblPickProcessor"></asp:Label>
                 <br />
             </asp:Panel>
         </div>
-
-
-        <div class="modal-content">
-            <asp:UpdatePanel ID="panelGraphicsCards" runat="server">
+            <div class="modal-content">
+          
+            <asp:UpdatePanel ID="updatePanelGraphics" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
-                    <asp:DropDownList ID="ddlGraphicsCards" runat="server" AutoPostBack="True" CssClass="ddlGraphicsCard" >
-                    </asp:DropDownList>
+                   
                     <br />
-                    <asp:Panel ID="graphicsCardsPanel" runat="server" Visible="True" Height="306px">
-                        <div class="outerTable">
-                            <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogoGraphics" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
-                                <div class="productImage">
-                                    <asp:Image ID="ImageGraphicsCard" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
-                                </div>
-                            </div>
-                            <div class="productInfo">
-                                <div class="info-row">
-                                    <asp:Label ID="graphicsCardNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
-                                </div>
-                                <div class="info-row" style="height: 15%;">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblGraphicsCardDesc" runat="server" Font-Bold="True" ForeColor="#605A5A">Description:</asp:Label>
-
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="graphicsCardDescResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                                <div class="info-row">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblGraphicsCardStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="graphicsCardStockResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="priceInfo">
-                                <div class="priceHolder">
-                                    <asp:Label ID="lblGraphicsCardResult" runat="server" ForeColor="Gray">Price:</asp:Label>
-                                    <br />
-                                    <asp:Label ID="graphicsCardPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </div>
-                            </div>
+                    <br />
+                    <asp:Panel ID="Panel9" runat="server" Visible="True" Height="1000px">
+                        <div class="row">
+                        <div class="col-lg-12 table" >
+                            <asp:GridView ID="gvGraphics" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnPageIndexChanging="gvGraphics_PageIndexChanging" OnRowCancelingEdit="gvGraphics_RowCancelingEdit" OnRowDeleting="gvGraphics_RowDeleting" OnRowEditing="gvGraphics_RowEditing" OnRowUpdating="gvGraphics_RowUpdating"  >
+                                <Columns>
+                                    <asp:BoundField DataField="Id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="Name" HeaderText="Name" />
+                                    <asp:BoundField DataField="Price" HeaderText="Price" />
+                                    <asp:BoundField DataField="Stock" HeaderText="Stock" />
+                                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                                    
+                                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
+                                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
                         </div>
-                    </asp:Panel>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3" ></div>
+                         <div class="col-md-6 center-block text-center" style="height:80%" >
+                             
+                            
+                             <div class="box center-block ">
+                                  <h4 >Add new Graphic Card</h4>    
+                                 <div class="overlay">
+                                      <table style="width: 100%; height=100%">
+                                 
+                                 <tr>
+                                     <td><h4 >Name</h4></td>
+                                     <td> <asp:TextBox ID="tbGcName" runat="server" BackColor="Black"></asp:TextBox></td>
+                                    
+                                 </tr>
+                                 <tr>
+                                     <td><h4 >Price</h4></td>
+                                     <td><asp:TextBox ID="tbGcPrice" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                  <tr>
+                                     <td><h4 >Stock</h4></td>
+                                     <td><asp:TextBox ID="tbGcStock" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                   <tr>
+                                     <td><h4 >Description</h4></td>
+                                     <td><asp:TextBox ID="tbGcDescription" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+   
+                                           <tr>
+                                     <td>
+                                         <asp:Button ID="btnGcCancel" runat="server" Text="Cancel" CssClass="btn-center-register" OnClick="btnGcCancel_Click" /></td>
+                                     <td>
+                                         <asp:Button ID="btnGcAdd" runat="server" Text="Add New Graphic card"  CssClass="btn-center-register" Width="100%" OnClick="btnGcAdd_Click"   /></td>
+                                     
+                                 </tr>
+                             </table>
+                                 </div>
+
+                             </div>
+                            
+
+                         </div>
+                            </div>
+                        </asp:Panel>
                 </ContentTemplate>
+               
             </asp:UpdatePanel>
+           
+            <br />
         </div>
+
     </div>
 
         <div id="modalRAM">
@@ -678,61 +789,98 @@
             <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
             <asp:Panel ID="Panel5" runat="server" BackColor="Black" CssClass="panel1">
                 <br />
-                <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a RAM" CssClass="lblPickProcessor"></asp:Label>
+                <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="RAM panel" CssClass="lblPickProcessor"></asp:Label>
                 <br />
             </asp:Panel>
         </div>
 
 
         <div class="modal-content">
-            <asp:UpdatePanel ID="UpdatePanel4" runat="server">
+          
+            <asp:UpdatePanel ID="updatePanelRam" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
-                    <asp:DropDownList ID="ddlRAM" runat="server" AutoPostBack="True" CssClass="ddlRAM" >
-                    </asp:DropDownList>
+                   
                     <br />
-                    <asp:Panel ID="panelRAM" runat="server" Visible="True" Height="306px">
-                        <div class="outerTable">
-                            <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageLogoRAM" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
-                                <div class="productImage">
-                                    <asp:Image ID="ImageRAM" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
-                                </div>
-                            </div>
-                            <div class="productInfo">
-                                <div class="info-row">
-                                    <asp:Label ID="lblRAMNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
-                                </div>
-                                <div class="info-row" style="height: 15%;">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblRAMDesc" runat="server" Font-Bold="True" ForeColor="#605A5A">Description:</asp:Label>
-
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="RAMDescResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                                <div class="info-row">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblRAMStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="RAMStockResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="priceInfo">
-                                <div class="priceHolder">
-                                    <asp:Label ID="lblRAMPrice" runat="server" ForeColor="Gray">Price:</asp:Label>
-                                    <br />
-                                    <asp:Label ID="RAMPriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </div>
-                            </div>
+                    <br />
+                    <asp:Panel ID="Panel10" runat="server" Visible="True" Height="1000px">
+                        <div class="row">
+                        <div class="col-lg-12 table" >
+                            <asp:GridView ID="gvRam" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnPageIndexChanging="gvRam_PageIndexChanging" OnRowCancelingEdit="gvRam_RowCancelingEdit" OnRowDeleting="gvRam_RowDeleting" OnRowEditing="gvRam_RowEditing" OnRowUpdating="gvRam_RowUpdating"  >
+                                <Columns>
+                                    <asp:BoundField DataField="Id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="Name" HeaderText="Name" />
+                                    <asp:BoundField DataField="Price" HeaderText="Price" />
+                                    <asp:BoundField DataField="Stock" HeaderText="Stock" />
+                                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                                    
+                                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
+                                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
                         </div>
-                    </asp:Panel>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3" ></div>
+                         <div class="col-md-6 center-block text-center" style="height:80%" >
+                             
+                            
+                             <div class="box center-block ">
+                                  <h4 >Add new Ram memory</h4>    
+                                 <div class="overlay">
+                                      <table style="width: 100%; height=100%">
+                                 
+                                 <tr>
+                                     <td><h4 >Name</h4></td>
+                                     <td> <asp:TextBox ID="tbRmName" runat="server" BackColor="Black"></asp:TextBox></td>
+                                    
+                                 </tr>
+                                 <tr>
+                                     <td><h4 >Price</h4></td>
+                                     <td><asp:TextBox ID="tbRmPrice" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                  <tr>
+                                     <td><h4 >Stock</h4></td>
+                                     <td><asp:TextBox ID="tbRmStock" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                   <tr>
+                                     <td><h4 >Description</h4></td>
+                                     <td><asp:TextBox ID="tbRmDescription" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+   
+                                           <tr>
+                                     <td>
+                                         <asp:Button ID="btnRmCancel" runat="server" Text="Cancel" CssClass="btn-center-register" OnClick="btnRmCancel_Click" /></td>
+                                     <td>
+                                         <asp:Button ID="btnRmAdd" runat="server" Text="Add New ram memory"  CssClass="btn-center-register" Width="100%" OnClick="btnRmAdd_Click"   /></td>
+                                     
+                                 </tr>
+                             </table>
+                                 </div>
+
+                             </div>
+                            
+
+                         </div>
+                            </div>
+                        </asp:Panel>
                 </ContentTemplate>
+               
             </asp:UpdatePanel>
+           
+            <br />
         </div>
     </div>
 
@@ -741,63 +889,294 @@
             <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
             <asp:Panel ID="Panel6" runat="server" BackColor="Black" CssClass="panel1">
                 <br />
-                <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Choose a Hard Drive" CssClass="lblPickProcessor"></asp:Label>
+                <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Storage panel" CssClass="lblPickProcessor"></asp:Label>
                 <br />
             </asp:Panel>
         </div>
-
-
-        <div class="modal-content">
-            <asp:UpdatePanel ID="UpdatePanel5" runat="server">
+             <div class="modal-content">
+          
+            <asp:UpdatePanel ID="updatePanelStorage" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
-                    <asp:DropDownList ID="ddlHardDrives" runat="server" AutoPostBack="True" CssClass="ddlHardDrive" >
-                    </asp:DropDownList>
+                   
                     <br />
-                    <asp:Panel ID="panelHardDrives" runat="server" Visible="True" Height="306px">
-                        <div class="outerTable">
-                            <div class="imageGroup">
-                                <div class="logoImage">
-                                    <asp:Image ID="ImageHardDriveLogo" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/logo.png" />
-                                </div>
-                                <div class="productImage">
-                                    <asp:Image ID="ImageHardDrive" runat="server" Height="60px" Width="100px" ImageUrl="~/Styles/img/web.png" />
-                                </div>
-                            </div>
-                            <div class="productInfo">
-                                <div class="info-row">
-                                    <asp:Label ID="hardDriveNameResult" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#4C4C4C"></asp:Label>
-                                </div>
-                                <div class="info-row" style="height: 15%;">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblHardDriveDesc" runat="server" Font-Bold="True" ForeColor="#605A5A">Description:</asp:Label>
+                    <br />
 
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="hardDriveDescResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                                <div class="info-row">
-                                    <div class="info-col1">
-                                        <asp:Label ID="lblHardDriveStock" runat="server" Font-Bold="True" ForeColor="#605A5A">Stock:</asp:Label>
-                                    </div>
-                                    <div class="info-col2">
-                                        <asp:Label ID="hardDriveStockResult" runat="server" ForeColor="Gray"></asp:Label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="priceInfo">
-                                <div class="priceHolder">
-                                    <asp:Label ID="lblHardDrivePrice" runat="server" ForeColor="Gray">Price:</asp:Label>
-                                    <br />
-                                    <asp:Label ID="hardDrivePriceResult" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                </div>
-                            </div>
+               <asp:Panel ID="Panel11" runat="server" Visible="True" Height="1000px">
+                        <div class="row">
+                        <div class="col-lg-12 table" >
+                            <asp:GridView ID="gvStorage" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnPageIndexChanging="gvStorage_PageIndexChanging" OnRowCancelingEdit="gvStorage_RowCancelingEdit" OnRowDeleting="gvStorage_RowDeleting" OnRowEditing="gvStorage_RowEditing" OnRowUpdating="gvStorage_RowUpdating"   >
+                                <Columns>
+                                    <asp:BoundField DataField="Id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="Name" HeaderText="Name" />
+                                    <asp:BoundField DataField="Price" HeaderText="Price" />
+                                    <asp:BoundField DataField="Stock" HeaderText="Stock" />
+                                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                                    
+                                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
+                                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
                         </div>
-                    </asp:Panel>
-                </ContentTemplate>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3" ></div>
+                         <div class="col-md-6 center-block text-center" style="height:80%" >
+                             
+                            
+                             <div class="box center-block ">
+                                  <h4 >Add new storge</h4>    
+                                 <div class="overlay">
+                                      <table style="width: 100%; height=100%">
+                                 
+                                 <tr>
+                                     <td><h4 >Name</h4></td>
+                                     <td> <asp:TextBox ID="tbStName" runat="server" BackColor="Black"></asp:TextBox></td>
+                                    
+                                 </tr>
+                                 <tr>
+                                     <td><h4 >Price</h4></td>
+                                     <td><asp:TextBox ID="tbStPrice" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                  <tr>
+                                     <td><h4 >Stock</h4></td>
+                                     <td><asp:TextBox ID="tbStStock" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                   <tr>
+                                     <td><h4 >Description</h4></td>
+                                     <td><asp:TextBox ID="tbStDescription" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+   
+                                           <tr>
+                                     <td>
+                                         <asp:Button ID="btnStCancel" runat="server" Text="Cancel" CssClass="btn-center-register" OnClick="btnStCancel_Click"  /></td>
+                                     <td>
+                                         <asp:Button ID="btnStAdd" runat="server" Text="Add New storage"  CssClass="btn-center-register" Width="100%" OnClick="btnStAdd_Click"  /></td>
+                                     
+                                 </tr>
+                             </table>
+                                 </div>
+
+                             </div>
+                            
+
+                         </div>
+                            </div>
+                        </asp:Panel>   </ContentTemplate>
+               
             </asp:UpdatePanel>
+           
+            <br />
         </div>
     </div>
+
+     
+
+     <div id="modalAddAdmin">
+        <div class="close-modalAddAdmin">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <asp:Panel ID="Panel14" runat="server" BackColor="Black" CssClass="panel1">
+                <br />
+                <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Add new admin panel" CssClass="lblPickProcessor"></asp:Label>
+                <br />
+            </asp:Panel>
+        </div>
+             <div class="modal-content">
+          
+            <asp:UpdatePanel ID="updatePanelNewAdmin" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                   
+                    <br />
+                    <br />
+
+               <asp:Panel ID="Panel15" runat="server" Visible="True" Height="800px">
+                       
+                        <div class="row">
+                            <div class="col-md-3" ></div>
+                         <div class="col-md-6 center-block text-center" style="height:80%" >
+                             
+                            
+                             <div class="box center-block ">
+                                  <h4 >New admin account</h4>    
+                                 <div class="overlay">
+                                      <table style="width: 100%; height=100%">
+                                 
+                                 <tr>
+                                     <td><h4 >Username</h4></td>
+                                     <td> <asp:TextBox ID="tbAdUsername" runat="server" BackColor="Black"></asp:TextBox></td>
+                                    
+                                 </tr>
+                                 <tr>
+                                     <td><h4 >Password</h4></td>
+                                     <td><asp:TextBox ID="tbAdPassword" runat="server" BackColor="Black" TextMode="Password"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                  <tr>
+                                     <td><h4 >Type</h4></td>
+                                     <td> <asp:DropDownList ID="ddlAdType" BackColor="Black" runat="server" Width="123px">
+                                         <asp:ListItem>admin</asp:ListItem>
+                                         <asp:ListItem>user</asp:ListItem>
+                                         </asp:DropDownList> </td>
+                                      
+                                 </tr>
+                                   <tr>
+                                     <td><h4 >First name</h4></td>
+                                     <td><asp:TextBox ID="tbAdFN" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                    
+                                  <tr>
+                                     <td><h4 >Last name</h4></td>
+                                     <td><asp:TextBox ID="tbAdLN" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                    
+                                  <tr>
+                                     <td><h4 >E-mail</h4></td>
+                                     <td><asp:TextBox ID="tbAdemail" runat="server" BackColor="Black"></asp:TextBox></td>
+                                     
+                                 </tr>
+                                           <tr>
+                                     <td>
+                                         <asp:Button ID="btnAdCancel" runat="server" Text="Cancel" CssClass="btn-center-register" OnClick="btnAdCancel_Click"   /></td>
+                                     <td >
+                                         <asp:Button ID="btnAdAdd"  runat="server" Text="Add New Account"  CssClass="btn-center-register" Width="100%" OnClick="btnAdAdd_Click"  /></td>
+                                     
+                                 </tr>
+                             </table>
+                                     <asp:Label ID="lbAdStatus" runat="server" Text=""></asp:Label>
+                                 </div>
+
+                             </div>
+                            
+
+                         </div>
+                            </div>
+                        </asp:Panel>   </ContentTemplate>
+               
+            </asp:UpdatePanel>
+           
+            <br />
+        </div>
+    </div>
+
+    <div id="modalDeleteAdmin">
+        <div class="close-modalDeleteAdmin">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <asp:Panel ID="Panel12" runat="server" BackColor="Black" CssClass="panel1">
+                <br />
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Delete admin panel" CssClass="lblPickProcessor"></asp:Label>
+                <br />
+            </asp:Panel>
+        </div>
+             <div class="modal-content">
+          
+            <asp:UpdatePanel ID="updatePanelDeleteAdmin" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                   
+                    <br />
+                    <br />
+
+               <asp:Panel ID="Panel13" runat="server" Visible="True" Height="800px">
+                     
+                          <asp:GridView ID="gvDeleteAcc" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnRowDeleting="gcDeleteAcc_RowDeleting" OnPageIndexChanging="gcDeleteAcc_PageIndexChanging"   >
+                                <Columns>
+                                    <asp:BoundField DataField="id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="username" HeaderText="Username"  />
+                                    <asp:BoundField DataField="password" HeaderText="Password" />
+                                    <asp:BoundField DataField="type" HeaderText="Type" />
+                                    <asp:BoundField DataField="firstname" HeaderText="First Name" />
+                                    <asp:BoundField DataField="lastname" HeaderText="Last Name" />
+                                    <asp:BoundField DataField="email" HeaderText="E-mail" />
+                                    
+                                   
+                                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
+                        </asp:Panel>   </ContentTemplate>
+               
+            </asp:UpdatePanel>
+           
+            <br />
+        </div>
+    </div>
+
+     <div id="modalEditAdmin">
+        <div class="close-modalEditAdmin">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <asp:Panel ID="Panel16" runat="server" BackColor="Black" CssClass="panel1">
+                <br />
+                <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="FloralWhite" Text="Edit admin panel" CssClass="lblPickProcessor"></asp:Label>
+                <br />
+            </asp:Panel>
+        </div>
+             <div class="modal-content">
+          
+            <asp:UpdatePanel ID="updatePanelEditAdmin" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                   
+                    <br />
+                    <br />
+
+               <asp:Panel ID="Panel17" runat="server" Visible="True"  Height="800px">
+                    
+                          <asp:GridView ID="gvEditAdmin" Width="100%" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" EditRowStyle-BackColor="Gray" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" CssClass="text-center" ForeColor="Black"   Font-Size="Smaller" AllowPaging="True" OnPageIndexChanging="gvEditAdmin_PageIndexChanging" OnRowEditing="gvEditAdmin_RowEditing" OnRowUpdating="gvEditAdmin_RowUpdating" OnRowCancelingEdit="gvEditAdmin_RowCancelingEdit"  >
+                                <Columns>
+                                    <asp:BoundField DataField="id" HeaderText="ID" ReadOnly="True" />
+                                    <asp:BoundField DataField="username" HeaderText="Username"  />
+                                    <asp:BoundField DataField="password" HeaderText="Password" />
+                                    <asp:BoundField DataField="type" HeaderText="Type" />
+                                    <asp:BoundField DataField="firstname" HeaderText="First Name" />
+                                    <asp:BoundField DataField="lastname" HeaderText="Last Name" />
+                                    <asp:BoundField DataField="email" HeaderText="E-mail" />
+                                    
+                                   
+                                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
+                                </Columns>
+                                <EditRowStyle BackColor="Silver" />
+                                <FooterStyle BackColor="#CCCCCC" />
+                                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                <RowStyle BackColor="WhiteSmoke" />
+                                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                <SortedAscendingHeaderStyle BackColor="#808080" />
+                                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                <SortedDescendingHeaderStyle BackColor="#383838" />
+                            </asp:GridView>
+                            </div>
+                         </div>
+
+                        </asp:Panel>   </ContentTemplate>
+               
+            </asp:UpdatePanel>
+           
+            <br />
+        </div>
+    </div>
+
     <script src="/scripts/animatedModal.js"></script>
     <script src="/scripts/jcarousel-processors.js"></script>
     <script type="text/javascript">
@@ -875,6 +1254,42 @@
             top: '10%',
             overflow: 'hidden'
         });
+        $("#animateAddAdmin").animatedModal({
+            modalTarget: 'modalAddAdmin',
+            animatedIn: 'lightSpeedIn',
+            animatedOut: 'bounceOutDown',
+            color: 'white',
+            width: '60%',
+            height: '75%',
+            left: '25%',
+            top: '10%',
+            overflow: 'hidden'
+        });
+
+        $("#animateDeleteAdmin").animatedModal({
+            modalTarget: 'modalDeleteAdmin',
+            animatedIn: 'lightSpeedIn',
+            animatedOut: 'bounceOutDown',
+            color: 'white',
+            width: '60%',
+            height: '75%',
+            left: '25%',
+            top: '10%',
+            overflow: 'hidden'
+        });
+
+        $("#animateEditAdmin").animatedModal({
+            modalTarget: 'modalEditAdmin',
+            animatedIn: 'lightSpeedIn',
+            animatedOut: 'bounceOutDown',
+            color: 'white',
+            width: '75%',
+            height: '75%',
+            left: '18%',
+            top: '10%',
+            overflow: 'hidden'
+        });
+
         $("#animateCPU").on("click", function () {
             blockUI();
         });
