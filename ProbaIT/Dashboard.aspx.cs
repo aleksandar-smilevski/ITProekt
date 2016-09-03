@@ -23,7 +23,7 @@ namespace ProbaIT
                 fillHardDrives();
                 fillRAM();
                 fillPowerUnits();
-                // Trigger events to have default values in the modal dialogs
+                // Trigger events to set default values in the modal dialogs
                 ddlProcessors.SelectedIndex = 1;
                 ddlProcessors_SelectedIndexChanged(null, null);
                 ddlMotherboards.SelectedIndex = 1;
@@ -383,7 +383,6 @@ namespace ProbaIT
             {
                 connection.Close();
             }
-
         }
 
         public void selectRAM(string id)
@@ -456,8 +455,6 @@ namespace ProbaIT
             {
                 connection.Close();
             }
-
-
         }
 
         public void selectHardDrive(string id)
@@ -520,6 +517,5 @@ namespace ProbaIT
         {
             selectHardDrive(ddlHardDrives.SelectedValue);
         }
-
     }
 }
