@@ -14,10 +14,10 @@ using System.Web.UI.DataVisualization.Charting;
 namespace ProbaIT
 {
     public partial class CPUAnalyzer : System.Web.UI.Page
-    {   
+    {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
 
             if (!IsPostBack)
             {
@@ -28,11 +28,12 @@ namespace ProbaIT
                 processors.DataSource = ViewState["data"];
                 processors.DataBind();
             }
-           
+
 
         }
 
-        public void loadProcessorProducts() {
+        public void loadProcessorProducts()
+        {
 
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
@@ -68,36 +69,37 @@ namespace ProbaIT
             }
         }
 
-       
+
 
         protected void BtnBack_Click(object sender, EventArgs e)
         {
-           
-                Response.Redirect("Default.aspx");
-            
+
+            Response.Redirect("Default.aspx");
+
         }
 
         protected void BtnCompare_Click(object sender, EventArgs e)
         {
             CPUPerformance service = new CPUPerformance();
-            string first =  processors.SelectedRow.Cells[0].Text;
+            string first = processors.SelectedRow.Cells[0].Text;
             string second = processors2.SelectedRow.Cells[0].Text;
-            if(first!=null && second!=null) {
+            if (first != null && second != null)
+            {
 
                 DataSet ds = new DataSet();
-                   ds = service.Compare(first, second);
-             
+                ds = service.Compare(first, second);
+
 
                 Chart1.DataSource = ds;
                 Chart1.Series["Score"].XValueMember = "Name";
                 Chart1.Series["Score"].YValueMembers = "Score";
-             
+
                 Chart1.DataBind();
                 Chart1.Visible = true;
 
                 name1.Text = ds.Tables[0].Rows[0][0].ToString();
                 name2.Text = ds.Tables[0].Rows[1][0].ToString();
-               
+
                 cores1.Text = ds.Tables[0].Rows[0][1].ToString();
                 cores2.Text = ds.Tables[0].Rows[1][1].ToString();
 
@@ -143,12 +145,13 @@ namespace ProbaIT
                 clock1.Text = ds.Tables[0].Rows[0][3].ToString();
                 clock2.Text = ds.Tables[0].Rows[1][3].ToString();
                 String clc1, clc2;
-                if (clock1.Text.Length  >= 4) { 
-                clc1 = clock1.Text.Remove(3);   
+                if (clock1.Text.Length >= 4)
+                {
+                    clc1 = clock1.Text.Remove(3);
                 }
                 else
                 {
-                   clc1 = clock1.Text.Remove(1);
+                    clc1 = clock1.Text.Remove(1);
                 }
                 if (clock2.Text.Length > 4)
                 {
@@ -183,12 +186,12 @@ namespace ProbaIT
                 cache1.Text = ds.Tables[0].Rows[0][4].ToString();
                 cache2.Text = ds.Tables[0].Rows[1][4].ToString();
                 String cac1, cac2;
-                if (cache1.Text.Length>3)
+                if (cache1.Text.Length > 3)
                     cac1 = cache1.Text.Remove(2);
                 else
                     cac1 = cache1.Text.Remove(1);
                 if (cache2.Text.Length > 3)
-                 cac2 = cache2.Text.Remove(2);
+                    cac2 = cache2.Text.Remove(2);
                 else
                     cac2 = cache2.Text.Remove(1);
 
@@ -235,7 +238,7 @@ namespace ProbaIT
                 }
 
                 Table1.Visible = true;
-               
+
 
 
 
@@ -243,9 +246,8 @@ namespace ProbaIT
 
         }
 
-        
+
     }
 
-        
-    }
-    
+
+}

@@ -16,8 +16,26 @@ namespace ProbaIT
         {
             if(!IsPostBack)
             {
+                // Fill dropdown lists
                 fillProcessors();
                 fillMotherboards();
+                fillGraphicsCards();
+                fillHardDrives();
+                fillRAM();
+                fillPowerUnits();
+                // Trigger events to set default values in the modal dialogs
+                ddlProcessors.SelectedIndex = 1;
+                ddlProcessors_SelectedIndexChanged(null, null);
+                ddlMotherboards.SelectedIndex = 1;
+                ddlMotherboards_SelectedIndexChanged(null, null);                   
+                ddlGraphicsCards.SelectedIndex = 1;
+                ddlGraphicsCards_SelectedIndexChanged(null, null);
+                ddlHardDrives.SelectedIndex = 1;
+                ddlHardDrives_SelectedIndexChanged(null, null);
+                ddlRAM.SelectedIndex = 1;
+                ddlRAM_SelectedIndexChanged(null, null);
+                ddlPowerUnits.SelectedIndex = 1;
+                ddlPowerUnits_SelectedIndexChanged(null, null);
             }
         }
 
@@ -55,14 +73,6 @@ namespace ProbaIT
         {
             pnlProcessor.Visible = true;
             selectProcessor(ddlProcessors.SelectedValue);
-            if(ddlProcessors.SelectedItem.Text.Contains("Intel"))
-            {
-                imgLogo.ImageUrl = "~/Styles/img/intel-logo.png";
-            } 
-            else
-            {
-                imgLogo.ImageUrl = "~/Styles/img/amd-logo.png";
-            }
         }
 
         public void selectProcessor(string id)
@@ -94,6 +104,17 @@ namespace ProbaIT
                         processorStockResult.Text = "No";
                     }
                     processorPriceResult.Text = reader["Price"].ToString() + " MKD";
+                  
+                }
+                if (processorNameResult.Text.Contains("Intel"))
+                {
+                    ImageProcessor.ImageUrl = "Styles/img/i7processor.jpg";
+                    ImageLogoProcessor.ImageUrl = "Styles/img/intel-logo.png";
+                }
+                else
+                {
+                    ImageProcessor.ImageUrl = "Styles/img/amd-processor.jpeg";
+                    ImageLogoProcessor.ImageUrl = "Styles/img/amd-logo.png";
                 }
             }
             catch (Exception err)
@@ -112,7 +133,7 @@ namespace ProbaIT
             for (int i = 0; i < count; i++)
             {
                 star = new Image();
-                star.ImageUrl = "Styles/img/star1.png";
+                star.ImageUrl = "Styles/img/star.png";
                 star.Width = Unit.Pixel(15);
                 star.Height = Unit.Pixel(15);
                 pnlStars.Controls.Add(star);
@@ -120,7 +141,7 @@ namespace ProbaIT
             for (int i = count; i < 10; i++)
             {
                 star = new Image();
-                star.ImageUrl = "Styles/img/empty-star1.png";
+                star.ImageUrl = "Styles/img/empty-star.png";
                 star.Width = Unit.Pixel(15);
                 star.Height = Unit.Pixel(15);
                 pnlStars.Controls.Add(star);
@@ -181,6 +202,7 @@ namespace ProbaIT
                     stockMotherboardsResult.Text = reader["Stock"].ToString();
                     motherboardsPriceResult.Text = reader["Price"].ToString() + " MKD";
                 }
+                ImageMotherboard.ImageUrl = "Styles/img/gigabyte.jpg";
             }
             catch (Exception err)
             {
@@ -226,7 +248,7 @@ namespace ProbaIT
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM PowerUnits WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.PowerUnits WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -238,6 +260,14 @@ namespace ProbaIT
                     powerUnitsDescResult.Text = reader["Description"].ToString();
                     powerUnitsStockResult.Text = reader["Stock"].ToString();
                     powerUnitsPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+                if(powerUnitNameResult.Text.Contains("CoolerMaster"))
+                {
+                    ImagePowerUnit.ImageUrl = "Styles/img/coolermaster.jpg";
+                }
+                else
+                {
+                    ImagePowerUnit.ImageUrl = "Styles/img/gembird.jpg";
                 }
             }
             catch (Exception err)
@@ -289,7 +319,7 @@ namespace ProbaIT
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM GraphicsCards WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.GraphicsCards WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -301,6 +331,14 @@ namespace ProbaIT
                     graphicsCardDescResult.Text = reader["Description"].ToString();
                     graphicsCardStockResult.Text = reader["Stock"].ToString();
                     graphicsCardPriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+                if(graphicsCardNameResult.Text.Contains("GeForce"))
+                {
+                    ImageGraphicsCard.ImageUrl = "Styles/img/gigabyte-geforce.jpg";
+                }
+                else
+                {
+                    ImageGraphicsCard.ImageUrl = "Styles/img/sapphire.jpg";
                 }
             }
             catch (Exception err)
@@ -323,7 +361,7 @@ namespace ProbaIT
             ddlRAM.Items.Clear();
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT Id, Name FROM dbo.RAM";
+            string query = "SELECT Id, Name FROM dbo.RAMS";
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataSet ds = new DataSet();
@@ -345,14 +383,13 @@ namespace ProbaIT
             {
                 connection.Close();
             }
-
         }
 
         public void selectRAM(string id)
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM RAM WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.RAMS WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -365,6 +402,15 @@ namespace ProbaIT
                     RAMStockResult.Text = reader["Stock"].ToString();
                     RAMPriceResult.Text = reader["Price"].ToString() + " MKD";
                 }
+                if(lblRAMNameResult.Text.Contains("Geil"))
+                {
+                    ImageRAM.ImageUrl = "Styles/img/geil.jpg";
+                }
+                else
+                {
+                    ImageRAM.ImageUrl = "Styles/img/hyper-fury.jpeg";
+                }
+                
             }
             catch (Exception err)
             {
@@ -387,7 +433,7 @@ namespace ProbaIT
             ddlHardDrives.Items.Clear();
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT Id, Name FROM dbo.HDD";
+            string query = "SELECT Id, Name FROM dbo.HDDS";
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataSet ds = new DataSet();
@@ -409,14 +455,13 @@ namespace ProbaIT
             {
                 connection.Close();
             }
-
         }
 
         public void selectHardDrive(string id)
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            string query = "SELECT * FROM HDD WHERE Id='" + id + "'";
+            string query = "SELECT * FROM dbo.HDDS WHERE Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -428,6 +473,34 @@ namespace ProbaIT
                     hardDriveDescResult.Text = reader["Description"].ToString();
                     hardDriveStockResult.Text = reader["Stock"].ToString();
                     hardDrivePriceResult.Text = reader["Price"].ToString() + " MKD";
+                }
+                if(hardDriveNameResult.Text.Contains("Hitachi"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/hitachi.jpg";
+                }
+                else if(hardDriveNameResult.Text.Contains("Samsung"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/samsung-ssd.jpg";
+                }
+                else if (hardDriveNameResult.Text.Contains("Seagate"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/seagate.jpg";
+                }
+                else if (hardDriveNameResult.Text.Contains("Toshiba"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/toshiba-hdd.png";
+                } 
+                else if (hardDriveNameResult.Text.Contains("Platinet"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/platinet.jpg";
+                } 
+                else if (hardDriveNameResult.Text.Contains("Kingston"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/kingston-ssd.jpg";
+                }
+                else if (hardDriveNameResult.Text.Contains("Western Digital"))
+                {
+                    ImageHardDrive.ImageUrl = "Styles/img/westerndigital.jpg";
                 }
             }
             catch (Exception err)
@@ -444,6 +517,5 @@ namespace ProbaIT
         {
             selectHardDrive(ddlHardDrives.SelectedValue);
         }
-
     }
 }

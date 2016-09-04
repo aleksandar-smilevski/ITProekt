@@ -43,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -77,7 +78,11 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
     <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.DynamicData.Design" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -85,7 +90,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Entity.Design" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.RegularExpressions" />
+    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -141,20 +151,40 @@
     <Content Include="scripts\jquery.min.js" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Styles\img\amd-logo.png" />
+    <Content Include="Styles\img\amd-processor.jpeg" />
     <Content Include="Styles\animate.min.css" />
     <Content Include="Styles\img\amd-logo.png" />
     <Content Include="Styles\img\background.jpg" />
+    <Content Include="Styles\img\coolermaster.jpg" />
+    <Content Include="Styles\img\empty-star.png" />
+    <Content Include="Styles\img\geil.jpg" />
+    <Content Include="Styles\img\gembird.jpg" />
+    <Content Include="Styles\img\gigabyte-geforce.jpg" />
+    <Content Include="Styles\img\gigabyte.jpg" />
+    <Content Include="Styles\img\hitachi.jpg" />
+    <Content Include="Styles\img\hyper-fury.jpeg" />
+    <Content Include="Styles\img\i7processor.jpg" />
+    <Content Include="Styles\img\intel-logo.png" />
+    <Content Include="Styles\img\kingston-ssd.jpg" />
     <Content Include="Styles\img\empty-star1.png" />
     <Content Include="Styles\img\i5processor.jpg" />
     <Content Include="Styles\img\i7processor.jpg" />
     <Content Include="Styles\img\intel-logo.png" />
     <Content Include="Styles\img\logo.png" />
     <Content Include="Styles\img\PC.png" />
+    <Content Include="Styles\img\platinet.jpg" />
+    <Content Include="Styles\img\samsung-ssd.jpg" />
+    <Content Include="Styles\img\sapphire.jpg" />
+    <Content Include="Styles\img\seagate.jpg" />
+    <Content Include="Styles\img\star.png" />
+    <Content Include="Styles\img\toshiba-hdd.png" />
     <Content Include="Styles\img\pro.png" />
     <Content Include="Styles\img\star1.png" />
     <Content Include="Styles\img\students.jpg" />
     <Content Include="Styles\img\typing.jpg" />
     <Content Include="Styles\img\web.png" />
+    <Content Include="Styles\img\westerndigital.jpg" />
     <Content Include="Styles\jcarousel-styles.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\navbar-fixed-side.css" />

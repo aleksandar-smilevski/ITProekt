@@ -67,22 +67,22 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Panel pnlProcessor;
         
         /// <summary>
-        /// imgLogo control.
+        /// ImageLogoProcessor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLogo;
+        protected global::System.Web.UI.WebControls.Image ImageLogoProcessor;
         
         /// <summary>
-        /// Image2 control.
+        /// ImageProcessor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image ImageProcessor;
         
         /// <summary>
         /// processorNameResult control.
@@ -265,15 +265,6 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Panel motherboardPanel;
         
         /// <summary>
-        /// ImageLogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogo;
-        
-        /// <summary>
         /// ImageMotherboard control.
         /// </summary>
         /// <remarks>
@@ -389,15 +380,6 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel powerUnitsPanel;
-        
-        /// <summary>
-        /// ImageLogoPU control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoPU;
         
         /// <summary>
         /// ImagePowerUnit control.
@@ -517,15 +499,6 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Panel graphicsCardsPanel;
         
         /// <summary>
-        /// ImageLogoGraphics control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoGraphics;
-        
-        /// <summary>
         /// ImageGraphicsCard control.
         /// </summary>
         /// <remarks>
@@ -643,15 +616,6 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Panel panelRAM;
         
         /// <summary>
-        /// ImageLogoRAM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoRAM;
-        
-        /// <summary>
         /// ImageRAM control.
         /// </summary>
         /// <remarks>
@@ -767,15 +731,6 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel panelHardDrives;
-        
-        /// <summary>
-        /// ImageHardDriveLogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageHardDriveLogo;
         
         /// <summary>
         /// ImageHardDrive control.

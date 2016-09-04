@@ -20,13 +20,13 @@ namespace ProbaIT
     public class CPUPerformance : System.Web.Services.WebService
     {
 
-        [WebMethod(Description ="This is web service for comparing the performances of two CPUs passed by ID number as arguments to the function")]
-        public DataSet  Compare(string ID1, string ID2)
+        [WebMethod(Description = "This is web service for comparing the performances of two CPUs passed by ID number as arguments to the function")]
+        public DataSet Compare(string ID1, string ID2)
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
             String querry = "SELECT Name , Cores , Threads , Clock , Cache , Score  FROM Processors WHERE Id=@P1 OR Id= @P2";
-           
+
             SqlCommand command = new SqlCommand(querry, connection);
             command.Parameters.AddWithValue("@P1", ID1);
             command.Parameters.AddWithValue("@P2", ID2);
@@ -38,9 +38,9 @@ namespace ProbaIT
             try
             {
                 connection.Open();
-               
+
                 adapter.Fill(ds, "CPU");
-            
+
             }
             catch (Exception err)
             {
@@ -54,9 +54,9 @@ namespace ProbaIT
 
             }
 
-            
+
             return ds;
-           
+
         }
     }
 }
