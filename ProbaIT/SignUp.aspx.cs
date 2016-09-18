@@ -40,14 +40,15 @@ namespace ProbaIT
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    if(reader["username"] != null)
+                    if (reader["username"] != null)
                     {
                         valid = false;
                     }
                 }
-                if(valid)
+                if (valid)
                 {
-                    cmd.ExecuteNonQuery();
+                    reader.Close();
+                    insertCMD.ExecuteNonQuery();
                 }
             }
             catch (Exception err)
