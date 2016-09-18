@@ -20,6 +20,7 @@
                 window.location = "CPUAnalyzer.aspx";
             });
         });
+
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -63,12 +64,12 @@
               </div>
                 <div class="text-center">
                     <!-- <asp:Button ID="btnSignIn" runat="server" CssClass="btn btn-default btn-center" Text="Sign in" /> -->
-                    <button class="btn btn-grey">Sign In</button>
+                    <a href="SignIn.aspx" class="btn btn-grey">Sign In</a>
                 </div>
             </div>
                <div class="well well-md well-register text-center"><h5>Don't have an account, yet?</h5><h5><strong>Sign up now!</strong></h5>
                   <!-- <asp:Button ID="btnSignUp" runat="server" CssClass="btn btn-default btn-center-register" Text="Sign Up" /> -->
-                  <button class="btn btn-grey">Sign Up</button>
+                  <a href="SignUp.aspx" class="btn btn-grey">Sign Up</a>
               </div>
           </nav>
       </div>
