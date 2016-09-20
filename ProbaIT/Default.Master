@@ -51,7 +51,7 @@
                     <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span> Home</a>
                   </li>
                   <li class="">
-                    <a href=""><span class="glyphicon glyphicon-star"></span> Favorites</a>
+                    <a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
                   </li>
                   <li class="">
                     <a href=""><span class="glyphicon glyphicon-tags"></span> Orders</a>
