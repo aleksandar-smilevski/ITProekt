@@ -48,15 +48,15 @@
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
-                                    <asp:Label ID="lblUsername" Text="Welcome!" runat="server" ForeColor="#FFFFCC"></asp:Label>
+                                    <asp:Label ID="lblUsername" Text="" runat="server" ForeColor="White"></asp:Label>
                                     <li class="active">
-                                        <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span>Home</a>
+                                        <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span> Home</a>
                                     </li>
                                     <li class="">
-                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a>
+                                        <a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
                                     </li>
                                     <li class="">
-                                        <a href=""><span class="glyphicon glyphicon-tags"></span>Orders</a>
+                                        <a href=""><span class="glyphicon glyphicon-tags"></span> Orders</a>
                                     </li>
 
                                     <li>
@@ -73,7 +73,7 @@
                             <h5>Don't have an account, yet?</h5>
                             <h5><strong>Sign up now!</strong></h5>
                             <!-- <asp:Button ID="btnSignUp" runat="server" CssClass="btn btn-default btn-center-register" Text="Sign Up" /> -->
-                            <input type="button" onclick="location.href = 'SignUp.aspx';" value="Sing Up" class="btn btn-grey" />
+                            <input type="button" onclick="location.href = 'SignUp.aspx';" value="Sign Up" class="btn btn-grey" />
 
                         </div>
                     </nav>
