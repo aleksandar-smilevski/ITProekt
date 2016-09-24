@@ -359,6 +359,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <img width="150" height="150" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAzMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyMCAzMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yOTIuNjk3LDE5Ljk5NUgyNy4zMDNDMTIuMjIzLDE5Ljk5NSwwLDMyLjIxOSwwLDQ3LjI5OXYxNjMuODIyYzAsMTUuMDc5LDEyLjIyMywyNy4zMDQsMjcuMzAzLDI3LjMwNEgxMzMuNzl2MjQuNyAgIGgtMjEuNTQ0Yy0xMC4xODUsMC0xOC40MzksOC4yNTUtMTguNDM5LDE4LjQ0YzAsMTAuMTg0LDguMjU1LDE4LjQ0LDE4LjQzOSwxOC40NGg5NS41MDhjMTAuMTg2LDAsMTguNDQtOC4yNTYsMTguNDQtMTguNDQgICBjMC0xMC4xODUtOC4yNTQtMTguNDQtMTguNDQtMTguNDRIMTg2LjIxdi0yNC43aDEwNi40ODdjMTUuMDgsMCwyNy4zMDMtMTIuMjI1LDI3LjMwMy0yNy4zMDRWNDcuMjk5ICAgQzMyMCwzMi4yMTksMzA3Ljc3NywxOS45OTUsMjkyLjY5NywxOS45OTV6IE0zMi4xODEsMTc5Ljk2YzAtMTQuNCwxMS43MTUtMjYuMTE2LDI2LjExNS0yNi4xMTYgICBjMTQuNDAxLDAsMjYuMTE1LDExLjcxNiwyNi4xMTUsMjYuMTE2YzAsMTQuNC0xMS43MTMsMjYuMTE2LTI2LjExNSwyNi4xMTZDNDMuODk2LDIwNi4wNzYsMzIuMTgxLDE5NC4zNiwzMi4xODEsMTc5Ljk2eiAgICBNMjg4LjMyOCwyMDYuNzUySDEyNy41NzljMC43MzQtMS44NzQsMC4yNS00LjA0LTEuMjkyLTUuNDA5bC0xMC40NzktOS4zMDhjMC44MTctMy44OTgsMS4yNTEtNy45MzgsMS4yNTEtMTIuMDc1ICAgYzAtNC4xNDItMC40MzQtOC4xODItMS4yNTMtMTIuMDg1bDEwLjQ3OC05LjMwNWMxLjcyNy0xLjUzNSwyLjEzOC00LjA3MSwwLjk4My02LjA3MmwtMTAuNzA2LTE4LjU0NCAgIGMtMS4xNTQtMi4wMDItMy41NTktMi45MTItNS43NS0yLjE4NGwtMTMuMzM4LDQuNDM0Yy01Ljk4Ni01LjM2Ni0xMy4wNzctOS41MjMtMjAuODg0LTEyLjA4NmwtMi44MjEtMTMuNzMgICBjLTAuNDY1LTIuMjYzLTIuNDU4LTMuODg3LTQuNzY5LTMuODg3SDQ3LjU4NmMtMi4zMTEsMC00LjMwMSwxLjYyNC00Ljc2OCwzLjg4N2wtMi44MiwxMy43MzMgICBjLTIuODgyLDAuOTQ3LTUuNjU5LDIuMTIzLTguMzI2LDMuNDg0VjUxLjY2N2gyNTYuNjU1VjIwNi43NTJ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNMTQzLjg3MywxMjcuNzc4Yy0xLjI5Mi0wLjQzLTIuNzA4LDAuMTA5LTMuMzg5LDEuMjg4bC02LjMxMiwxMC45MzFjLTAuNjc5LDEuMTc4LTAuNDM4LDIuNjc0LDAuNTc5LDMuNTc4bDYuMTc3LDUuNDg2ICAgYy0wLjQ4MiwyLjI5Ny0wLjczNyw0LjY3Ny0wLjczNyw3LjExNmMwLDIuNDQxLDAuMjU2LDQuODIzLDAuNzM5LDcuMTIzbC02LjE3Niw1LjQ4NGMtMS4wMTgsMC45MDQtMS4yNiwyLjQtMC41OCwzLjU3OSAgIGw2LjMxMSwxMC45M2MwLjY4MSwxLjE3OSwyLjA5NiwxLjcxNywzLjM4OCwxLjI4N2w3Ljg2MS0yLjYxM2MzLjUyOSwzLjE2Myw3LjcwOCw1LjYxMiwxMi4zMSw3LjEyNGwxLjY2Myw4LjA5MyAgIGMwLjI3NSwxLjMzMiwxLjQ0OSwyLjI4OSwyLjgxMSwyLjI4OWgxMi42MmMxLjM2MiwwLjAwMSwyLjUzNS0wLjk1NywyLjgxLTIuMjg5bDEuNjYzLTguMDk1YzQuNjAyLTEuNTEyLDguNzgtMy45NjMsMTIuMzA5LTcuMTI2ICAgbDcuODU5LDIuNjEzYzEuMjkyLDAuNDI4LDIuNzA3LTAuMTA5LDMuMzg5LTEuMjg4bDYuMzExLTEwLjkzYzAuNjc5LTEuMTc5LDAuNDM4LTIuNjc0LTAuNTgtMy41NzlsLTYuMTc3LTUuNDg2ICAgYzAuNDgyLTIuMjk4LDAuNzM4LTQuNjc5LDAuNzM4LTcuMTE3YzAtMi40NDEtMC4yNTUtNC44MjMtMC43MzktNy4xMjJsNi4xNzUtNS40ODRjMS4wMTgtMC45MDUsMS4yNi0yLjQsMC41NzktMy41OGwtNi4zMS0xMC45MjkgICBjLTAuNjgxLTEuMTgxLTIuMDk4LTEuNzE3LTMuMzg5LTEuMjg3bC03Ljg2MSwyLjYxM2MtMy41MjktMy4xNjMtNy43MDktNS42MTItMTIuMzExLTcuMTIzbC0xLjY2My04LjA5MyAgIGMtMC4yNzMtMS4zMzMtMS40NDgtMi4yOTEtMi44MDktMi4yOTFoLTEyLjYyMWMtMS4zNjIsMC0yLjUzNSwwLjk1OC0yLjgxLDIuMjkxbC0xLjY2Myw4LjA5NSAgIGMtNC42MDIsMS41MTEtOC43ODEsMy45NjMtMTIuMzA5LDcuMTI2TDE0My44NzMsMTI3Ljc3OHogTTE3NC44MjcsMTQwLjc4NWM4LjQ4NywwLDE1LjM5Miw2LjkwNSwxNS4zOTIsMTUuMzkzICAgYzAsOC40ODgtNi45MDUsMTUuMzk0LTE1LjM5MiwxNS4zOTRjLTguNDg3LDAtMTUuMzk0LTYuOTA1LTE1LjM5NC0xNS4zOTRDMTU5LjQzNCwxNDcuNjksMTY2LjM0LDE0MC43ODUsMTc0LjgyNywxNDAuNzg1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBhdGggZD0iTTEwNC42ODgsOTEuOTM4Yy0wLjMzLDEuNTc1LTAuNTA1LDMuMjA2LTAuNTA1LDQuODc4YzAsMS42NzMsMC4xNzUsMy4zMDYsMC41MDYsNC44ODJsLTQuMjMyLDMuNzU4ICAgYy0wLjY5NywwLjYyMS0wLjg2MywxLjY0NS0wLjM5NiwyLjQ1M2w0LjMyNiw3LjQ5MmMwLjQ2NiwwLjgwOCwxLjQzNywxLjE3NywyLjMyMiwwLjg4Mmw1LjM4OC0xLjc5MiAgIGMyLjQxOCwyLjE2OCw1LjI4MywzLjg0OCw4LjQzNiw0Ljg4NGwxLjE0LDUuNTQ2YzAuMTg4LDAuOTEzLDAuOTk0LDEuNTY5LDEuOTI1LDEuNTY5aDguNjUxYzAuOTMzLDAuMDAxLDEuNzM3LTAuNjU2LDEuOTI1LTEuNTY5ICAgbDEuMTQxLTUuNTQ4YzMuMTUyLTEuMDM1LDYuMDE3LTIuNzE2LDguNDM2LTQuODg0bDUuMzg3LDEuNzkyYzAuODg1LDAuMjk0LDEuODU2LTAuMDc1LDIuMzIyLTAuODgzbDQuMzI2LTcuNDkxICAgYzAuNDY1LTAuODA4LDAuMjk5LTEuODMzLTAuMzk3LTIuNDUzbC00LjIzMy0zLjc2YzAuMzMtMS41NzQsMC41MDUtMy4yMDYsMC41MDUtNC44NzhjMC0xLjY3NC0wLjE3NS0zLjMwNi0wLjUwNi00Ljg4MiAgIGw0LjIzMi0zLjc1OWMwLjY5Ni0wLjYyLDAuODY0LTEuNjQ1LDAuMzk4LTIuNDUzbC00LjMyNi03LjQ5MWMtMC40NjctMC44MDktMS40MzctMS4xNzctMi4zMjItMC44ODNsLTUuMzg4LDEuNzkxICAgYy0yLjQxOS0yLjE2OC01LjI4My0zLjg0Ny04LjQzNy00Ljg4M2wtMS4xNC01LjU0N2MtMC4xODgtMC45MTQtMC45OTMtMS41Ny0xLjkyNS0xLjU3aC04LjY1Yy0wLjkzNCwwLTEuNzM4LDAuNjU2LTEuOTI2LDEuNTcgICBsLTEuMTQsNS41NDljLTMuMTU0LDEuMDM2LTYuMDE4LDIuNzE1LTguNDM1LDQuODgzbC01LjM4OC0xLjc5MmMtMC44ODUtMC4yOTMtMS44NTYsMC4wNzUtMi4zMjIsMC44ODNsLTQuMzI1LDcuNDkxICAgYy0wLjQ2NywwLjgwOC0wLjMsMS44MzMsMC4zOTYsMi40NTJMMTA0LjY4OCw5MS45Mzh6IE0xMjcuOTIyLDg2LjI2NWM1LjgxNiwwLDEwLjU0OSw0LjczMiwxMC41NDksMTAuNTUgICBjMCw1LjgxOC00LjczMiwxMC41NDktMTAuNTQ5LDEwLjU0OXMtMTAuNTUtNC43MzEtMTAuNTUtMTAuNTQ5QzExNy4zNzIsOTAuOTk4LDEyMi4xMDUsODYuMjY1LDEyNy45MjIsODYuMjY1eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" class="img-center-nowidth" />
+                    <button id="buyBtn" class="btn btn-lg btn-primary" style="display: none;">Buy</button>
                     <h4 class="text-center">CHOOSE THE COMPONENTS YOU WOULD LIKE BY CLICKING THE BOXES BELOW</h4>
                     <div class="row">
                         <div class="col-md-12" id="control-container">
@@ -904,7 +905,7 @@
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '60%',
-            height: '75%',
+            height: '55%',
             left: '25%',
             top: '10%',
             overflow: 'hidden'
@@ -915,7 +916,7 @@
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '60%',
-            height: '75%',
+            height: '55%',
             left: '25%',
             top: '10%',
             overflow: 'hidden'
@@ -926,7 +927,7 @@
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '60%',
-            height: '75%',
+            height: '55%',
             left: '25%',
             top: '10%',
             overflow: 'hidden'
@@ -937,7 +938,7 @@
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '60%',
-            height: '75%',
+            height: '55%',
             left: '25%',
             top: '10%',
             overflow: 'hidden'
@@ -948,7 +949,7 @@
             animatedOut: 'bounceOutDown',
             color: 'white',
             width: '60%',
-            height: '75%',
+            height: '55%',
             left: '25%',
             top: '10%',
             overflow: 'hidden'
@@ -976,6 +977,7 @@
                 "font-size": "12px",
                 "text-transform": "capitalize"
             });
+            displayBuyButton();
         });
         $(document).on('click', '#powerUnitBtn', function () {
             var dropdown = document.getElementsByClassName("ddlPowerUnit");
@@ -986,6 +988,7 @@
                 "font-size": "12px",
                 "text-transform": "capitalize"
             });
+            displayBuyButton();
         });
         $(document).on('click', '#motherboardBtn', function () {
             var dropdown = document.getElementsByClassName("ddlMotherboard");
@@ -996,6 +999,7 @@
                 "font-size": "12px",
                 "text-transform": "capitalize"
             });
+            displayBuyButton();
         });
         $(document).on('click', '#RAMBtn', function () {
             var dropdown = document.getElementsByClassName("ddlRAM");
@@ -1006,6 +1010,7 @@
                 "font-size": "12px",
                 "text-transform": "capitalize"
             });
+            displayBuyButton();
         });
         $(document).on('click', '#graphicsCardBtn', function () {
             var dropdown = document.getElementsByClassName("ddlGraphicsCard");
@@ -1016,6 +1021,7 @@
                 "font-size": "12px",
                 "text-transform": "capitalize"
             });
+            displayBuyButton();
         });
         $(document).on('click', '#hardDriveBtn', function () {
             var dropdown = document.getElementsByClassName("ddlHardDrive");
@@ -1026,9 +1032,15 @@
                 "font-size": "12px",
                 "text-transform": "capitalize"
             });
+            displayBuyButton();
         });
       
-
+        function displayBuyButton() {
+            var button = $("#buyBtn");
+            if (button.css("display") == 'none') {
+                button.show();
+            }
+        }
 
     </script>
 </asp:Content>
