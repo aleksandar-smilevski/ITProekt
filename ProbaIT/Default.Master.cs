@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,9 +13,33 @@ namespace ProbaIT
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["id"] != null)
+            if (Session["id"] != null)
             {
-              //  btnSignIn.Visible = false;
+                int id = (int)Session["id"];
+                btnSignIn.Visible = false;
+                SqlConnection connection = new SqlConnection();
+                connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+                string query = "SELECT firstname FROM dbo.Users u WHERE id=" + id;
+                SqlCommand command = new SqlCommand(query, connection);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    if(reader.Read())
+                    {
+                        lblUsername.Text = "Welcome, " + reader["firstname"].ToString();
+                    }
+                    reader.Close();
+                        
+                }
+                catch(Exception err)
+                {
+
+                }
+                finally
+                {
+                    connection.Close();
+                }
             }
         }
     }
