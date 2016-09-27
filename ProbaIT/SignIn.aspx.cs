@@ -20,13 +20,14 @@ namespace ProbaIT
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string selectSQL = "SELECT id, password FROM Users WHERE username=@username";
+            string selectSQL = "SELECT id, password, type FROM Users WHERE username=@username";
             string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(selectSQL, con);
             cmd.Parameters.AddWithValue("@username", TxtUsername.Text);
             bool valid = true;
             int id = -1;
+            string type = null;
             try
             {
                 con.Open();
@@ -43,6 +44,7 @@ namespace ProbaIT
                     else
                     {
                         id = Convert.ToInt32(reader["id"].ToString());
+                        type = reader["type"].ToString();
                     }
                 }
             }
@@ -58,6 +60,7 @@ namespace ProbaIT
             if (valid && (id != -1))
             {
                 Session["id"] = id;
+                Session["type"] = type;
                 Response.Redirect("Dashboard.aspx");
             }
             else

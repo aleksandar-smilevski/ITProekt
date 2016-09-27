@@ -4,13 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+   
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="scripts/jquery-2.2.4.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="Styles/navbar-fixed-side.css" rel="stylesheet" />
     <link href="Styles/main.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         $(document).ready(function () {
             $("#dashboard-link").click(function () {
@@ -48,7 +48,7 @@
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
-                                    <asp:Label ID="lblUsername" Text="" runat="server" ForeColor="White"></asp:Label>
+                                    <asp:Label ID="lblUsername" Text="" runat="server" ForeColor="White" style="display:block; text-align:center; padding:2%"></asp:Label>
                                     <li class="active">
                                         <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span> Home</a>
                                     </li>

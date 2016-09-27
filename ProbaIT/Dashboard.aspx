@@ -354,7 +354,7 @@
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="col-sm-9 col-lg-10 backImgDashboard">
+    <div class="col-sm-9 col-lg-10 backImgDashboard" style="height:100vh">
         <div class="row" style="margin: 0 auto; width: 78.2%;">
             <div class="col-md-12">
                 <div class="box">
