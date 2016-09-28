@@ -11,6 +11,9 @@
             border-radius: 4px;
             margin-left: 40px;
         }
+        .auto-style2 {
+            width: 242px;
+        }
     </style>
 </asp:Content>
 
@@ -47,6 +50,26 @@
                     <asp:Label ID="lblPriceInCart" runat="server" Text="Price in cart:" ForeColor="White" Font-Size="14pt"></asp:Label>
                     &nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="tbPrice" runat="server" ReadOnly="True" Enabled="False" BackColor="White" ForeColor="Black" Width="75px">0</asp:TextBox>
+                    <br />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="Address is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Credit Card Number is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <br />
+                    <table align="center" class="nav-justified">
+                        <tr>
+                            <td>Address</td>
+                            <td class="auto-style2">
+                                <asp:TextBox ID="TextBox2" runat="server" ForeColor="Black" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Credit Card Number</td>
+                            <td class="auto-style2">
+                                <asp:TextBox ID="TextBox3" runat="server" ForeColor="Black"></asp:TextBox>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <asp:Button ID="Button1" runat="server" CssClass="btn-primary" Font-Size="12pt" OnClick="Button1_Click" Text="Checkout" />
                 </div>
             </div>
         </div>

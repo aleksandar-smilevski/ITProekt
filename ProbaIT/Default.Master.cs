@@ -49,6 +49,7 @@ namespace ProbaIT
         protected void logoutButton_Click(object sender, EventArgs e)
         {
             Session["id"] = null;
+            Session.Clear();
             logoutButton.Visible = false;
             logoutButton.Enabled = false;
             signInButton.Style.Add("display", "block");

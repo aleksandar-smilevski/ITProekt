@@ -169,6 +169,21 @@ namespace ProbaIT
                 updateGrid();
         }
 
-       
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //INSERT
+            //Debug.WriteLine(Session["cart" + Session["id"]].ToString());
+            for(int i = 0; i < gvCart.Rows.Count; i++)
+            {
+                Debug.WriteLine(gvCart.Rows[i].Cells[1].Text);
+            }
+            //string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
+            //string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            //SqlConnection con = new SqlConnection(connectionString);
+            //SqlCommand insertCMD = new SqlCommand(insertSQL, con);
+            //string allComponents;
+            //insertCMD.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"]));
+            //insertCMD.Parameters.AddWithValue("@orderContent", allComponents);
+        }
     }
 }
