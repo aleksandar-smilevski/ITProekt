@@ -18,6 +18,43 @@ namespace ProbaIT
 
         }
 
+        protected void logIn(string username)
+        {
+            string selectSQL = "SELECT id, type FROM dbo.Users WHERE username=" + username;
+            string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(selectSQL, con);
+            bool valid = true;
+            int id = -1;
+            string type = null;
+            try
+            {
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    id = Convert.ToInt32(reader["id"].ToString());
+                    type = reader["type"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                //Label1.Text = err.Message;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            if (valid && (id != -1))
+            {
+                Session["id"] = id;
+                Session["type"] = type;
+                Response.Redirect("Dashboard.aspx");
+            }
+
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             string insertSQL = "INSERT INTO Users (username, password, type, firstname, lastname, email) VALUES (@username, @password, @type, @firstname, @lastname ,@email)";
@@ -34,6 +71,7 @@ namespace ProbaIT
             insertCMD.Parameters.AddWithValue("@lastname", TxtLastName.Text);
             insertCMD.Parameters.AddWithValue("@email", TxtEmail.Text);
             bool valid = true;
+            string user = null;
             try
             {
                 con.Open();
@@ -42,6 +80,7 @@ namespace ProbaIT
                 {
                     if (reader["username"] != null)
                     {
+                        user = (string)reader["username"];
                         valid = false;
                     }
                 }
@@ -49,6 +88,7 @@ namespace ProbaIT
                 {
                     reader.Close();
                     insertCMD.ExecuteNonQuery();
+
                 }
             }
             catch (Exception err)
@@ -58,11 +98,16 @@ namespace ProbaIT
             finally
             {
                 con.Close();
+
             }
             if (!valid)
             {
                 Label1.Text = "A user with that username already exists";
             }
+            Session["username"] = TxtUsername.Text;
+
+            Response.Redirect("Default.aspx");
+
 
         }
         public string CalculateMD5Hash(string input)

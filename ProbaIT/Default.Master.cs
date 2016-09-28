@@ -44,6 +44,10 @@ namespace ProbaIT
                     connection.Close();
                 }
             }
+            else if (Session["username"] != null)
+            {
+                lblUsername.Text = "Welcome, " + (string)Session["username"];
+            }
         }
 
         protected void logoutButton_Click(object sender, EventArgs e)
