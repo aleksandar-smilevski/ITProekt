@@ -178,6 +178,10 @@ namespace ProbaIT
             {
                 Debug.WriteLine(gvCart.Rows[i].Cells[1].Text);
                 allComponents.Append(gvCart.Rows[i].Cells[1].Text);
+                if(i < gvCart.Rows.Count - 1)
+                {
+                    allComponents.Append(", ");
+                }
 
             }
             string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
@@ -198,13 +202,8 @@ namespace ProbaIT
             finally
             {
                 con.Close();
-                   
+                Response.Redirect("Orders.aspx");
             }
-        }
-
-        protected void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

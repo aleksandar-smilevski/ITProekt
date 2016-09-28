@@ -24,9 +24,20 @@ namespace ProbaIT
                     return;
                 }
                 DataTable dt = this.GetData();
+               
 
                 //Building an HTML string.
                 StringBuilder html = new StringBuilder();
+
+                // If the user does not have any orders, display a message and redirect to Dashboard
+                if (dt.Rows.Count == 0)
+                {
+                    html.Append("<h2 style='text-align: center; margin-top: 20%; color: #26A8D4; text-shadow: 1px 1px 2px;'>You don't have any orders yet! :( </h2>");
+                    html.Append("<h2 style='text-align: center;'>Why not head over to the Home page and make a build?</h2>");
+                    PlaceHolder1.Controls.Add(new Literal { Text = html.ToString() });
+                    return;
+
+                }
 
                 //Table start.
                 html.Append("<table class='table table-bordered table-responsive' style='width:100%'>");
@@ -34,10 +45,10 @@ namespace ProbaIT
                 //Building the Header row.
                 html.Append("<tr>");
                 
-                html.Append("<th style='text-align:center'>");
+                html.Append("<th style='text-align:center;  font-size: 16px;'>");
                 html.Append("Order ID");
                 html.Append("</th>");
-                html.Append("<th style='text-align:center'>");
+                html.Append("<th style='text-align:center;  font-size: 16px;'>");
                 html.Append("Order Content");
                 html.Append("</th>");
 
@@ -46,7 +57,7 @@ namespace ProbaIT
                 //Building the Data rows.
                 foreach (DataRow row in dt.Rows)
                 {
-                    html.Append("<tr>");
+                    html.Append("<tr style='text-align:center; font-size: 16px;'>");
                     foreach (DataColumn column in dt.Columns)
                     {
                         html.Append("<td>");
@@ -77,12 +88,17 @@ namespace ProbaIT
                         sda.SelectCommand = cmd;
                         using (DataTable dt = new DataTable())
                         {
-                            sda.Fill(dt);
+                            sda.Fill(dt);                           
                             return dt;
                         }
                     }
                 }
             }
+        }
+
+       protected void GoToDashboardBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dashboard.aspx");
         }
     }
 }

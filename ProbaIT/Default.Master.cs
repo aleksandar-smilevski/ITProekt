@@ -64,7 +64,7 @@ namespace ProbaIT
             signInButton.Style.Add("display", "block");
             signUpDiv.Style.Add("display", "block");
             lblUsername.Text = "";
-            
+            Response.Redirect("Default.aspx");
         }
     }
 }

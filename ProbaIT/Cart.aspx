@@ -17,7 +17,8 @@
 
         .auto-style2 tbody tr:first-child  {
             background-color: black !important;
-            padding: 0.5rem;
+            padding: 0.5rem !important;
+            text-align: center !important;
         }
     </style>
 </asp:Content>
@@ -63,7 +64,7 @@
                         <tr>
                             <td>Address</td>
                             <td class="auto-style2">
-                                <asp:TextBox ID="TextBox2" runat="server" ForeColor="Black" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+                                <asp:TextBox ID="TextBox2" runat="server" ForeColor="Black"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>

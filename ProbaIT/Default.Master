@@ -47,19 +47,19 @@
                                     <img class="img-circle img-center" src="Styles/img/logo.png" id="logo" /></a>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav" id="menu-list">
                                     <asp:Label ID="lblUsername" Text="" runat="server" ForeColor="White" style="display:block; text-align:center; padding:2%"></asp:Label>
-                                    <li class="active">
+                                    <li class="" id="home">
                                         <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span> Home</a>
                                     </li>
                                     <li class="" id="cart">
                                         <a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
                                     </li>
-                                    <li class="">
-                                        <a href="Orders.aspx"><span class="glyphicon glyphicon-tags"></span> Orders</a>
+                                    <li class="" id="orders">
+                                        <a href="Orders.aspx"><span class="glyphicon glyphicon-tags"></span> My orders</a>
                                     </li>
 
-                                    <li>
+                                    <li class="" id="settings">
                                         <a href="Settings.aspx"><span class="glyphicon glyphicon-cog"></span> My account</a>
                                     </li>
                                 </ul>
@@ -83,5 +83,31 @@
             </div>
         </div>
     </form>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              var location = window.location.href;
+              if (location.indexOf("Cart.aspx") !== -1) {
+                  setActiveClass("cart");
+              }
+              else if (location.indexOf("Settings.aspx") !== -1) {
+                  setActiveClass("settings");
+              }
+              else if (location.indexOf("Orders.aspx") !== -1) {
+                  setActiveClass("orders");
+              }
+              else {
+                  setActiveClass("home");
+              }
+
+              function setActiveClass(activeId) {
+                  $("#" + activeId).addClass("active");
+                  console.log($("#menu-list"));
+                  $("#menu-list li").not(document.getElementById(activeId)).removeClass("active");
+              }
+          });
+
+         
+    </script>
 </body>
+  
 </html>
