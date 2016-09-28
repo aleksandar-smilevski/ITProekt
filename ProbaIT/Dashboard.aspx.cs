@@ -18,6 +18,8 @@ namespace ProbaIT
             if (!IsPostBack)
             {
                 // Fill dropdown lists
+                if (Session["id"] == null)
+                    Response.Redirect("SignIn.aspx");
                 fillProcessors();
                 fillMotherboards();
                 fillGraphicsCards();

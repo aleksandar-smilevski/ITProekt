@@ -140,18 +140,18 @@ namespace ProbaIT
             gvCart.DataBind();
         }
 
-        protected void gvCart_RowUpdating(object sender, GridViewUpdateEventArgs e)
-        {
-            TextBox tb = (TextBox)gvCart.Rows[e.RowIndex].Cells[5].Controls[0];
-            Product p = new Product(gvCart.Rows[e.RowIndex].Cells[1].Text, gvCart.Rows[e.RowIndex].Cells[2].Text, int.Parse(tb.Text));
-            HashSet<Product> set = (HashSet<Product>)Session["cart" + Session["id"]];
-            set.Remove(p);
-            set.Add(p);
-            Session["cart" + Session["id"]] = set;
-            gvCart.EditIndex = -1;
-            tbPrice.Text = "0";
-            updateGrid();
-        }
+        //protected void gvCart_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        //{
+        //    TextBox tb = (TextBox)gvCart.Rows[e.RowIndex].Cells[5].Controls[0];
+        //    Product p = new Product(gvCart.Rows[e.RowIndex].Cells[1].Text, gvCart.Rows[e.RowIndex].Cells[2].Text, int.Parse(tb.Text));
+        //    HashSet<Product> set = (HashSet<Product>)Session["cart" + Session["id"]];
+        //    set.Remove(p);
+        //    set.Add(p);
+        //    Session["cart" + Session["id"]] = set;
+        //    gvCart.EditIndex = -1;
+        //    tbPrice.Text = "0";
+        //    updateGrid();
+        //}
 
         protected void gvCart_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
@@ -168,5 +168,7 @@ namespace ProbaIT
             else
                 updateGrid();
         }
+
+       
     }
 }

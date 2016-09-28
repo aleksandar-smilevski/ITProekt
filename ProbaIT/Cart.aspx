@@ -22,7 +22,7 @@
         </div>
         <div id="divGrid" runat="server">
             <div class="text-center" style="margin-left: 30%; margin-bottom: 10%; margin-top: 20%;">
-                <asp:GridView ID="gvCart" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" CssClass="auto-style2" Width="567px" AllowPaging="True" OnPageIndexChanging="gvCart_PageIndexChanging" OnRowCancelingEdit="gvCart_RowCancelingEdit" OnRowEditing="gvCart_RowEditing" OnRowUpdating="gvCart_RowUpdating" PageSize="5" OnRowDeleting="gvCart_RowDeleting">
+                <asp:GridView ID="gvCart" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" CssClass="auto-style2" Width="567px" AllowPaging="True" OnPageIndexChanging="gvCart_PageIndexChanging" OnRowCancelingEdit="gvCart_RowCancelingEdit" OnRowEditing="gvCart_RowEditing" PageSize="5" OnRowDeleting="gvCart_RowDeleting">
                     <AlternatingRowStyle BackColor="Gainsboro" />
                     <Columns>
                         <asp:BoundField DataField="Type" HeaderText="Type" ReadOnly="True" />
@@ -30,7 +30,7 @@
                         <asp:BoundField DataField="Description" HeaderText="Description" ReadOnly="True" />
                         <asp:BoundField DataField="Price" HeaderText="Price per unit" ReadOnly="True" />
                         <asp:BoundField HeaderText="Quantity" DataField="Quantity" />
-                        <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+                        <asp:CommandField ShowDeleteButton="True" EditText="" />
                     </Columns>
                     <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                     <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
