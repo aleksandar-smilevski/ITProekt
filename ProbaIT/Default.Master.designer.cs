@@ -49,6 +49,33 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Button btnSignIn;
         
         /// <summary>
+        /// signInButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton signInButton;
+        
+        /// <summary>
+        /// logoutButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button logoutButton;
+        
+        /// <summary>
+        /// signUpDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl signUpDiv;
+        
+        /// <summary>
         /// btnSignUp control.
         /// </summary>
         /// <remarks>

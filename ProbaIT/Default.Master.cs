@@ -16,7 +16,10 @@ namespace ProbaIT
             if (Session["id"] != null)
             {
                 int id = (int)Session["id"];
-                btnSignIn.Visible = false;
+                signInButton.Style.Add("display", "none");
+                signUpDiv.Style.Add("display", "none");
+                logoutButton.Visible = true;
+                logoutButton.Enabled = true;
                 SqlConnection connection = new SqlConnection();
                 connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
                 string query = "SELECT firstname FROM dbo.Users u WHERE id=" + id;
@@ -41,6 +44,17 @@ namespace ProbaIT
                     connection.Close();
                 }
             }
+        }
+
+        protected void logoutButton_Click(object sender, EventArgs e)
+        {
+            Session["id"] = null;
+            logoutButton.Visible = false;
+            logoutButton.Enabled = false;
+            signInButton.Style.Add("display", "block");
+            signUpDiv.Style.Add("display", "block");
+            lblUsername.Text = "";
+            
         }
     }
 }
