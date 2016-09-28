@@ -14,6 +14,11 @@
         .auto-style2 {
             width: 242px;
         }
+
+        .auto-style2 tbody tr:first-child  {
+            background-color: black !important;
+            padding: 0.5rem;
+        }
     </style>
 </asp:Content>
 
@@ -25,7 +30,7 @@
         </div>
         <div id="divGrid" runat="server">
             <div class="text-center" style="margin-left: 30%; margin-bottom: 10%; margin-top: 20%;">
-                <asp:GridView ID="gvCart" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" CssClass="auto-style2" Width="567px" AllowPaging="True" OnPageIndexChanging="gvCart_PageIndexChanging" OnRowCancelingEdit="gvCart_RowCancelingEdit" OnRowEditing="gvCart_RowEditing" PageSize="5" OnRowDeleting="gvCart_RowDeleting">
+                <asp:GridView ID="gvCart" runat="server" BackColor="#CCCCCC" ForeColor="Black" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" CssClass="auto-style2" Width="567px" AllowPaging="True" OnPageIndexChanging="gvCart_PageIndexChanging" OnRowCancelingEdit="gvCart_RowCancelingEdit" OnRowEditing="gvCart_RowEditing" PageSize="5" OnRowDeleting="gvCart_RowDeleting">
                     <AlternatingRowStyle BackColor="Gainsboro" />
                     <Columns>
                         <asp:BoundField DataField="Type" HeaderText="Type" ReadOnly="True" />
@@ -67,9 +72,15 @@
                                 <asp:TextBox ID="TextBox3" runat="server" ForeColor="Black"></asp:TextBox>
                             </td>
                         </tr>
+                           <tr>
+                            <td>Phone Number</td>
+                            <td class="auto-style2">
+                                <asp:TextBox ID="TextBox" runat="server" ForeColor="Black"></asp:TextBox>
+                            </td>
+                        </tr>
                     </table>
                     <br />
-                    <asp:Button ID="Button1" runat="server" CssClass="btn-primary" Font-Size="12pt" OnClick="Button1_Click" Text="Checkout" />
+                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-lg btn-primary" Font-Size="12pt" OnClick="Button1_Click" Text="Checkout" />
                 </div>
             </div>
         </div>

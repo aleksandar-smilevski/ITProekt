@@ -173,17 +173,38 @@ namespace ProbaIT
         {
             //INSERT
             //Debug.WriteLine(Session["cart" + Session["id"]].ToString());
-            for(int i = 0; i < gvCart.Rows.Count; i++)
+            StringBuilder allComponents = new StringBuilder();
+            for (int i = 0; i < gvCart.Rows.Count; i++)
             {
                 Debug.WriteLine(gvCart.Rows[i].Cells[1].Text);
+                allComponents.Append(gvCart.Rows[i].Cells[1].Text);
+
             }
-            //string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
-            //string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
-            //SqlConnection con = new SqlConnection(connectionString);
-            //SqlCommand insertCMD = new SqlCommand(insertSQL, con);
-            //string allComponents;
-            //insertCMD.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"]));
-            //insertCMD.Parameters.AddWithValue("@orderContent", allComponents);
+            string insertSQL = "INSERT INTO Orders (userid, orderContent) VALUES (@userid, @orderContent)";
+            string connectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand insertCMD = new SqlCommand(insertSQL, con);
+            insertCMD.Parameters.AddWithValue("@userid", Convert.ToInt32(Session["id"]));
+            insertCMD.Parameters.AddWithValue("@orderContent", allComponents.ToString());
+            try
+            {
+                con.Open();
+                insertCMD.ExecuteNonQuery();
+            }
+            catch (Exception err)
+            {
+
+            }
+            finally
+            {
+                con.Close();
+                   
+            }
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
