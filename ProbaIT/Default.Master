@@ -52,7 +52,7 @@
                                     <li class="active">
                                         <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span> Home</a>
                                     </li>
-                                    <li class="">
+                                    <li class="" id="cart">
                                         <a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
                                     </li>
                                     <li class="">
