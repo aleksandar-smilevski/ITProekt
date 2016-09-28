@@ -527,9 +527,9 @@ namespace ProbaIT
             Button button = (Button)sender;
             int id = int.Parse(ExtractNumber(button.ID));
             HashSet<Product> products;
-            if (Session["cart"] != null)
+            if (Session["cart" + Session["id"]] != null)
             {
-                products = (HashSet<Product>)Session["cart"];
+                products = (HashSet<Product>)Session["cart" + Session["id"]];
             }
             else
             {
@@ -538,7 +538,7 @@ namespace ProbaIT
             Product product = new Product(type[id - 1], parts[id - 1], int.Parse(textQuantity[id - 1]));
             products.Remove(product);
             products.Add(product);
-            Session["cart"] = products;
+            Session["cart" + Session["id"]] = products;
         }
 
         public string ExtractNumber(string original)

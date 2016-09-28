@@ -25,8 +25,6 @@
                 <asp:GridView ID="gvCart" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" CssClass="auto-style2" Width="567px" AllowPaging="True" OnPageIndexChanging="gvCart_PageIndexChanging" OnRowCancelingEdit="gvCart_RowCancelingEdit" OnRowEditing="gvCart_RowEditing" OnRowUpdating="gvCart_RowUpdating" PageSize="5" OnRowDeleting="gvCart_RowDeleting">
                     <AlternatingRowStyle BackColor="Gainsboro" />
                     <Columns>
-                        <asp:ImageField ReadOnly="True">
-                        </asp:ImageField>
                         <asp:BoundField DataField="Type" HeaderText="Type" ReadOnly="True" />
                         <asp:BoundField DataField="Name" HeaderText="Name of product" ReadOnly="True" />
                         <asp:BoundField DataField="Description" HeaderText="Description" ReadOnly="True" />
@@ -50,7 +48,7 @@
                     &nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="tbPrice" runat="server" ReadOnly="True" Enabled="False" BackColor="White" ForeColor="Black" Width="75px">0</asp:TextBox>
                 </div>
-                
             </div>
         </div>
+    </div>
 </asp:Content>

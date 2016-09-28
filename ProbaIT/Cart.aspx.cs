@@ -19,7 +19,8 @@ namespace ProbaIT
         {
             if (!IsPostBack)
             {
-                if (Session["cart"] != null)
+                Debug.WriteLine(Session["cart" + Session["id"]]);
+                if (Session["cart" + Session["id"]] != null)
                 {
                     divCart.Style.Add("display", "none");
                     divGrid.Style.Add("display", "block");
@@ -28,7 +29,7 @@ namespace ProbaIT
                 else
                 {
                     divCart.Style.Add("display", "block");
-                    gvCart.Visible = false;
+                    divGrid.Style.Add("display", "none");
                 }
             }
         }
@@ -41,7 +42,7 @@ namespace ProbaIT
             connection.ConnectionString = ConfigurationManager.ConnectionStrings["ITProekt"].ConnectionString;
             string query;
             StringBuilder description;
-            foreach (Product p in (HashSet<Product>)Session["cart"])
+            foreach (Product p in (HashSet<Product>)Session["cart" + Session["id"]])
             {
                 if (ViewState["dataTable"] != null)
                 {
@@ -143,10 +144,10 @@ namespace ProbaIT
         {
             TextBox tb = (TextBox)gvCart.Rows[e.RowIndex].Cells[5].Controls[0];
             Product p = new Product(gvCart.Rows[e.RowIndex].Cells[1].Text, gvCart.Rows[e.RowIndex].Cells[2].Text, int.Parse(tb.Text));
-            HashSet<Product> set = (HashSet<Product>)Session["cart"];
+            HashSet<Product> set = (HashSet<Product>)Session["cart" + Session["id"]];
             set.Remove(p);
             set.Add(p);
-            Session["cart"] = set;
+            Session["cart" + Session["id"]] = set;
             gvCart.EditIndex = -1;
             tbPrice.Text = "0";
             updateGrid();
@@ -154,10 +155,10 @@ namespace ProbaIT
 
         protected void gvCart_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            Product p = new Product(gvCart.Rows[e.RowIndex].Cells[1].Text, gvCart.Rows[e.RowIndex].Cells[2].Text, int.Parse(gvCart.Rows[e.RowIndex].Cells[5].Text));
-            HashSet<Product> set = (HashSet<Product>)Session["cart"];
+            Product p = new Product(gvCart.Rows[e.RowIndex].Cells[0].Text, gvCart.Rows[e.RowIndex].Cells[1].Text, int.Parse(gvCart.Rows[e.RowIndex].Cells[4].Text));
+            HashSet<Product> set = (HashSet<Product>)Session["cart" + Session["id"]];
             set.Remove(p);
-            Session["cart"] = set;
+            Session["cart" + Session["id"]] = set;
             tbPrice.Text = "0";
             if (set.Count == 0)
             {
