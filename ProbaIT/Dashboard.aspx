@@ -975,6 +975,7 @@
                 "text-transform": "capitalize"
             });
             displayBuyButton();
+            $(".close-modalCPU").trigger('click');
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart3.ClientID %>", function () {
@@ -986,10 +987,11 @@
                 "text-transform": "capitalize"
             });
             displayBuyButton();
+            $(".close-modalPU").trigger('click');
+
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart2.ClientID %>", function () {
-            console.log("Hey");
             var dropdown = document.getElementsByClassName("ddlMotherboard");
             var value = $(dropdown).children("option").filter(":selected").text();
             document.getElementById("motherboardsTitle").innerHTML = value;
@@ -998,6 +1000,7 @@
                 "text-transform": "capitalize"
             });
             displayBuyButton();
+            $(".close-modalMotherboards").trigger('click');
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart5.ClientID %>", function () {
@@ -1009,6 +1012,7 @@
                 "text-transform": "capitalize"
             });
             displayBuyButton();
+            $(".close-modalRAM").trigger('click');
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart4.ClientID %>", function () {
@@ -1020,6 +1024,7 @@
                 "text-transform": "capitalize"
             });
             displayBuyButton();
+            $(".close-modalGraphicsCards").trigger('click');
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart6.ClientID %>", function () {
@@ -1031,6 +1036,7 @@
                 "text-transform": "capitalize"
             });
             displayBuyButton();
+            $(".close-modalHardDrives").trigger('click');
         });
       
         function displayBuyButton() {
