@@ -15,12 +15,11 @@ namespace ProbaIT
     public partial class Admin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-
         {   ///// TREBA DA GO PRENASOCI SEKOJ STO NE E ADMIN
-            //if (Session["id"] == null || Session["type"] == "user")
-            //{
-            //    Response.Redirect("~/Default.aspx");
-            //}
+            if (Session["id"] == null || Session["type"] == null || Session["type"].ToString() == "user")
+            {
+                Response.Redirect("~/AccessDenied.aspx");
+            }
 
             if (!IsPostBack) {
                 loadProcessors();

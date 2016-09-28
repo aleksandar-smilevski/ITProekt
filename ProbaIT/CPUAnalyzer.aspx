@@ -7,7 +7,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="col-sm-9 col-lg-10 backImg" style="height:100%;">
+    <div class="col-sm-9 col-lg-10" style="height:100vh;">
       <div class="row" style="margin: 0 auto; width:78.2%">
         <div class="row" >
           <div class="col-md-12" style="margin-top:15px">

@@ -10,60 +10,69 @@
 namespace ProbaIT {
     
     
-    public partial class Default {
+    public partial class Settings {
         
         /// <summary>
-        /// head control.
+        /// lblExceptionEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label lblExceptionEdit;
         
         /// <summary>
-        /// form1 control.
+        /// txtFirstNameEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstNameEdit;
         
         /// <summary>
-        /// lblUsername control.
+        /// txtLastNameEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsername;
+        protected global::System.Web.UI.WebControls.TextBox txtLastNameEdit;
         
         /// <summary>
-        /// btnSignIn control.
+        /// txtPasswordEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSignIn;
+        protected global::System.Web.UI.WebControls.TextBox txtPasswordEdit;
         
         /// <summary>
-        /// btnSignUp control.
+        /// txtConfirmPasswordEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSignUp;
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmPasswordEdit;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// TxtConfirmPasswordCompare1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.CompareValidator TxtConfirmPasswordCompare1;
+        
+        /// <summary>
+        /// btnSubmitChanges control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmitChanges;
     }
 }
