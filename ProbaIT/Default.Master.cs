@@ -47,12 +47,17 @@ namespace ProbaIT
             else if (Session["username"] != null)
             {
                 lblUsername.Text = "Welcome, " + (string)Session["username"];
+                signInButton.Style.Add("display", "none");
+                signUpDiv.Style.Add("display", "none");
+                logoutButton.Visible = true;
+                logoutButton.Enabled = true;
             }
         }
 
         protected void logoutButton_Click(object sender, EventArgs e)
         {
             Session["id"] = null;
+            Session["username"] = null;
             Session.Clear();
             logoutButton.Visible = false;
             logoutButton.Enabled = false;

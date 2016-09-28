@@ -18,7 +18,7 @@ namespace ProbaIT
             if (!IsPostBack)
             {
                 // Fill dropdown lists
-                if (Session["id"] == null)
+                if (Session["id"] == null && Session["username"] == null)
                     Response.Redirect("SignIn.aspx");
                 fillProcessors();
                 fillMotherboards();
