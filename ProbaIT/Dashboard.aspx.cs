@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -14,7 +15,7 @@ namespace ProbaIT
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 // Fill dropdown lists
                 fillProcessors();
@@ -516,6 +517,33 @@ namespace ProbaIT
         protected void ddlHardDrives_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectHardDrive(ddlHardDrives.SelectedValue);
+        }
+
+        protected void AddToCart(object sender, EventArgs e)
+        {
+            string[] type = new string[] { "Processor", "MotherBoard", "PowerUnit", "GraphicsCard", "RAM", "HardDrive" };
+            string[] parts = new string[] { processorNameResult.Text, motherboardNameResult.Text, powerUnitNameResult.Text, graphicsCardNameResult.Text, lblRAMNameResult.Text, hardDriveNameResult.Text };
+            string[] textQuantity = new string[] { textQuantity1.Text, textQuantity2.Text, textQuantity3.Text, textQuantity4.Text, textQuantity5.Text, textQuantity6.Text };
+            Button button = (Button)sender;
+            int id = int.Parse(ExtractNumber(button.ID));
+            HashSet<Product> products;
+            if (Session["cart"] != null)
+            {
+                products = (HashSet<Product>)Session["cart"];
+            }
+            else
+            {
+                products = new HashSet<Product>();
+            }
+            Product product = new Product(type[id - 1], parts[id - 1], int.Parse(textQuantity[id - 1]));
+            products.Remove(product);
+            products.Add(product);
+            Session["cart"] = products;
+        }
+
+        public string ExtractNumber(string original)
+        {
+            return new string(original.Where(c => char.IsDigit(c)).ToArray());
         }
     }
 }

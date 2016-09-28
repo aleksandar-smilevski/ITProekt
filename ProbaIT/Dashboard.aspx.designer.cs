@@ -220,6 +220,24 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label processorPriceResult;
         
         /// <summary>
+        /// textQuantity1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textQuantity1;
+        
+        /// <summary>
+        /// buttonAddToCart1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAddToCart1;
+        
+        /// <summary>
         /// Panel3 control.
         /// </summary>
         /// <remarks>
@@ -335,6 +353,24 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label motherboardsPriceResult;
+        
+        /// <summary>
+        /// textQuantity2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textQuantity2;
+        
+        /// <summary>
+        /// buttonAddToCart2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAddToCart2;
         
         /// <summary>
         /// Panel2 control.
@@ -454,6 +490,24 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label powerUnitsPriceResult;
         
         /// <summary>
+        /// textQuantity3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textQuantity3;
+        
+        /// <summary>
+        /// buttonAddToCart3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAddToCart3;
+        
+        /// <summary>
         /// Panel4 control.
         /// </summary>
         /// <remarks>
@@ -569,6 +623,24 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label graphicsCardPriceResult;
+        
+        /// <summary>
+        /// textQuantity4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textQuantity4;
+        
+        /// <summary>
+        /// buttonAddToCart4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAddToCart4;
         
         /// <summary>
         /// Panel5 control.
@@ -688,6 +760,24 @@ namespace ProbaIT {
         protected global::System.Web.UI.WebControls.Label RAMPriceResult;
         
         /// <summary>
+        /// textQuantity5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textQuantity5;
+        
+        /// <summary>
+        /// buttonAddToCart5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAddToCart5;
+        
+        /// <summary>
         /// Panel6 control.
         /// </summary>
         /// <remarks>
@@ -803,5 +893,23 @@ namespace ProbaIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label hardDrivePriceResult;
+        
+        /// <summary>
+        /// textQuantity6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textQuantity6;
+        
+        /// <summary>
+        /// buttonAddToCart6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAddToCart6;
     }
 }

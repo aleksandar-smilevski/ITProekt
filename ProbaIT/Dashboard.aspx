@@ -161,12 +161,6 @@
             cursor: pointer;
         }
 
-        .auto-style1 {
-            width: 65%;
-            height: 295px;
-            margin-left: 74px;
-        }
-
         .close-modalCPU {
             cursor: pointer;
             color: #000000;
@@ -195,22 +189,9 @@
             width: 24%;
         }
 
-        .auto-style3 {
-            height: 24px;
-        }
-
         .blockUI {
             background: #222222;
             pointer-events: none;
-        }
-
-        .auto-style4 {
-            text-align: center;
-            width: 407px;
-        }
-
-        .auto-style5 {
-            width: 407px;
         }
 
         .panel1 {
@@ -228,25 +209,7 @@
             padding: 10px;
         }
 
-        .auto-style6 {
-            width: 70px;
-        }
-
-        .auto-style7 {
-            height: 24px;
-            width: 70px;
-        }
-
-        .auto-style8 {
-            text-align: center;
-            width: 283px;
-        }
-
-        .auto-style9 {
-            width: 283px;
-        }
-
-
+        
         .outerTable {
             width: 90%;
             height: 70%;
@@ -349,6 +312,17 @@
         .freeShipping {
             font-size: small;
             color: #8a8a8a;
+        }
+        .auto-style3 {
+            margin-bottom: 0;
+        }
+        .auto-style4 {
+            width: 20%;
+            height: 100%;
+            display: inline-block;
+            border-radius: 5px;
+            margin-left: -60px;
+            text-align: center;
         }
     </style>
 
@@ -515,7 +489,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="priceInfo">
+                            <div class="auto-style4">
                                 <div class="priceHolder">
                                     <asp:Label ID="lblProcessorPrice" runat="server" ForeColor="Gray" Font-Size="Medium">Price:</asp:Label>
 
@@ -524,6 +498,8 @@
                                     <p class="freeShipping">Free Shipping</p>
                                 </div>
                                 <button id="processorBtn" type="button" class="btn btn-primary btn-lg">Save my choice</button>
+                                <asp:TextBox ID="textQuantity1" runat="server" CssClass="auto-style3" Height="25px" TextMode="Number" Width="29px">1</asp:TextBox>
+                                <asp:Button ID="buttonAddToCart1" CssClass="btn btn-primary btn-lg glyphicon-shopping-cart" runat="server" Text="Add to cart" Width="175px" Height="47px" OnClick="AddToCart" />
                             </div>
                         </div>
                     </asp:Panel>
@@ -602,7 +578,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="priceInfo">
+                            <div class="auto-style4">
                                 <div class="priceHolder">
                                     <asp:Label ID="Label1" runat="server" ForeColor="Gray">Price:</asp:Label>
                                     <br />
@@ -611,6 +587,8 @@
 
                                 </div>
                                 <button id="motherboardBtn" type="button" class="btn btn-primary btn-lg">Save my choice</button>
+                                <asp:TextBox ID="textQuantity2" runat="server" CssClass="auto-style3" Height="25px" TextMode="Number" Width="29px">1</asp:TextBox>
+                                <asp:Button ID="buttonAddToCart2" CssClass="btn btn-primary btn-lg" runat="server" Text="Add to cart" Width="175px" Height="47px" OnClick="AddToCart" />
 
                             </div>
                         </div>
@@ -665,7 +643,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="priceInfo">
+                            <div class="auto-style4">
                                 <div class="priceHolder">
                                     <asp:Label ID="lblPowerUnitsPrice" runat="server" ForeColor="Gray">Price:</asp:Label>
                                     <br />
@@ -674,6 +652,8 @@
 
                                 </div>
                                 <button id="powerUnitBtn" type="button" class="btn btn-primary btn-lg">Save my choice</button>
+                                <asp:TextBox ID="textQuantity3" runat="server" CssClass="auto-style3" Height="25px" TextMode="Number" Width="29px">1</asp:TextBox>
+                                <asp:Button ID="buttonAddToCart3" CssClass="btn btn-primary btn-lg" runat="server" Text="Add to cart" Width="175px" Height="47px" OnClick="AddToCart" />
 
                             </div>
                         </div>
@@ -730,7 +710,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="priceInfo">
+                            <div class="auto-style4">
                                 <div class="priceHolder">
                                     <asp:Label ID="lblGraphicsCardResult" runat="server" ForeColor="Gray">Price:</asp:Label>
                                     <br />
@@ -738,6 +718,8 @@
                                     <p class="freeShipping">Free Shipping</p>
                                 </div>
                                 <button id="graphicsCardBtn" type="button" class="btn btn-primary btn-lg">Save my choice</button>
+                                <asp:TextBox ID="textQuantity4" runat="server" CssClass="auto-style3" Height="25px" TextMode="Number" Width="29px">1</asp:TextBox>
+                                <asp:Button ID="buttonAddToCart4" CssClass="btn btn-primary btn-lg" runat="server" Text="Add to cart" Width="175px" Height="47px" OnClick="AddToCart" />
 
                             </div>
                         </div>
@@ -794,7 +776,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="priceInfo">
+                            <div class="auto-style4">
                                 <div class="priceHolder">
                                     <asp:Label ID="lblRAMPrice" runat="server" ForeColor="Gray">Price:</asp:Label>
                                     <br />
@@ -803,6 +785,8 @@
 
                                 </div>
                                 <button id="RAMBtn" type="button" class="btn btn-primary btn-lg">Save my choice</button>
+                                <asp:TextBox ID="textQuantity5" runat="server" CssClass="auto-style3" Height="25px" TextMode="Number" Width="29px">1</asp:TextBox>
+                                <asp:Button ID="buttonAddToCart5" CssClass="btn btn-primary btn-lg" runat="server" Text="Add to cart" Width="175px" Height="47px" OnClick="AddToCart" />
 
                             </div>
                         </div>
@@ -859,7 +843,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="priceInfo">
+                            <div class="auto-style4">
                                 <div class="priceHolder">
                                     <asp:Label ID="lblHardDrivePrice" runat="server" ForeColor="Gray">Price:</asp:Label>
                                     <br />
@@ -868,6 +852,9 @@
 
                                 </div>
                                 <button id="hardDriveBtn" type="button" class="btn btn-primary btn-lg">Save my choice</button>
+                                <asp:TextBox ID="textQuantity6" runat="server" CssClass="auto-style3" Height="25px" TextMode="Number" Width="29px">1</asp:TextBox>
+                                <asp:Button ID="buttonAddToCart6" CssClass="btn btn-primary btn-lg" runat="server" Text="Add to cart" Width="175px" Height="47px" OnClick="AddToCart" />
+
 
                             </div>
                         </div>
@@ -977,6 +964,7 @@
                 "text-transform": "capitalize"
             });
         });
+
         $(document).on('click', '#powerUnitBtn', function () {
             var dropdown = document.getElementsByClassName("ddlPowerUnit");
             var value = $(dropdown).children("option").filter(":selected").text();
@@ -987,6 +975,7 @@
                 "text-transform": "capitalize"
             });
         });
+
         $(document).on('click', '#motherboardBtn', function () {
             var dropdown = document.getElementsByClassName("ddlMotherboard");
             var value = $(dropdown).children("option").filter(":selected").text();
@@ -997,6 +986,7 @@
                 "text-transform": "capitalize"
             });
         });
+
         $(document).on('click', '#RAMBtn', function () {
             var dropdown = document.getElementsByClassName("ddlRAM");
             var value = $(dropdown).children("option").filter(":selected").text();
@@ -1007,6 +997,7 @@
                 "text-transform": "capitalize"
             });
         });
+
         $(document).on('click', '#graphicsCardBtn', function () {
             var dropdown = document.getElementsByClassName("ddlGraphicsCard");
             var value = $(dropdown).children("option").filter(":selected").text();
@@ -1017,6 +1008,7 @@
                 "text-transform": "capitalize"
             });
         });
+
         $(document).on('click', '#hardDriveBtn', function () {
             var dropdown = document.getElementsByClassName("ddlHardDrive");
             var value = $(dropdown).children("option").filter(":selected").text();
@@ -1027,7 +1019,7 @@
                 "text-transform": "capitalize"
             });
         });
-      
+
 
 
     </script>
