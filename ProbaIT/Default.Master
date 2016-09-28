@@ -51,7 +51,7 @@
                     <a href="Default.aspx"><span class="glyphicon glyphicon-home"></span> Home</a>
                   </li>
                   <li class="">
-                    <a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+                    <a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
                   </li>
                   <li class="">
                     <a href=""><span class="glyphicon glyphicon-tags"></span> Orders</a>
@@ -65,6 +65,7 @@
                 <div class="text-center">
                     <!-- <asp:Button ID="btnSignIn" runat="server" CssClass="btn btn-default btn-center" Text="Sign in" /> -->
                     <a href="SignIn.aspx" class="btn btn-grey">Sign In</a>
+                    <div id="userName">Vikac</div>
                 </div>
             </div>
                <div class="well well-md well-register text-center"><h5>Don't have an account, yet?</h5><h5><strong>Sign up now!</strong></h5>
