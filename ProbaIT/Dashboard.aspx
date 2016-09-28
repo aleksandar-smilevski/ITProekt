@@ -351,7 +351,9 @@
                             <div class="col-md-4">
                                 <div class="box hovereffect" id="motherboards">
                                     <div class="overlay">
-                                        <h3 class="info"><a id="animateMotherboards" href="#modalMotherboards">Buy Now</a></h3>
+                                         <a id="animateMotherboards" href="#modalMotherboards">
+                                            <h3 class="info">Buy Now</h3>
+                                        </a>
                                     </div>
                                     <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYwIDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnPgoJPHJlY3QgeD0iMzEiIHk9IjQ0LjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cmVjdCB4PSIxNCIgeT0iNDQuNSIgd2lkdGg9IjQiIGhlaWdodD0iNSIgZmlsbD0iI0ZGRkZGRiIvPgoJPHJlY3QgeD0iMzEiIHk9IjQ4LjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cmVjdCB4PSIyOCIgeT0iNDQuNSIgd2lkdGg9IjEiIGhlaWdodD0iMiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHJlY3QgeD0iNTEiIHk9IjQwLjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjIiIGZpbGw9IiNGRkZGRkYiLz4KCTxyZWN0IHg9IjUxIiB5PSI0NC41IiB3aWR0aD0iMSIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNMzQuNzA5LDMwLjVoMTYuNTgyYzAuMzkxLDAsMC43MDktMC4zMTgsMC43MDktMC43MDlWMTMuMjA5YzAtMC4zOTEtMC4zMTgtMC43MDktMC43MDktMC43MDlIMzQuNzA5ICAgQzM0LjMxOCwxMi41LDM0LDEyLjgxOCwzNCwxMy4yMDl2MTYuNTgyQzM0LDMwLjE4MiwzNC4zMTgsMzAuNSwzNC43MDksMzAuNXogTTM1LDIzLjVoMnYtMWgtMnYtMmgydi0xaC0ydi0yaDJ2LTJoMnYtMmgydjJoMXYtMmgyICAgdjJoMXYtMmgydjJoMnYyaDJ2MmgtMnYxaDJ2MmgtMnYxaDJ2MmgtMnYyaC0ydjJoLTJ2LTJoLTF2MmgtMnYtMmgtMXYyaC0ydi0yaC0ydi0yaC0yVjIzLjV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cmVjdCB4PSIyOCIgeT0iNDAuNSIgd2lkdGg9IjEiIGhlaWdodD0iMiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHJlY3QgeD0iOSIgeT0iMzEuNSIgd2lkdGg9IjMiIGhlaWdodD0iMyIgZmlsbD0iI0ZGRkZGRiIvPgoJPHJlY3QgeD0iNTEiIHk9IjM2LjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjIiIGZpbGw9IiNGRkZGRkYiLz4KCTxyZWN0IHg9IjI4IiB5PSIzNi41IiB3aWR0aD0iMSIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNNTcsNi41di0xYzAtMC41NTMtMC40NDctMS0xLTFzLTEsMC40NDctMSwxdjFoLTF2LTNoLTRoLTJoLTJoLTJoLTJoLTJoLTJoLTJoLTR2M2gtMXYtMWMwLTAuNTUzLTAuNDQ4LTEtMS0xICAgcy0xLDAuNDQ3LTEsMXYxaC0xdi0xYzAtMC41NTMtMC40NDgtMS0xLTFzLTEsMC40NDctMSwxdjFoLTRoLTZoLTJIOEgwdjVoNGMwLjU1MiwwLDEsMC40NDcsMSwxcy0wLjQ0OCwxLTEsMUgwdjFoNCAgIGMwLjU1MiwwLDEsMC40NDcsMSwxcy0wLjQ0OCwxLTEsMUgwdjFoNGMwLjU1MiwwLDEsMC40NDcsMSwxcy0wLjQ0OCwxLTEsMUgwdjIwaDRjMC41NTIsMCwxLDAuNDQ3LDEsMXMtMC40NDgsMS0xLDFIMHYxaDQgICBjMC41NTIsMCwxLDAuNDQ3LDEsMXMtMC40NDgsMS0xLDFIMHYxaDRjMC41NTIsMCwxLDAuNDQ3LDEsMXMtMC40NDgsMS0xLDFIMHYxaDRjMC41NTIsMCwxLDAuNDQ3LDEsMXMtMC40NDgsMS0xLDFIMHYxaDQgICBjMC41NTIsMCwxLDAuNDQ3LDEsMXMtMC40NDgsMS0xLDFIMHYzaDYwdi01MEg1N3ogTTQsMzQuNWMtMC41NTIsMC0xLTAuNDQ4LTEtMXMwLjQ0OC0xLDEtMXMxLDAuNDQ4LDEsMVM0LjU1MiwzNC41LDQsMzQuNXogICAgTTQsMzEuNWMtMC41NTIsMC0xLTAuNDQ4LTEtMXMwLjQ0OC0xLDEtMXMxLDAuNDQ4LDEsMVM0LjU1MiwzMS41LDQsMzEuNXogTTQsMjguNWMtMC41NTIsMC0xLTAuNDQ4LTEtMXMwLjQ0OC0xLDEtMXMxLDAuNDQ4LDEsMSAgIFM0LjU1MiwyOC41LDQsMjguNXogTTE2LDM4LjVjMC41NTIsMCwxLDAuNDQ4LDEsMXMtMC40NDgsMS0xLDFzLTEtMC40NDgtMS0xUzE1LjQ0OCwzOC41LDE2LDM4LjV6IE04LDguNWg2djE3aC0ydjEgICBjMCwwLjU1My0wLjQ0OCwxLTEsMXMtMS0wLjQ0Ny0xLTF2LTFIOFY4LjV6IE03LDI5LjVoN3Y3SDdWMjkuNXogTTE0LDM5LjVjMCwwLjU1Mi0wLjQ0OCwxLTEsMXMtMS0wLjQ0OC0xLTFzMC40NDgtMSwxLTEgICBTMTQsMzguOTQ4LDE0LDM5LjV6IE0yMSw0Ny41YzAuNTUyLDAsMSwwLjQ0NywxLDFzLTAuNDQ4LDEtMSwxaC0xdjJoLTh2LTJoLTFjLTAuNTUyLDAtMS0wLjQ0Ny0xLTFzMC40NDgtMSwxLTFoMXYtMWgtMSAgIGMtMC41NTIsMC0xLTAuNDQ3LTEtMXMwLjQ0OC0xLDEtMWgxdi0yaDh2MmgxYzAuNTUyLDAsMSwwLjQ0NywxLDFzLTAuNDQ4LDEtMSwxaC0xdjFIMjF6IE0xOCwzOS41YzAtMC41NTIsMC40NDgtMSwxLTEgICBzMSwwLjQ0OCwxLDFzLTAuNDQ4LDEtMSwxUzE4LDQwLjA1MiwxOCwzOS41eiBNMjIsMzEuNWgtMnYxYzAsMC41NTMtMC40NDgsMS0xLDFzLTEtMC40NDctMS0xdi0xaC0ydi0yM2g2VjMxLjV6IE01MCw1LjVoMnYxaC0yICAgVjUuNXogTTQ2LDUuNWgydjFoLTJWNS41eiBNNDIsNS41aDJ2MWgtMlY1LjV6IE0zOCw1LjVoMnYxaC0yVjUuNXogTTM0LDUuNWgydjFoLTJWNS41eiBNMzIsMTMuMjA5ICAgYzAtMS40OTQsMS4yMTUtMi43MDksMi43MDktMi43MDloMTYuNTgyYzEuNDk0LDAsMi43MDksMS4yMTUsMi43MDksMi43MDl2MTYuNTgyYzAsMS40OTQtMS4yMTUsMi43MDktMi43MDksMi43MDlIMzQuNzA5ICAgQzMzLjIxNSwzMi41LDMyLDMxLjI4NSwzMiwyOS43OTFWMTMuMjA5eiBNMjgsMTUuNWMwLjU1MiwwLDEsMC40NDgsMSwxcy0wLjQ0OCwxLTEsMXMtMS0wLjQ0OC0xLTFTMjcuNDQ4LDE1LjUsMjgsMTUuNXogTTI4LDE4LjUgICBjMC41NTIsMCwxLDAuNDQ4LDEsMXMtMC40NDgsMS0xLDFzLTEtMC40NDgtMS0xUzI3LjQ0OCwxOC41LDI4LDE4LjV6IE0yOCwyMS41YzAuNTUyLDAsMSwwLjQ0OCwxLDFzLTAuNDQ4LDEtMSwxcy0xLTAuNDQ4LTEtMSAgIFMyNy40NDgsMjEuNSwyOCwyMS41eiBNMjgsMjQuNWMwLjU1MiwwLDEsMC40NDgsMSwxcy0wLjQ0OCwxLTEsMXMtMS0wLjQ0OC0xLTFTMjcuNDQ4LDI0LjUsMjgsMjQuNXogTTI4LDI3LjVjMC41NTIsMCwxLDAuNDQ4LDEsMSAgIHMtMC40NDgsMS0xLDFzLTEtMC40NDgtMS0xUzI3LjQ0OCwyNy41LDI4LDI3LjV6IE0yOCwzMC41YzAuNTUyLDAsMSwwLjQ0OCwxLDFzLTAuNDQ4LDEtMSwxcy0xLTAuNDQ4LTEtMVMyNy40NDgsMzAuNSwyOCwzMC41eiAgICBNMjUsMTcuNWMwLjU1MiwwLDEsMC40NDgsMSwxcy0wLjQ0OCwxLTEsMXMtMS0wLjQ0OC0xLTFTMjQuNDQ4LDE3LjUsMjUsMTcuNXogTTI1LDIxLjVjMC41NTIsMCwxLDAuNDQ4LDEsMXMtMC40NDgsMS0xLDEgICBzLTEtMC40NDgtMS0xUzI0LjQ0OCwyMS41LDI1LDIxLjV6IE01NSw0MC41YzAuNTUzLDAsMSwwLjQ0NywxLDFzLTAuNDQ3LDEtMSwxaC0xdjJoMWMwLjU1MywwLDEsMC40NDcsMSwxcy0wLjQ0NywxLTEsMWgtMXYyaDEgICBjMC41NTMsMCwxLDAuNDQ3LDEsMXMtMC40NDcsMS0xLDFoLTF2MkgyNnYtMmgtMWMtMC41NTIsMC0xLTAuNDQ3LTEtMXMwLjQ0OC0xLDEtMWgxdi0yaC0xYy0wLjU1MiwwLTEtMC40NDctMS0xczAuNDQ4LTEsMS0xaDF2LTIgICBoLTFjLTAuNTUyLDAtMS0wLjQ0Ny0xLTFzMC40NDgtMSwxLTFoMXYtMmgtMWMtMC41NTIsMC0xLTAuNDQ3LTEtMXMwLjQ0OC0xLDEtMWgxdi0yaDI4djJoMWMwLjU1MywwLDEsMC40NDcsMSwxcy0wLjQ0NywxLTEsMWgtMSAgIHYySDU1eiBNNTYsMjYuNWMtMC41NTIsMC0xLTAuNDQ4LTEtMXMwLjQ0OC0xLDEtMXMxLDAuNDQ4LDEsMVM1Ni41NTIsMjYuNSw1NiwyNi41eiBNNTYsMTkuNWMtMC41NTIsMC0xLTAuNDQ4LTEtMXMwLjQ0OC0xLDEtMSAgIHMxLDAuNDQ4LDEsMVM1Ni41NTIsMTkuNSw1NiwxOS41eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHJlY3QgeD0iMTAiIHk9IjEwLjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjEzIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cmVjdCB4PSIxOCIgeT0iMTAuNSIgd2lkdGg9IjIiIGhlaWdodD0iMTkiIGZpbGw9IiNGRkZGRkYiLz4KCTxyZWN0IHg9IjUxIiB5PSI0OC41IiB3aWR0aD0iMSIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cmVjdCB4PSIzMSIgeT0iNDAuNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIiIGZpbGw9IiNGRkZGRkYiLz4KCTxyZWN0IHg9IjI4IiB5PSI0OC41IiB3aWR0aD0iMSIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cgk8cmVjdCB4PSIzMSIgeT0iMzYuNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIiIGZpbGw9IiNGRkZGRkYiLz4KCTxyZWN0IHg9IjM5IiB5PSIxNy41IiB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
                                         class="img-center-nowidth" />
@@ -361,7 +363,9 @@
                             <div class="col-md-4">
                                 <div class="box hovereffect" id="power-units">
                                     <div class="overlay">
-                                        <h3 class="info"><a id="animatePU" href="#modalPU">Buy Now</a></h3>
+                                        <a id="animatePU" href="#modalPU">
+                                            <h3 class="info">Buy Now</h3>
+                                        </a>
                                     </div>
                                     <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4IiB2aWV3Qm94PSIwIDAgNDQ2LjI3MSA0NDYuMjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ0Ni4yNzEgNDQ2LjI3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQzOS4xMjQsODEuMTZoLTY4LjUxMVY1OS40MjRjMC0zLjk0Ni0zLjE5OS03LjE0Ni03LjE0Ni03LjE0NmgtNDguOTk5Yy0zLjk0NiwwLTcuMTQ2LDMuMTk5LTcuMTQ2LDcuMTQ2VjgxLjE2SDEzOC45NDcgICAgVjU5LjQyNGMwLTMuOTQ2LTMuMTk5LTcuMTQ2LTcuMTQ2LTcuMTQ2SDgyLjgwMmMtMy45NDYsMC03LjE0NiwzLjE5OS03LjE0Niw3LjE0NlY4MS4xNkg3LjE0NkMzLjIsODEuMTYsMCw4NC4zNTksMCw4OC4zMDYgICAgdjQ1LjYxNGMwLDMuOTQ2LDMuMTk5LDcuMTQ2LDcuMTQ2LDcuMTQ2aDIzLjIwMWgzODUuNTc3aDIzLjIwMWMzLjk0NSwwLDcuMTQ2LTMuMTk5LDcuMTQ2LTcuMTQ2Vjg4LjMwNiAgICBDNDQ2LjI3LDg0LjM2LDQ0My4wNyw4MS4xNiw0MzkuMTI0LDgxLjE2eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik0zMC4zNDYsMzg0LjcyM2MwLDUuMTE5LDQuMTQ5LDkuMjcsOS4yNjgsOS4yN2gzNjcuMDQxYzUuMTE5LDAsOS4yNjktNC4xNSw5LjI2OS05LjI3VjE2NS40MDRIMzAuMzQ2VjM4NC43MjN6ICAgICBNMTc5LjI2MiwyOTAuMDE0bDIxLjcxNi02OS40MDFjMC4zNzMtMS4xOTIsMS40NzgtMi4wMDQsMi43MjctMi4wMDRoMzMuODY0YzAuOTE0LDAsMS43NzEsMC40MzgsMi4zMTEsMS4xNzcgICAgYzAuNTM4LDAuNzM4LDAuNjg5LDEuNjkxLDAuNDA2LDIuNTYxbC0xMy4yMjEsNDAuODM5aDM3LjIxN2MxLjA0NywwLDIuMDA4LDAuNTcyLDIuNTEsMS40OWMwLjUsMC45MTgsMC40NTksMi4wMzUtMC4xMDcsMi45MTQgICAgbC00OS43MTksNzcuMTQ5Yy0wLjUzOCwwLjgzNS0xLjQ1MywxLjMxLTIuNDAyLDEuMzFjLTAuMzQzLDAtMC42ODktMC4wNjItMS4wMjUtMC4xOWMtMS4yNjMtMC40ODUtMi4wMTItMS43OTMtMS43OTMtMy4xMjkgICAgbDguMDI4LTQ5LjAwNUgxODEuOTljLTAuOTA5LDAtMS43NjQtMC40MzQtMi4zMDItMS4xNjZDMTc5LjE0OCwyOTEuODI2LDE3OC45OSwyOTAuODgxLDE3OS4yNjIsMjkwLjAxNHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" class="img-center-nowidth" />
                                     <h4 id="PUTitle">Power Units</h4>
@@ -370,7 +374,9 @@
                             <div class="col-md-4">
                                 <div class="box hovereffect" id="ram">
                                     <div class="overlay">
-                                        <h3 class="info"><a id="animateRAM" href="#modalRAM">Buy Now</a></h3>
+                                         <a id="animateRAM" href="#modalRAM">
+                                            <h3 class="info">Buy Now</h3>
+                                        </a> 
                                     </div>
                                     <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYwIDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNTZweCIgaGVpZ2h0PSIyNTZweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM5LjE0NSwzLjEwM2MtMS4yNDQsMC4yOTktMi4yNDIsMS4yOTYtMi41NDIsMi41NDFjLTAuMjkzLDEuMjE1LDAuMDUxLDIuNDYxLDAuOTIyLDMuMzMxICAgIGMwLjY2NywwLjY2NywxLjU1MiwxLjAyNCwyLjQ3NiwxLjAyNGMwLjI4MywwLDAuNTctMC4wMzMsMC44NTUtMC4xMDNjMS4yNDQtMC4zLDIuMjQyLTEuMjk3LDIuNTQxLTIuNTQgICAgYzAuMjkzLTEuMjE1LTAuMDUyLTIuNDYtMC45MjItMy4zMzFDNDEuNjA1LDMuMTU1LDQwLjM2MSwyLjgxLDM5LjE0NSwzLjEwM3ogTTQxLjQ1Myw2Ljg4OWMtMC4xMjQsMC41MTMtMC41NTEsMC45NC0xLjA2NSwxLjA2NCAgICBDMzkuODQ2LDguMDgyLDM5LjMxOSw3Ljk0LDM4Ljk0LDcuNTZjLTAuMzgtMC4zOC0wLjUyMi0wLjkwNy0wLjM5Mi0xLjQ0OGMwLjEyNC0wLjUxNCwwLjU1Mi0wLjk0MSwxLjA2NS0xLjA2NCAgICBDMzkuNzQ0LDUuMDE2LDM5Ljg3NCw1LDQwLjAwMSw1YzAuMzk5LDAsMC43NzIsMC4xNTIsMS4wNiwwLjQzOUM0MS40NCw1LjgxOSw0MS41ODMsNi4zNDcsNDEuNDUzLDYuODg5eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik0zNi42MDMsNTIuNjQ0Yy0wLjI5MywxLjIxNSwwLjA1MSwyLjQ2MSwwLjkyMiwzLjMzMWMwLjY2NywwLjY2NywxLjU1MiwxLjAyNCwyLjQ3NiwxLjAyNCAgICBjMC4yODMsMCwwLjU3LTAuMDMzLDAuODU1LTAuMTAzYzEuMjQ0LTAuMywyLjI0Mi0xLjI5NywyLjU0MS0yLjU0YzAuMjkzLTEuMjE1LTAuMDUyLTIuNDYtMC45MjItMy4zMzEgICAgYy0wLjg3LTAuODY5LTIuMTE0LTEuMjE0LTMuMzMtMC45MjNDMzcuOTAxLDUwLjQwMSwzNi45MDMsNTEuMzk4LDM2LjYwMyw1Mi42NDR6IE00MC4wMDEsNTJjMC4zOTksMCwwLjc3MiwwLjE1MiwxLjA2LDAuNDM5ICAgIGMwLjM3OSwwLjM4LDAuNTIyLDAuOTA3LDAuMzkyLDEuNDQ5Yy0wLjEyNCwwLjUxMy0wLjU1MSwwLjk0LTEuMDY1LDEuMDY0Yy0wLjU0MiwwLjEyNy0xLjA2OS0wLjAxMi0xLjQ0OC0wLjM5MyAgICBjLTAuMzgtMC4zOC0wLjUyMi0wLjkwNy0wLjM5Mi0xLjQ0OGMwLjEyNC0wLjUxNCwwLjU1Mi0wLjk0MSwxLjA2NS0xLjA2NEMzOS43NDQsNTIuMDE2LDM5Ljg3NCw1Miw0MC4wMDEsNTJ6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTQzLjQwNSwwSDI3LjV2MWMwLDEuMTAzLTAuODk3LDItMiwycy0yLTAuODk3LTItMlYwaC0zaC0yaC01djVoMnY1MGgtMnY1aDVoMmgzdi0xYzAtMS4xMDMsMC44OTctMiwyLTJzMiwwLjg5NywyLDJ2MSAgICBoMTUuOTA1YzEuNzA3LDAsMy4wOTUtMS4zODksMy4wOTUtMy4wOTZWMy4wOTZDNDYuNSwxLjM4OSw0NS4xMTEsMCw0My40MDUsMHogTTE4LjUsNThoLTN2LTFoMlYzaC0yVjJoM1Y1OHogTTQ0LjUsMTFoLTV2Mmg1djEgICAgaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXYxaC01djJoNXY3LjkwNCAgICBjMCwwLjYwNC0wLjQ5MSwxLjA5Ni0xLjA5NSwxLjA5NkgyOS4zNzRjLTAuNDQ1LTEuNzI0LTIuMDEzLTMtMy44NzQtM3MtMy40MjgsMS4yNzYtMy44NzQsM0gyMC41VjJoMS4xMjYgICAgYzAuNDQ1LDEuNzI0LDIuMDEzLDMsMy44NzQsM3MzLjQyOC0xLjI3NiwzLjg3NC0zaDE0LjAzMUM0NC4wMDksMiw0NC41LDIuNDkxLDQ0LjUsMy4wOTZWMTF6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTMyLjUsNmgtMnYyaC0xVjZoLTJ2MmgtMVY2aC0ydjJoLTJ2OGgydjJoMnYtMmgxdjJoMnYtMmgxdjJoMnYtMmgyVjhoLTJWNnogTTMyLjUsMTRoLTh2LTRoOFYxNHoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMzIuNSw0MmgtMnYyaC0xdi0yaC0ydjJoLTF2LTJoLTJ2MmgtMnY4aDJ2Mmgydi0yaDF2Mmgydi0yaDF2Mmgydi0yaDJ2LThoLTJWNDJ6IE0zMi41LDUwaC04di00aDhWNTB6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTMyLjUsMjRoLTJ2MmgtMXYtMmgtMnYyaC0xdi0yaC0ydjJoLTJ2OGgydjJoMnYtMmgxdjJoMnYtMmgxdjJoMnYtMmgydi04aC0yVjI0eiBNMzIuNSwzMmgtOHYtNGg4VjMyeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" class="img-center-nowidth" />
                                     <h4 id="RAMTitle">RAM</h4>
@@ -379,7 +385,9 @@
                             <div class="col-md-4">
                                 <div class="box hovereffect" id="graphic-cards">
                                     <div class="overlay">
-                                        <h3 class="info"><a id="animateGraphicsCards" href="#modalGraphicsCards">Buy Now</a></h3>
+                                        <a id="animateGraphicsCards" href="#modalGraphicsCards">
+                                            <h3 class="info">Buy Now</h3>
+                                        </a>                                      
                                     </div>
                                     <img src="Styles/img/graphics-card.png" class="img-center-nowidth" />
                                     <h4 id="graphicsCardsTitle">Graphics Cards</h4>
@@ -388,7 +396,9 @@
                             <div class="col-md-4">
                                 <div class="box hovereffect" id="hard-drives">
                                     <div class="overlay">
-                                        <h3 class="info"><a id="animateHardDrives" href="#modalHardDrives">Buy Now</a></h3>
+                                         <a id="animateHardDrives" href="#modalHardDrives">
+                                            <h3 class="info">Buy Now</h3>
+                                        </a> 
                                     </div>
                                     <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgNDM4LjUzMyA0MzguNTMyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MzguNTMzIDQzOC41MzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDMzLjk3OCwyNDMuNTMxTDM3Ny43MjQsNzAuNTE5Yy0zLjIzNy0xMC4wODktOS4yMzItMTguMjc0LTE3Ljk4Ni0yNC41NTRzLTE4LjM3MS05LjQxOS0yOC44MzYtOS40MTlIMTA3LjYzNyAgICBjLTEwLjQ3MiwwLTIwLjA4LDMuMTM3LTI4LjgzNyw5LjQxOWMtOC43NTcsNi4yOC0xNC43NTMsMTQuNDY1LTE3Ljk4NywyNC41NTRMNC41NjgsMjQzLjUzMUMxLjUyMywyNTMuMDUyLDAsMjYwLjE4OSwwLDI2NC45NDcgICAgdjkxLjM2MWMwLDEyLjU1OSw0LjQ3MSwyMy4zMDgsMTMuNDE3LDMyLjI1N2M4Ljk0Nyw4Ljk0OSwxOS43MDEsMTMuNDIyLDMyLjI2NCwxMy40MjJoMzQ3LjE3NiAgICBjMTIuNTYsMCwyMy4zMTUtNC40NzMsMzIuMjY1LTEzLjQyMmM4Ljk0NS04Ljk0OSwxMy40MTEtMTkuNjk4LDEzLjQxMS0zMi4yNTd2LTkxLjM2MSAgICBDNDM4LjUzMywyNjAuMTg5LDQzNy4wMjMsMjUzLjA1Miw0MzMuOTc4LDI0My41MzF6IE05NS42NDYsODEuNjQ5YzAuNzYzLTIuNDc0LDIuMjg0LTQuNTIxLDQuNTY4LTYuMTM2ICAgIGMyLjI4Ni0xLjYxOSw0Ljc1OS0yLjQyOCw3LjQyMy0yLjQyOGgyMjMuMjYyYzIuNjY2LDAsNS4xNDQsMC44MSw3LjQyNiwyLjQyOGMyLjI4MywxLjYxNSwzLjgwNiwzLjY2Miw0LjU2NSw2LjEzNiAgICBsNDQuODIzLDEzNy42MTdINTAuODIyTDk1LjY0Niw4MS42NDl6IE00MDIuMDAxLDM1Ni4zMDljMCwyLjQ3MS0wLjkxMSw0LjYwOS0yLjcxOCw2LjQyYy0xLjgxMywxLjgxLTMuOTQ5LDIuNzA3LTYuNDIsMi43MDcgICAgSDQ1LjY4MWMtMi40NzQsMC00LjYxNS0wLjg5Ny02LjQyMy0yLjcwN2MtMS44MDctMS44MTEtMi43MTItMy45NDktMi43MTItNi40MnYtOTEuMzYxYzAtMi40NzksMC45MDUtNC42MTMsMi43MTItNi40MjggICAgYzEuODA5LTEuODAzLDMuOTQ5LTIuNzAzLDYuNDIzLTIuNzAzaDM0Ny4xODNjMi40NzEsMCw0LjYwOSwwLjg5Niw2LjQyLDIuNzAzYzEuODA3LDEuODE0LDIuNzE0LDMuOTQ5LDIuNzE0LDYuNDI4djkxLjM2MSAgICBINDAyLjAwMXoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMjc0LjA4NywyODcuNzg2Yy02LjI4MywwLTExLjY2MiwyLjIzMS0xNi4xMzIsNi43MDhjLTQuNDczLDQuNDc2LTYuNzE0LDkuODUyLTYuNzE0LDE2LjEzMiAgICBjMCw2LjI3OSwyLjIzNywxMS42NTksNi43MTQsMTYuMTMyYzQuNDczLDQuNDc3LDkuODQ5LDYuNzA3LDE2LjEzMiw2LjcwN3MxMS42NjMtMi4yMywxNi4xMzItNi43MDcgICAgYzQuNDctNC40Nyw2LjcxNS05Ljg0OSw2LjcxNS0xNi4xMzJjMC02LjI4LTIuMjM4LTExLjY2My02LjcxNS0xNi4xMzJDMjg1Ljc0NCwyOTAuMDIxLDI4MC4zNzEsMjg3Ljc4NiwyNzQuMDg3LDI4Ny43ODZ6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM0Ny4xNzgsMjg3Ljc4NmMtNi4yODMsMC0xMS42NjMsMi4yMzgtMTYuMTM2LDYuNzA4Yy00LjQ3Myw0LjQ3Ni02LjcwNyw5Ljg1Mi02LjcwNywxNi4xMzIgICAgYzAsNi4yNzksMi4yMzQsMTEuNjU5LDYuNzA3LDE2LjEzMmM0LjQ3Myw0LjQ3Nyw5Ljg1Myw2LjcwNywxNi4xMzYsNi43MDdjNi4yNzYsMCwxMS42NjMtMi4yMywxNi4xMzItNi43MDcgICAgYzQuNDctNC40Nyw2LjcxNS05Ljg0OSw2LjcxNS0xNi4xMzJjMC02LjI4LTIuMjM4LTExLjY2My02LjcxNS0xNi4xMzJDMzU4LjgzMywyOTAuMDIxLDM1My40NTUsMjg3Ljc4NiwzNDcuMTc4LDI4Ny43ODZ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" class="img-center-nowidth" />
                                     <h4 id="hardDrivesTitle">HDD & SSD</h4>
@@ -962,56 +972,51 @@
             document.getElementById("processorsTitle").innerHTML = value;
             console.log(value);
             $("#processorsTitle").css({
-                "font-size": "12px",
-                "text-transform": "capitalize"
-            });
-            displayBuyButton();
-        });
-
-        $(document).on('click', "#" + "<%= buttonAddToCart2.ClientID %>", function () {
-            var dropdown = document.getElementsByClassName("ddlPowerUnit");
-            var value = $(dropdown).children("option").filter(":selected").text();
-            document.getElementById("PUTitle").innerHTML = value;
-            console.log(value);
-            $("#PUTitle").css({
-                "font-size": "12px",
                 "text-transform": "capitalize"
             });
             displayBuyButton();
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart3.ClientID %>", function () {
+            var dropdown = document.getElementsByClassName("ddlPowerUnit");
+            var value = $(dropdown).children("option").filter(":selected").text();
+            document.getElementById("PUTitle").innerHTML = value;
+            console.log(value);
+            $("#PUTitle").css({
+                "text-transform": "capitalize"
+            });
+            displayBuyButton();
+        });
+
+        $(document).on('click', "#" + "<%= buttonAddToCart2.ClientID %>", function () {
             console.log("Hey");
             var dropdown = document.getElementsByClassName("ddlMotherboard");
             var value = $(dropdown).children("option").filter(":selected").text();
             document.getElementById("motherboardsTitle").innerHTML = value;
             console.log(value);
             $("#motherboardsTitle").css({
-                "font-size": "12px",
-                "text-transform": "capitalize"
-            });
-            displayBuyButton();
-        });
-
-        $(document).on('click', "#" + "<%= buttonAddToCart4.ClientID %>", function () {
-            var dropdown = document.getElementsByClassName("ddlRAM");
-            var value = $(dropdown).children("option").filter(":selected").text();
-            document.getElementById("RAMTitle").innerHTML = value;
-            console.log(value);
-            $("#RAMTitle").css({
-                "font-size": "12px",
                 "text-transform": "capitalize"
             });
             displayBuyButton();
         });
 
         $(document).on('click', "#" + "<%= buttonAddToCart5.ClientID %>", function () {
+            var dropdown = document.getElementsByClassName("ddlRAM");
+            var value = $(dropdown).children("option").filter(":selected").text();
+            document.getElementById("RAMTitle").innerHTML = value;
+            console.log(value);
+            $("#RAMTitle").css({
+                "text-transform": "capitalize"
+            });
+            displayBuyButton();
+        });
+
+        $(document).on('click', "#" + "<%= buttonAddToCart4.ClientID %>", function () {
             var dropdown = document.getElementsByClassName("ddlGraphicsCard");
             var value = $(dropdown).children("option").filter(":selected").text();
             document.getElementById("graphicsCardsTitle").innerHTML = value;
             console.log(value);
             $("#graphicsCardsTitle").css({
-                "font-size": "12px",
                 "text-transform": "capitalize"
             });
             displayBuyButton();
@@ -1023,7 +1028,6 @@
             document.getElementById("hardDrivesTitle").innerHTML = value;
             console.log(value);
             $("#hardDrivesTitle").css({
-                "font-size": "12px",
                 "text-transform": "capitalize"
             });
             displayBuyButton();
