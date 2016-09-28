@@ -57,11 +57,17 @@ namespace ProbaIT
                 con.Close();
             }
 
-            if (valid && (id != -1))
+            if (valid && (id != -1) && type=="user")
             {
                 Session["id"] = id;
                 Session["type"] = type;
                 Response.Redirect("Dashboard.aspx");
+            }
+            else if (valid && (id!=-1) && type == "admin")
+            {
+                Session["id"] = id;
+                Session["type"] = type;
+                Response.Redirect("Admin.aspx");
             }
             else
             {

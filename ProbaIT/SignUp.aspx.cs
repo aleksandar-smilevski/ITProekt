@@ -61,7 +61,12 @@ namespace ProbaIT
             }
             if (!valid)
             {
+                Label1.ForeColor = System.Drawing.Color.Red;
                 Label1.Text = "A user with that username already exists";
+            }
+            else
+            { Label1.ForeColor = System.Drawing.Color.Green;
+                Label1.Text = "Account has been created succsessfuly";
             }
 
         }

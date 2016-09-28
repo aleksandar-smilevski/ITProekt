@@ -1315,7 +1315,7 @@ namespace ProbaIT
 
         protected void gvEditAdmin_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
-            DataSet ds = (DataSet)ViewState["User"];
+            DataSet ds = (DataSet)ViewState["Users"];
             gvEditAdmin.EditIndex = -1;
             gvEditAdmin.DataSource = ds;
             gvEditAdmin.DataBind();
